@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+/* * {
+  outline: 1px solid red;
+} */
+
+:root {
+  --primary: #f3f8ff;
+  --secondary: #18437e;
+  --accent: #ff9d7a;
+  --accent-secondary: #fc8f67;
+  --rating: #ffbd53;
+  --background: #e3efff;
+  --secondary-a50: rgba(24, 67, 126, 0.5);
+  --primary-a50: rgba(243, 248, 255, 0.5);
+  --white: #fff;
+  --black: #000;
+  --gray-background: #f3f3f3;
+  --gray-text: #a1acb3;
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Open Sans', sans-serif;
+  --third-family: 'Heebo', sans-serif;
+  --font3: 'Font Awesome 5 Free', sans-serif;
+  --font4: 'Onest', sans-serif;
+  --font5: 'Poppins', sans-serif;
+  --font6: 'HK Grotesk', sans-serif;
+  --font7: 'Geist', sans-serif;
+}
+
+.fadeBackground {
+  background: linear-gradient(270deg, rgba(7, 33, 68, 0.4) 0%, rgba(7, 33, 68, 0.9) 100%);
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.fadeOverlay {
+  background: linear-gradient(180deg, rgba(7, 33, 68, 0.3) 0%, rgba(7, 33, 68, 0.7) 100%);
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.imageBlur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  transition: opacity 0.5s ease;
+}
+
+.imageLoading {
+  filter: blur(3px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.heroLoading {
+  filter: blur(2px);
+  transition: filter 0.5s ease-in-out;
+}
+
+.loadingSpinner,
+.errorMessage {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  background: var(--white);
+  width: 100%;
+  /* padding: 152px 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 80dvh;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+
+  @media (max-width: 1024px) {
+    height: calc(100vh - 68px);
+  }
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--primary);
+  padding: 48px 80px;
+  box-sizing: border-box;
+  gap: 48px;
+
+  @media (max-width: 860px) {
+    padding: 24px 16px !important;
+  }
+}
+
+.sectionWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.contentContainer {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 10;
+}
+
+.sectionTitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.01em;
+  color: var(--black);
+  text-align: center;
+}
+
+.sectionSubtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--black);
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border: 1px solid #e5eaf4;
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.react-tel-input .selected-flag {
+  background: var(--white) !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag,
+.react-tel-input .country-list .search {
+  background: var(--white) !important;
+}
+
+.react-tel-input .country-list .country.highlight {
+  background-color: #c4dfff !important;
+
+  &:hover {
+    background-color: #c4dfff !important;
+  }
+}
+
+.react-tel-input .country-list .country:hover {
+  background-color: var(--background) !important;
+}
+
+.react-tel-input .country-list .search {
+  display: flex;
+  padding: 10px 10px 6px 10px !important;
+  box-sizing: border-box;
+}
+
+.react-tel-input .country-list .country-name {
+  font-size: 16px;
+  font-family: var(--font-family);
+}

@@ -1,0 +1,79 @@
+.sectionTitle {
+  font-family: var(--font-family);
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+
+  @media (max-width: 860px) {
+    font-size: 1.875rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.625rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+
+  @media (max-width: 640px) {
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+}
+
+.filterButton {
+  padding: 12px 24px;
+  background: var(--white);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &.active {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--text-primary);
+  }
+
+  @media (max-width: 640px) {
+    padding: 10px 20px;
+    font-size: 0.9375rem;
+  }
+}
+
+.candidatesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  @media (max-width: 1140px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

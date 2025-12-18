@@ -1,0 +1,267 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  border-radius: 12px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 15px 35px 0 rgba(255, 157, 122, 0.05);
+  background: #fefcfc;
+
+  @media (max-width: 640px) {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary, #000);
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 640px) {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
+.modalTitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--black);
+  text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: 28px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  @media (max-width: 640px) {
+    gap: 1rem;
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary, #000);
+  line-height: 1.4;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}
+
+.required {
+  color: #e17f5c;
+}
+
+.input {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  padding: 0.875rem 1rem;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background: var(--white, #fff);
+  color: var(--text-primary, #000);
+  border: 1px solid #c3cad9;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    border-color: var(--accent, #e17f5c);
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+    padding: 0.75rem 0.875rem;
+  }
+}
+
+.fileInputWrapper {
+  cursor: pointer;
+}
+
+.fileInput {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border: 1px dashed #e0e0e0;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: border-color 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--accent, #e17f5c);
+  }
+
+  svg {
+    color: #666;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-family: var(--font-family);
+    font-size: 0.9375rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media (max-width: 640px) {
+    padding: 0.75rem 0.875rem;
+
+    span {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.checkboxGroup {
+  margin-top: 0.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.125rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 4px;
+  cursor: pointer;
+  appearance: none;
+  background: var(--white, #fff);
+  position: relative;
+  transition: all 0.2s ease;
+
+  &:checked {
+    background: var(--accent, #e17f5c);
+    border-color: var(--accent, #e17f5c);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.checkboxText {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  color: var(--text-primary, #000);
+  line-height: 1.5;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}
+
+.submitButton {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--white, #fff);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background: var(--accent-secondary);
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+    padding: 0.875rem 1.5rem;
+  }
+}

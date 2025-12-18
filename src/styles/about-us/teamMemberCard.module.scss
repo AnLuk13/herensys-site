@@ -1,0 +1,75 @@
+.teamMemberCard {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: #f0f0f0;
+
+  @media (max-width: 860px) {
+    height: 240px;
+  }
+
+  @media (max-width: 640px) {
+    height: 320px;
+  }
+}
+
+.memberImage {
+  transition: transform 0.3s ease;
+
+  .teamMemberCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.memberInfo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media (max-width: 640px) {
+    padding: 16px;
+  }
+}
+
+.memberName {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+.memberRole {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--accent);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}

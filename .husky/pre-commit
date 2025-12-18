@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🔍 Running ESLint + Prettier via lint-staged..."
+npx --no-install lint-staged || { echo "❌ Lint or format errors found."; exit 1; }
+echo "✅ All checks passed — committing!"

@@ -1,0 +1,349 @@
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .headerSection {
+    padding: 10px 80px;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: var(--primary);
+
+    .headerContentBox {
+      width: 100%;
+      height: 56px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+
+      .logoScheduleBox {
+        max-width: 400px;
+        width: 100%;
+        height: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .socialBox {
+        //height: 32px;
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+
+        .phoneContainer {
+          display: flex;
+          align-items: center;
+          max-width: 253px;
+          width: 100%;
+          justify-content: space-between;
+          gap: 16px;
+
+          .phoneBox {
+            width: 111px;
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            .phoneText {
+              font-family: var(--font-family);
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: -0.02em;
+              color: var(--secondary);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navigationSection {
+    padding: 10px 20px;
+    width: 100%;
+    background: var(--white);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e5eaf4;
+    border-radius: clamp(0px, calc((100vw - 1140px) * 0.5), 10px);
+    height: 69px;
+
+    @media (max-width: 1140px) {
+      border-right: 0;
+      border-left: 0;
+      border-top: 0;
+    }
+    max-width: 1140px;
+    box-sizing: border-box;
+    position: fixed;
+    top: clamp(0px, calc((100vw - 1140px) * 0.5), 50px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    // @media (max-width: 1039px) {
+    //   display: none;
+    // }
+
+    .navigationContent {
+      max-width: 768px;
+      width: 100%;
+      height: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .navLink {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: var(--black);
+        text-decoration: none;
+      }
+    }
+
+    .desktopContent {
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.scheduleBox {
+  width: fit-content;
+  height: 48px;
+
+  .scheduleTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: var(--secondary);
+  }
+
+  .scheduleTextBox {
+    gap: 12px;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    text-wrap: nowrap;
+
+    .scheduleText {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
+      color: var(--accent);
+    }
+  }
+}
+
+.socialLinks {
+  max-width: 148px;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 1039px) {
+  .headerSection {
+    padding: 10px 16px !important;
+    border-bottom: 1px solid var(--secondary);
+    height: 68px !important;
+  }
+
+  .phoneIconBox,
+  .scheduleBox,
+  .languageDropdown {
+    display: none;
+  }
+
+  .socialLinks {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+  }
+
+  .phoneContainer {
+    flex-direction: column;
+    width: fit-content !important;
+    gap: 0 !important;
+  }
+
+  .phoneBox {
+    width: fit-content !important;
+  }
+
+  .logoScheduleBox {
+    width: fit-content !important;
+    max-width: fit-content !important;
+  }
+
+  .socialBox {
+    max-width: 150px !important;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 69px;
+    right: -100%;
+    width: 100%;
+    height: calc(100% - 68px);
+    background-color: var(--white);
+    transition: right 0.3s ease;
+    z-index: 3;
+    display: flex !important;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    overscroll-behavior: contain;
+
+    &.show {
+      right: 0;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .mobileMenuContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .detailsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+
+      .socialsLanguageBox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mobileSocialLinks {
+          max-width: 148px;
+          width: 100%;
+          height: 28px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+      &Menu {
+        position: relative;
+        margin-top: 14px;
+        left: 0;
+        padding: 0 8px;
+        list-style-type: none;
+        display: block;
+        z-index: 999;
+        text-align: left;
+
+        .dropdownMenuItem {
+          // padding: 7px 0;
+          padding: 0;
+          width: fit-content;
+        }
+      }
+    }
+
+    .mobileNavTabsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 16px;
+
+      .fitContent {
+        width: fit-content;
+      }
+    }
+
+    .navigationLinks {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 122%;
+      letter-spacing: -0.02em;
+      color: var(--black);
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.5s all ease-in-out;
+      position: relative;
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 2px;
+        border-radius: 99px;
+        width: 0;
+        transition: 0.3s ease-in-out;
+      }
+
+      &:hover::before {
+        background-color: var(--secondary);
+        width: 100%;
+      }
+    }
+  }
+}
+
+// adjust the max-height if mobileNavTabsContainer
+// has more navLinks options
+@media (max-height: 700px) {
+  .mobileNavTabsContainer {
+    padding: 16px 0;
+    width: 100%;
+    max-height: 100%;
+    overflow: scroll;
+    border-bottom: 1px solid var(--secondary);
+    border-top: 1px solid var(--secondary);
+    box-sizing: border-box;
+  }
+}

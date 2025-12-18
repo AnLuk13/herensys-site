@@ -1,0 +1,1149 @@
+{
+  "about-us": [
+    {
+      "id": "7e027fcc-ab97-46d2-a667-eeeb6e3e2e0b",
+      "src": "/assets/optimized-images/about-us/about-us.webp",
+      "alt": "about-us"
+    },
+    {
+      "id": "d0f83fe1-b8a2-4056-809b-f57196c66a69",
+      "src": "/assets/optimized-images/about-us/window-production.webp",
+      "alt": "window-production"
+    }
+  ],
+  "blindsElectric": [
+    {
+      "id": "0e5a2ff1-5b54-4828-bddc-5a913cdf837c",
+      "src": "/assets/optimized-images/blindsElectric/AF1QipMtEcxWEIntT0XKb20qjoOyVBF344vDjEC1mYh8w2000-h2000-k-no-p-ezgif.com-webp-to-jpg-converter.webp",
+      "alt": "AF1QipMtEcxWEIntT0XKb20qjoOyVBF344vDjEC1mYh8w2000-h2000-k-no-p-ezgif.com-webp-to-jpg-converter"
+    },
+    {
+      "id": "8ddb9271-cbad-4d21-86e8-dd228147e46f",
+      "src": "/assets/optimized-images/blindsElectric/antracit-7016-rulou-1.webp",
+      "alt": "antracit-7016-rulou-1"
+    },
+    {
+      "id": "384d49ad-2747-44ae-98f0-c7c0b03695d1",
+      "src": "/assets/optimized-images/blindsElectric/Rulouri-electrice-Rulourile-exterioare-din-aluminiu-electrice-2.webp",
+      "alt": "Rulouri-electrice-Rulourile-exterioare-din-aluminiu-electrice-2"
+    }
+  ],
+  "blindsManual": [
+    {
+      "id": "ebfa913a-7843-4d21-be60-24e311d6535d",
+      "src": "/assets/optimized-images/blindsManual/reparatii-rulouri-in-galati.webp",
+      "alt": "reparatii-rulouri-in-galati"
+    },
+    {
+      "id": "5627919a-8ed2-48c3-9804-5b14430eb881",
+      "src": "/assets/optimized-images/blindsManual/rulou-exterior-alexiana-ezgif.com-webp-to-jpg-converter.webp",
+      "alt": "rulou-exterior-alexiana-ezgif.com-webp-to-jpg-converter"
+    },
+    {
+      "id": "755bc58d-a43d-430d-95e1-81ff9687243a",
+      "src": "/assets/optimized-images/blindsManual/rulouri-exterioare-duras_5757.webp",
+      "alt": "rulouri-exterioare-duras_5757"
+    }
+  ],
+  "catalogSection": [
+    {
+      "id": "4e823db2-bd7f-44a4-81c9-972f3708da2f",
+      "src": "/assets/optimized-images/catalogSection/export.webp",
+      "alt": "export"
+    },
+    {
+      "id": "052920a0-badc-42f5-ba70-c2813bd54e74",
+      "src": "/assets/optimized-images/catalogSection/fatade.webp",
+      "alt": "fatade"
+    },
+    {
+      "id": "7ad92a7a-6697-419d-bc5e-e8e744d6dbef",
+      "src": "/assets/optimized-images/catalogSection/ferestre.webp",
+      "alt": "ferestre"
+    },
+    {
+      "id": "20bc58b0-d3cc-4570-ac86-5aeeab89792c",
+      "src": "/assets/optimized-images/catalogSection/glisante.webp",
+      "alt": "glisante"
+    },
+    {
+      "id": "f3df112f-0c0c-4bd6-99eb-454d92074cdb",
+      "src": "/assets/optimized-images/catalogSection/inchideri-terase.webp",
+      "alt": "inchideri-terase"
+    },
+    {
+      "id": "5387233a-2656-47b1-a792-8c5427e0d910",
+      "src": "/assets/optimized-images/catalogSection/usi.webp",
+      "alt": "usi"
+    }
+  ],
+  "colorsPvc": [
+    {
+      "id": "f3acfb6c-b916-4c2e-a6c7-13790b8c9bbd",
+      "src": "/assets/optimized-images/colorsPvc/01-DarkOak-TRP.webp",
+      "alt": "01-DarkOak-TRP"
+    },
+    {
+      "id": "98d3c6db-dcda-4c12-b3ac-f671d0df9d8c",
+      "src": "/assets/optimized-images/colorsPvc/02-GoldenOak-TRP.webp",
+      "alt": "02-GoldenOak-TRP"
+    },
+    {
+      "id": "7fe76f0c-7e55-45c4-9da3-bc57d7c1b551",
+      "src": "/assets/optimized-images/colorsPvc/04-AnthrazitGrau-TRP.webp",
+      "alt": "04-AnthrazitGrau-TRP"
+    },
+    {
+      "id": "708334e2-2786-4662-8afb-e3a2e008e456",
+      "src": "/assets/optimized-images/colorsPvc/07-WhiteWoodLike-TRP.webp",
+      "alt": "07-WhiteWoodLike-TRP"
+    },
+    {
+      "id": "77e4b147-2c1b-41e1-b457-8a102f7a145b",
+      "src": "/assets/optimized-images/colorsPvc/08-CremeWeiss-TRP.webp",
+      "alt": "08-CremeWeiss-TRP"
+    },
+    {
+      "id": "7594bf99-7b70-4e04-b81b-a1162f6112d5",
+      "src": "/assets/optimized-images/colorsPvc/18-UltimateBlack-TRP.webp",
+      "alt": "18-UltimateBlack-TRP"
+    },
+    {
+      "id": "43431b7c-7464-458d-ab96-be4a67017cc9",
+      "src": "/assets/optimized-images/colorsPvc/23-NaturalOak-TRP.webp",
+      "alt": "23-NaturalOak-TRP"
+    },
+    {
+      "id": "888d0f38-f019-4526-9675-31a5e8853276",
+      "src": "/assets/optimized-images/colorsPvc/42-CrystalWhite-TRP.webp",
+      "alt": "42-CrystalWhite-TRP"
+    }
+  ],
+  "exportFrantaBelgia": [
+    {
+      "id": "1f7140ed-6b56-435f-a952-df2060fa710f",
+      "src": "/assets/optimized-images/exportFrantaBelgia/316672447_557724006362819_3228692514182821492_n.webp",
+      "alt": "316672447_557724006362819_3228692514182821492_n"
+    },
+    {
+      "id": "7729c49a-b87f-4db7-b580-db97ead897f4",
+      "src": "/assets/optimized-images/exportFrantaBelgia/338023377_948473402822939_6037843335833246989_n.webp",
+      "alt": "338023377_948473402822939_6037843335833246989_n"
+    },
+    {
+      "id": "d1c232cb-3bf9-46a2-bf8d-02d41725dd27",
+      "src": "/assets/optimized-images/exportFrantaBelgia/425409090_883786360423247_2867110619022736002_n.webp",
+      "alt": "425409090_883786360423247_2867110619022736002_n"
+    },
+    {
+      "id": "0774c07c-81c8-4496-8c50-ee948419dba4",
+      "src": "/assets/optimized-images/exportFrantaBelgia/425513196_883786380423245_4799598966012046395_n.webp",
+      "alt": "425513196_883786380423245_4799598966012046395_n"
+    },
+    {
+      "id": "2c5c97c5-d67e-4a02-a59d-974e22f42350",
+      "src": "/assets/optimized-images/exportFrantaBelgia/469249445_1152375432977034_8682028435452541263_n.webp",
+      "alt": "469249445_1152375432977034_8682028435452541263_n"
+    },
+    {
+      "id": "a648090d-15c3-49e4-92e1-c4ff38e6e42a",
+      "src": "/assets/optimized-images/exportFrantaBelgia/469293992_1152375362977041_7561228715455790202_n (1).webp",
+      "alt": "469293992_1152375362977041_7561228715455790202_n (1)"
+    },
+    {
+      "id": "bc223277-f459-4a5a-9dc3-9751adc60450",
+      "src": "/assets/optimized-images/exportFrantaBelgia/469329612_1152375372977040_5489301192382042318_n.webp",
+      "alt": "469329612_1152375372977040_5489301192382042318_n"
+    },
+    {
+      "id": "bb4d96ad-b322-49f7-a5f1-3c9869912f72",
+      "src": "/assets/optimized-images/exportFrantaBelgia/469455982_1152375626310348_6107043118202079077_n.webp",
+      "alt": "469455982_1152375626310348_6107043118202079077_n"
+    },
+    {
+      "id": "95f669ef-d6a9-4c26-a073-6b8a498aadff",
+      "src": "/assets/optimized-images/exportFrantaBelgia/469861153_1155701722644405_8790349612351601399_n.webp",
+      "alt": "469861153_1155701722644405_8790349612351601399_n"
+    },
+    {
+      "id": "95bfdd26-86c0-476e-921f-49ddc3296615",
+      "src": "/assets/optimized-images/exportFrantaBelgia/473759128_1181403126740931_46699502572384675_n.webp",
+      "alt": "473759128_1181403126740931_46699502572384675_n"
+    },
+    {
+      "id": "813e7942-7596-4c0c-8d24-a37cbd9cbb74",
+      "src": "/assets/optimized-images/exportFrantaBelgia/474183907_1181403406740903_5347610546260646416_n.webp",
+      "alt": "474183907_1181403406740903_5347610546260646416_n"
+    }
+  ],
+  "exportIrlanda": [
+    {
+      "id": "b7c575d4-2d34-4ad8-bb52-d9a51351abbd",
+      "src": "/assets/optimized-images/exportIrlanda/436351153_933488085453074_4921974320404886345_n.webp",
+      "alt": "436351153_933488085453074_4921974320404886345_n"
+    },
+    {
+      "id": "b675b86b-4894-4fb7-8db6-a3ddff13dd6d",
+      "src": "/assets/optimized-images/exportIrlanda/448768383_980212547447294_2656765234193088331_n.webp",
+      "alt": "448768383_980212547447294_2656765234193088331_n"
+    },
+    {
+      "id": "673b6132-995f-4369-a793-78fc7f45f38b",
+      "src": "/assets/optimized-images/exportIrlanda/448865341_980212550780627_5947460774504248826_n.webp",
+      "alt": "448865341_980212550780627_5947460774504248826_n"
+    },
+    {
+      "id": "4b6545b2-fb84-4f07-be8b-de9c7cf4054a",
+      "src": "/assets/optimized-images/exportIrlanda/464856290_1077901681011713_4792929656260512939_n.webp",
+      "alt": "464856290_1077901681011713_4792929656260512939_n"
+    },
+    {
+      "id": "e38c12c1-1f27-4b99-abad-3d4d623e2d40",
+      "src": "/assets/optimized-images/exportIrlanda/466976899_1096460989155782_5716559196717875248_n.webp",
+      "alt": "466976899_1096460989155782_5716559196717875248_n"
+    },
+    {
+      "id": "f51676fc-451e-435c-a639-78c7b4af903a",
+      "src": "/assets/optimized-images/exportIrlanda/467816510_1096460982489116_8693096208768681230_n.webp",
+      "alt": "467816510_1096460982489116_8693096208768681230_n"
+    },
+    {
+      "id": "e3f1c366-95ef-4965-80a3-6cd8d6e3cb3b",
+      "src": "/assets/optimized-images/exportIrlanda/467854391_1096460992489115_1805187334165487408_n.webp",
+      "alt": "467854391_1096460992489115_1805187334165487408_n"
+    },
+    {
+      "id": "4444f51c-4e09-41d0-820d-f70d1d48cd03",
+      "src": "/assets/optimized-images/exportIrlanda/468855089_1150829916464919_4916310466869795603_n.webp",
+      "alt": "468855089_1150829916464919_4916310466869795603_n"
+    }
+  ],
+  "exportItalia": [
+    {
+      "id": "91c7a20f-62cc-49a9-b386-4da19e4a5100",
+      "src": "/assets/optimized-images/exportItalia/333933326_935075711244300_1268443417154704302_n.webp",
+      "alt": "333933326_935075711244300_1268443417154704302_n"
+    },
+    {
+      "id": "83232175-0b86-4453-b728-68a5a54bc2aa",
+      "src": "/assets/optimized-images/exportItalia/334295557_1566286160532472_6074590553274929214_n.webp",
+      "alt": "334295557_1566286160532472_6074590553274929214_n"
+    },
+    {
+      "id": "79875a11-b4b1-4390-90c0-df23c83dc99a",
+      "src": "/assets/optimized-images/exportItalia/344231557_1256466411660477_821318049437947901_n.webp",
+      "alt": "344231557_1256466411660477_821318049437947901_n"
+    },
+    {
+      "id": "8c8562de-925f-408e-ac11-0ea5d5fc4832",
+      "src": "/assets/optimized-images/exportItalia/354564478_722482549886963_1070598307542359903_n.webp",
+      "alt": "354564478_722482549886963_1070598307542359903_n"
+    },
+    {
+      "id": "5517f99d-8d3a-4309-b027-575e515101b9",
+      "src": "/assets/optimized-images/exportItalia/369922540_775696117898939_1933402297527264452_n.webp",
+      "alt": "369922540_775696117898939_1933402297527264452_n"
+    },
+    {
+      "id": "09c36d2c-4770-4c43-a6c6-0a406f8807b8",
+      "src": "/assets/optimized-images/exportItalia/370373661_775696027898948_6419821367212324167_n.webp",
+      "alt": "370373661_775696027898948_6419821367212324167_n"
+    },
+    {
+      "id": "b739b6c3-777d-4c4f-94df-4fc284255bd7",
+      "src": "/assets/optimized-images/exportItalia/400948606_825531709582046_3685291203772372684_n.webp",
+      "alt": "400948606_825531709582046_3685291203772372684_n"
+    },
+    {
+      "id": "05b80362-0730-4dfd-a7fa-352a3e147a29",
+      "src": "/assets/optimized-images/exportItalia/428620605_898516132283603_256815722432664967_n.webp",
+      "alt": "428620605_898516132283603_256815722432664967_n"
+    },
+    {
+      "id": "f5361f31-9d40-4f9a-a604-9e67b0f369e3",
+      "src": "/assets/optimized-images/exportItalia/435901744_926745536127329_7252998106772472200_n.webp",
+      "alt": "435901744_926745536127329_7252998106772472200_n"
+    },
+    {
+      "id": "280b7654-6053-4ab6-bb9a-ac7dc56cfd8a",
+      "src": "/assets/optimized-images/exportItalia/448002390_970836991718183_4090406880787361426_n.webp",
+      "alt": "448002390_970836991718183_4090406880787361426_n"
+    },
+    {
+      "id": "442554ca-dd56-4936-907b-d31fa4da7de7",
+      "src": "/assets/optimized-images/exportItalia/450000063_990463189755563_5762562671339735267_n.webp",
+      "alt": "450000063_990463189755563_5762562671339735267_n"
+    },
+    {
+      "id": "3dbf91e9-02df-41cb-9563-4c38d6337868",
+      "src": "/assets/optimized-images/exportItalia/458427187_1034658812002667_1605771651732375115_n.webp",
+      "alt": "458427187_1034658812002667_1605771651732375115_n"
+    },
+    {
+      "id": "66bf3353-d814-422a-b530-d45b388798fd",
+      "src": "/assets/optimized-images/exportItalia/458584039_1034658825335999_2828246597259320774_n.webp",
+      "alt": "458584039_1034658825335999_2828246597259320774_n"
+    },
+    {
+      "id": "150935df-49f3-41eb-8bfa-0e908c79178c",
+      "src": "/assets/optimized-images/exportItalia/459308393_1039978688137346_5874536356905241253_n.webp",
+      "alt": "459308393_1039978688137346_5874536356905241253_n"
+    },
+    {
+      "id": "ded2f0ad-5a14-478e-8c03-a49a8b156607",
+      "src": "/assets/optimized-images/exportItalia/474056086_1139995324802348_7844374833584192066_n.webp",
+      "alt": "474056086_1139995324802348_7844374833584192066_n"
+    }
+  ],
+  "fatadeAluminiu": [
+    {
+      "id": "da7ec502-634e-4f91-af0d-17e781589f74",
+      "src": "/assets/optimized-images/fatadeAluminiu/324745387_503881321729112_2274858098773654770_n.webp",
+      "alt": "324745387_503881321729112_2274858098773654770_n"
+    },
+    {
+      "id": "b902b56a-eefa-43a9-998f-281945128d5b",
+      "src": "/assets/optimized-images/fatadeAluminiu/326686225_544235174330583_1723409409656288832_n.webp",
+      "alt": "326686225_544235174330583_1723409409656288832_n"
+    },
+    {
+      "id": "e1c9d3b5-f22f-4095-9414-e4a91b639b22",
+      "src": "/assets/optimized-images/fatadeAluminiu/333221259_961983398125178_4791420334207019472_n.webp",
+      "alt": "333221259_961983398125178_4791420334207019472_n"
+    },
+    {
+      "id": "947dc3e6-c3cc-42b4-bbb2-5d2cbb8d2c8a",
+      "src": "/assets/optimized-images/fatadeAluminiu/349867785_6499242996781675_6992215703059771058_n.webp",
+      "alt": "349867785_6499242996781675_6992215703059771058_n"
+    },
+    {
+      "id": "21553341-4b13-476e-9943-e6dc6453a00c",
+      "src": "/assets/optimized-images/fatadeAluminiu/468886474_1150829646464946_818206732238802060_n.webp",
+      "alt": "468886474_1150829646464946_818206732238802060_n"
+    },
+    {
+      "id": "6732115c-6dea-45ed-85bd-903280414426",
+      "src": "/assets/optimized-images/fatadeAluminiu/469126934_1150830073131570_4335664730604349150_n.webp",
+      "alt": "469126934_1150830073131570_4335664730604349150_n"
+    },
+    {
+      "id": "24fad849-a83f-48f4-b047-8f6b2a25db80",
+      "src": "/assets/optimized-images/fatadeAluminiu/469343907_1152376456310265_7063756336887666650_n.webp",
+      "alt": "469343907_1152376456310265_7063756336887666650_n"
+    },
+    {
+      "id": "7c173734-22e9-403a-b2ea-dd421e9d4eea",
+      "src": "/assets/optimized-images/fatadeAluminiu/469577618_1155146729366571_4951841368970976273_n.webp",
+      "alt": "469577618_1155146729366571_4951841368970976273_n"
+    },
+    {
+      "id": "35d560b1-2a20-4856-ac2e-366483adc397",
+      "src": "/assets/optimized-images/fatadeAluminiu/469627065_1155147142699863_1964768737787960138_n.webp",
+      "alt": "469627065_1155147142699863_1964768737787960138_n"
+    },
+    {
+      "id": "94b3263a-ee68-4d59-9d85-827ed361417c",
+      "src": "/assets/optimized-images/fatadeAluminiu/472148408_1171444551070122_8062668506988698405_n.webp",
+      "alt": "472148408_1171444551070122_8062668506988698405_n"
+    },
+    {
+      "id": "4e6a56cb-2b6f-4810-aee6-c9d241ae574d",
+      "src": "/assets/optimized-images/fatadeAluminiu/472271262_1171444481070129_3342555196975631559_n.webp",
+      "alt": "472271262_1171444481070129_3342555196975631559_n"
+    }
+  ],
+  "ferestreAluminiu": [
+    {
+      "id": "0b5c3a23-bffd-4b85-9238-d3e297e6499a",
+      "src": "/assets/optimized-images/ferestreAluminiu/333296878_555011123265845_9166436409852376980_n.webp",
+      "alt": "333296878_555011123265845_9166436409852376980_n"
+    },
+    {
+      "id": "7eeb4e18-b3ed-4ddf-b704-60d0fac58218",
+      "src": "/assets/optimized-images/ferestreAluminiu/337411872_1745714339157875_7875507101877755266_n.webp",
+      "alt": "337411872_1745714339157875_7875507101877755266_n"
+    },
+    {
+      "id": "8abccfc7-1503-47d6-8a35-bb9c4b1eefa8",
+      "src": "/assets/optimized-images/ferestreAluminiu/341105525_1353265722187744_6188806836009475086_n.webp",
+      "alt": "341105525_1353265722187744_6188806836009475086_n"
+    },
+    {
+      "id": "6e9c5745-a873-4794-a1be-6b3e7e6d0a0b",
+      "src": "/assets/optimized-images/ferestreAluminiu/433653934_915642807237602_6648848575562358887_n.webp",
+      "alt": "433653934_915642807237602_6648848575562358887_n"
+    },
+    {
+      "id": "a424d754-7317-4083-b344-deea8ba150a4",
+      "src": "/assets/optimized-images/ferestreAluminiu/469706977_1111223961012818_8775859209995215612_n.webp",
+      "alt": "469706977_1111223961012818_8775859209995215612_n"
+    },
+    {
+      "id": "a69974e0-3de5-4076-a43c-06b0696c8a2e",
+      "src": "/assets/optimized-images/ferestreAluminiu/472718697_1174808680733709_5912869421805651086_n.webp",
+      "alt": "472718697_1174808680733709_5912869421805651086_n"
+    },
+    {
+      "id": "c78894e8-56ba-40cf-b74e-d96e5ea415bf",
+      "src": "/assets/optimized-images/ferestreAluminiu/472721680_1174808677400376_798751965464604051_n.webp",
+      "alt": "472721680_1174808677400376_798751965464604051_n"
+    },
+    {
+      "id": "331355a0-d008-4691-af11-b9ed022fa41d",
+      "src": "/assets/optimized-images/ferestreAluminiu/474188695_1181395660075011_3451287404174984922_n.webp",
+      "alt": "474188695_1181395660075011_3451287404174984922_n"
+    }
+  ],
+  "ferestrePvc": [
+    {
+      "id": "5b2b05da-eb91-4dfe-8d50-89274e6c2706",
+      "src": "/assets/optimized-images/ferestrePvc/311628211_520733040061916_7027732487560395710_n.webp",
+      "alt": "311628211_520733040061916_7027732487560395710_n"
+    },
+    {
+      "id": "a78222a9-f03e-406c-b4a1-04a422de05cd",
+      "src": "/assets/optimized-images/ferestrePvc/314354638_541567764645110_53254942485758661_n.webp",
+      "alt": "314354638_541567764645110_53254942485758661_n"
+    },
+    {
+      "id": "b83c60c8-845e-4a61-9c20-bfbb3dc889af",
+      "src": "/assets/optimized-images/ferestrePvc/319116282_573740204761199_6564864997453950053_n.webp",
+      "alt": "319116282_573740204761199_6564864997453950053_n"
+    },
+    {
+      "id": "a4588b2a-9a4d-4a62-8810-cec1095e5865",
+      "src": "/assets/optimized-images/ferestrePvc/330428214_1255912685300278_4823908157265182149_n.webp",
+      "alt": "330428214_1255912685300278_4823908157265182149_n"
+    },
+    {
+      "id": "94f959e1-c84a-4c69-ae08-a7bcdccfa261",
+      "src": "/assets/optimized-images/ferestrePvc/332761913_6539661439380514_3450072083060484195_n.webp",
+      "alt": "332761913_6539661439380514_3450072083060484195_n"
+    },
+    {
+      "id": "7b5d26fe-7498-459b-8dc9-8dc96873766e",
+      "src": "/assets/optimized-images/ferestrePvc/333225392_550539323846535_6741434422997586876_n.webp",
+      "alt": "333225392_550539323846535_6741434422997586876_n"
+    },
+    {
+      "id": "cb7a9d2e-f8e0-4e48-b3d2-d99fe839f293",
+      "src": "/assets/optimized-images/ferestrePvc/346279528_196496399984101_4881965835198514925_n.webp",
+      "alt": "346279528_196496399984101_4881965835198514925_n"
+    },
+    {
+      "id": "807827dc-949a-4fcc-8b89-6d5def2faf7b",
+      "src": "/assets/optimized-images/ferestrePvc/348866474_6163196317066827_4010166301744119964_n.webp",
+      "alt": "348866474_6163196317066827_4010166301744119964_n"
+    },
+    {
+      "id": "bd98ede5-5dfa-48aa-99cf-ea5c84e18f68",
+      "src": "/assets/optimized-images/ferestrePvc/349519629_793084029012277_8199864538830362121_n.webp",
+      "alt": "349519629_793084029012277_8199864538830362121_n"
+    },
+    {
+      "id": "1a6a5d80-2522-4642-ab67-4af4c8a662f4",
+      "src": "/assets/optimized-images/ferestrePvc/353670251_720936583374893_1679985683986371944_n.webp",
+      "alt": "353670251_720936583374893_1679985683986371944_n"
+    },
+    {
+      "id": "7283910d-21c6-4166-aec1-c1f8143c3f6d",
+      "src": "/assets/optimized-images/ferestrePvc/356244637_729511962517355_2929510600965573345_n.webp",
+      "alt": "356244637_729511962517355_2929510600965573345_n"
+    },
+    {
+      "id": "23c83671-7e9d-4d04-868a-5fcacc74f460",
+      "src": "/assets/optimized-images/ferestrePvc/357078687_734518948683323_4555346803662616916_n.webp",
+      "alt": "357078687_734518948683323_4555346803662616916_n"
+    },
+    {
+      "id": "1dd32c5c-7a0e-44bc-af4a-aa6a7d3a0bac",
+      "src": "/assets/optimized-images/ferestrePvc/380048696_788627153272502_7616914643713648283_n.webp",
+      "alt": "380048696_788627153272502_7616914643713648283_n"
+    },
+    {
+      "id": "ee781c6f-cd8b-4573-94c1-0a71ac18127c",
+      "src": "/assets/optimized-images/ferestrePvc/380880729_790257216442829_7113820760711221975_n.webp",
+      "alt": "380880729_790257216442829_7113820760711221975_n"
+    },
+    {
+      "id": "5b5136cb-5516-4386-bc94-303c7671e583",
+      "src": "/assets/optimized-images/ferestrePvc/401468902_827400329395184_126412084773929802_n.webp",
+      "alt": "401468902_827400329395184_126412084773929802_n"
+    },
+    {
+      "id": "3ee0e041-81d5-4f69-86e3-72211d334d34",
+      "src": "/assets/optimized-images/ferestrePvc/429993474_901783798623503_1352889004817441730_n.webp",
+      "alt": "429993474_901783798623503_1352889004817441730_n"
+    },
+    {
+      "id": "a65ddeac-b63e-4ca5-aa3d-36bcdcb0846d",
+      "src": "/assets/optimized-images/ferestrePvc/433611439_914353224033227_7921778208465907783_n.webp",
+      "alt": "433611439_914353224033227_7921778208465907783_n"
+    },
+    {
+      "id": "6256f245-0ffb-412a-8918-dbc92f46c17c",
+      "src": "/assets/optimized-images/ferestrePvc/442499741_949529623848920_3809097854264249033_n.webp",
+      "alt": "442499741_949529623848920_3809097854264249033_n"
+    },
+    {
+      "id": "177d1b48-3857-43f5-9a20-d6b78b0c1055",
+      "src": "/assets/optimized-images/ferestrePvc/443710808_954719219996627_866165390537357530_n.webp",
+      "alt": "443710808_954719219996627_866165390537357530_n"
+    },
+    {
+      "id": "46f82b4f-3b67-4981-aaa6-4814795e8554",
+      "src": "/assets/optimized-images/ferestrePvc/445544665_963399792461903_1772767980229500788_n.webp",
+      "alt": "445544665_963399792461903_1772767980229500788_n"
+    },
+    {
+      "id": "8726bce3-ca77-4084-9bda-3df892628563",
+      "src": "/assets/optimized-images/ferestrePvc/447641197_969453518523197_759543944788589993_n.webp",
+      "alt": "447641197_969453518523197_759543944788589993_n"
+    },
+    {
+      "id": "ca5bd021-d229-48eb-928e-62ddabfe255a",
+      "src": "/assets/optimized-images/ferestrePvc/451556512_998548672280348_4035393456522653455_n.webp",
+      "alt": "451556512_998548672280348_4035393456522653455_n"
+    },
+    {
+      "id": "2203b618-125d-47b4-930c-2201a6e624cf",
+      "src": "/assets/optimized-images/ferestrePvc/458351668_1033187072149841_2992533024356094265_n.webp",
+      "alt": "458351668_1033187072149841_2992533024356094265_n"
+    },
+    {
+      "id": "1ba63a0a-0721-45bb-840a-b42b0a68a7c6",
+      "src": "/assets/optimized-images/ferestrePvc/458743430_1034658908669324_7398829137553590253_n.webp",
+      "alt": "458743430_1034658908669324_7398829137553590253_n"
+    },
+    {
+      "id": "7953ddc5-35d9-4126-94f3-c5ea9070e0b7",
+      "src": "/assets/optimized-images/ferestrePvc/468432834_1098722612262953_7211071643356912838_n.webp",
+      "alt": "468432834_1098722612262953_7211071643356912838_n"
+    },
+    {
+      "id": "797e0e98-7111-4665-80ee-42c6f417a397",
+      "src": "/assets/optimized-images/ferestrePvc/469672647_1154383812776196_4203476338300537338_n.webp",
+      "alt": "469672647_1154383812776196_4203476338300537338_n"
+    },
+    {
+      "id": "61dee8f1-85ef-4cf2-9e41-60db724b2d8e",
+      "src": "/assets/optimized-images/ferestrePvc/472293813_1171444501070127_7889710381304020731_n.webp",
+      "alt": "472293813_1171444501070127_7889710381304020731_n"
+    },
+    {
+      "id": "f9a9a85c-860d-4e03-a25f-8a6f82f5a519",
+      "src": "/assets/optimized-images/ferestrePvc/473145497_1175461810668396_874461741237653810_n.webp",
+      "alt": "473145497_1175461810668396_874461741237653810_n"
+    }
+  ],
+  "glasses": [
+    {
+      "id": "25e0b61a-f7b2-4fa8-a80c-285b997b9de3",
+      "src": "/assets/optimized-images/glasses/1.webp",
+      "alt": "1"
+    },
+    {
+      "id": "0b4ab193-0f03-4c15-8bcf-64747c9d56e0",
+      "src": "/assets/optimized-images/glasses/10.webp",
+      "alt": "10"
+    },
+    {
+      "id": "40ecd0e3-87ad-4eaf-9d1a-ca36606ddcf5",
+      "src": "/assets/optimized-images/glasses/2.webp",
+      "alt": "2"
+    },
+    {
+      "id": "710b15b7-be01-4ebd-b3cc-0ef8916288f4",
+      "src": "/assets/optimized-images/glasses/3.webp",
+      "alt": "3"
+    },
+    {
+      "id": "f68ae2c9-772c-4c4a-b769-7e580006e871",
+      "src": "/assets/optimized-images/glasses/4.webp",
+      "alt": "4"
+    },
+    {
+      "id": "b9a18f43-60cf-4ec6-92f0-a3d84f86dc59",
+      "src": "/assets/optimized-images/glasses/5.webp",
+      "alt": "5"
+    },
+    {
+      "id": "412481db-93a7-47bb-b3cd-6db6c41f26d9",
+      "src": "/assets/optimized-images/glasses/6.webp",
+      "alt": "6"
+    },
+    {
+      "id": "5335a9ac-f287-40e5-8490-6e1265bc8b52",
+      "src": "/assets/optimized-images/glasses/7.webp",
+      "alt": "7"
+    },
+    {
+      "id": "c41fd6fd-99be-491c-b7a5-fbb0f802208b",
+      "src": "/assets/optimized-images/glasses/8.webp",
+      "alt": "8"
+    },
+    {
+      "id": "71832d67-3f1a-4b15-9daa-ded1e5f9a6e0",
+      "src": "/assets/optimized-images/glasses/9.webp",
+      "alt": "9"
+    }
+  ],
+  "glisanteAluminiu": [
+    {
+      "id": "dc84c848-35c8-47d6-9675-031b16cd0416",
+      "src": "/assets/optimized-images/glisanteAluminiu/330493330_1430421907362616_209679810216646125_n.webp",
+      "alt": "330493330_1430421907362616_209679810216646125_n"
+    },
+    {
+      "id": "cf12a37f-f049-4f78-a989-d8cca84b96d0",
+      "src": "/assets/optimized-images/glisanteAluminiu/352998704_727125969422621_8544618017090786345_n.webp",
+      "alt": "352998704_727125969422621_8544618017090786345_n"
+    },
+    {
+      "id": "0383f305-56dd-4334-a9c9-241ceccc8473",
+      "src": "/assets/optimized-images/glisanteAluminiu/468606560_1105665664901981_5778774966901079825_n.webp",
+      "alt": "468606560_1105665664901981_5778774966901079825_n"
+    },
+    {
+      "id": "4d9714de-3b59-4813-847c-ed2f944294a0",
+      "src": "/assets/optimized-images/glisanteAluminiu/469423787_1152375529643691_836322702145800918_n.webp",
+      "alt": "469423787_1152375529643691_836322702145800918_n"
+    },
+    {
+      "id": "2a91ac5d-8a77-47b2-819c-8de443857609",
+      "src": "/assets/optimized-images/glisanteAluminiu/469537685_1153854179495826_6841244446191900472_n.webp",
+      "alt": "469537685_1153854179495826_6841244446191900472_n"
+    }
+  ],
+  "glisantePvc": [
+    {
+      "id": "85707caa-e527-4dd1-b4a3-22ff9ff5eab0",
+      "src": "/assets/optimized-images/glisantePvc/318732527_571816791620207_2735379243027638414_n.webp",
+      "alt": "318732527_571816791620207_2735379243027638414_n"
+    },
+    {
+      "id": "68205460-b33c-42ce-8ea7-e8feede6abb0",
+      "src": "/assets/optimized-images/glisantePvc/469930268_1155709899310254_9092463434491006238_n.webp",
+      "alt": "469930268_1155709899310254_9092463434491006238_n"
+    },
+    {
+      "id": "37c357ad-ade2-4aea-8193-30745e5c0e8b",
+      "src": "/assets/optimized-images/glisantePvc/472428856_1172194554328455_5116945416119151308_n.webp",
+      "alt": "472428856_1172194554328455_5116945416119151308_n"
+    },
+    {
+      "id": "f0967009-ec07-448b-b9b7-1dfdb29ded53",
+      "src": "/assets/optimized-images/glisantePvc/474187016_1181396410074936_5115738415663381221_n.webp",
+      "alt": "474187016_1181396410074936_5115738415663381221_n"
+    }
+  ],
+  "glisanteVekaMotion": [
+    {
+      "id": "bb20bf16-4653-4a3b-88a7-763de2a2d1f5",
+      "src": "/assets/optimized-images/glisanteVekaMotion/448865341_980212550780627_5947460774504248826_n.webp",
+      "alt": "448865341_980212550780627_5947460774504248826_n"
+    },
+    {
+      "id": "8842d60c-fb66-429f-8bfd-b620a23fbd7f",
+      "src": "/assets/optimized-images/glisanteVekaMotion/450650596_993980442737171_4602168110590107075_n.webp",
+      "alt": "450650596_993980442737171_4602168110590107075_n"
+    }
+  ],
+  "hero": [
+    {
+      "id": "b582ce35-ad06-40c9-9acb-9fc777031bdb",
+      "src": "/assets/optimized-images/hero/exportFrantaBelgia.webp",
+      "alt": "exportFrantaBelgia"
+    },
+    {
+      "id": "ade1e25b-3f90-4a59-892e-3e5db15149d5",
+      "src": "/assets/optimized-images/hero/exportIrlanda.webp",
+      "alt": "exportIrlanda"
+    },
+    {
+      "id": "1d28011e-38d6-4259-80d6-ea443ea3a743",
+      "src": "/assets/optimized-images/hero/exportItalia.webp",
+      "alt": "exportItalia"
+    },
+    {
+      "id": "cd7c9677-25e0-4638-8cc8-e1706b5aac83",
+      "src": "/assets/optimized-images/hero/fatadeAluminiu.webp",
+      "alt": "fatadeAluminiu"
+    },
+    {
+      "id": "0f608084-5f85-4a42-b4e9-9320021ba7ba",
+      "src": "/assets/optimized-images/hero/ferestreAluminiu.webp",
+      "alt": "ferestreAluminiu"
+    },
+    {
+      "id": "a90e427d-404a-424e-8908-36a013d87bc3",
+      "src": "/assets/optimized-images/hero/ferestrePvc.webp",
+      "alt": "ferestrePvc"
+    },
+    {
+      "id": "9ea2fe60-64ca-45bd-9931-3d31156fa37f",
+      "src": "/assets/optimized-images/hero/glisanteAluminiu.webp",
+      "alt": "glisanteAluminiu"
+    },
+    {
+      "id": "974a976e-2551-4940-989a-e595a6111d3e",
+      "src": "/assets/optimized-images/hero/glisantePvc.webp",
+      "alt": "glisantePvc"
+    },
+    {
+      "id": "900c6ac3-58e9-4c78-83a8-a1f8bdf780d0",
+      "src": "/assets/optimized-images/hero/glisanteVekaMotion.webp",
+      "alt": "glisanteVekaMotion"
+    },
+    {
+      "id": "b6de5d5c-bc2e-4365-828a-9799d2ea14d1",
+      "src": "/assets/optimized-images/hero/inchideriTerase.webp",
+      "alt": "inchideriTerase"
+    },
+    {
+      "id": "cdf57b49-dcf1-4920-b941-a53c84d36d5e",
+      "src": "/assets/optimized-images/hero/usiAluminiu.webp",
+      "alt": "usiAluminiu"
+    },
+    {
+      "id": "ac6d2201-ebb7-4b53-8166-28bedfcfd298",
+      "src": "/assets/optimized-images/hero/usiPvc.webp",
+      "alt": "usiPvc"
+    }
+  ],
+  "home": [
+    {
+      "id": "4f78c0a4-9c62-4687-9fcf-663fe0a9e92c",
+      "src": "/assets/optimized-images/home/311628211_520733040061916_7027732487560395710_n.webp",
+      "alt": "311628211_520733040061916_7027732487560395710_n"
+    },
+    {
+      "id": "90108673-5edc-4fc9-8b86-6662d77e38a0",
+      "src": "/assets/optimized-images/home/333296878_555011123265845_9166436409852376980_n.webp",
+      "alt": "333296878_555011123265845_9166436409852376980_n"
+    },
+    {
+      "id": "4624269d-007f-4702-a4cd-3d4a8fc45ff3",
+      "src": "/assets/optimized-images/home/338167606_3366351786956808_7494187896635925552_n.webp",
+      "alt": "338167606_3366351786956808_7494187896635925552_n"
+    },
+    {
+      "id": "51f5cde8-b0f0-4cf2-9617-07121a1832e8",
+      "src": "/assets/optimized-images/home/369922540_775696117898939_1933402297527264452_n.webp",
+      "alt": "369922540_775696117898939_1933402297527264452_n"
+    },
+    {
+      "id": "7386f7d0-4961-439c-b941-7b0043e8c684",
+      "src": "/assets/optimized-images/home/370373661_775696027898948_6419821367212324167_n.webp",
+      "alt": "370373661_775696027898948_6419821367212324167_n"
+    },
+    {
+      "id": "02439442-de2b-4182-9677-e3790cd88e4f",
+      "src": "/assets/optimized-images/home/398670454_821126520022565_2027791579160078506_n.webp",
+      "alt": "398670454_821126520022565_2027791579160078506_n"
+    },
+    {
+      "id": "1462bc46-e3b3-4873-add1-9ffeee3a7991",
+      "src": "/assets/optimized-images/home/450000063_990463189755563_5762562671339735267_n.webp",
+      "alt": "450000063_990463189755563_5762562671339735267_n"
+    },
+    {
+      "id": "67945882-888f-4b4f-800f-1a2abe114d30",
+      "src": "/assets/optimized-images/home/458427187_1034658812002667_1605771651732375115_n.webp",
+      "alt": "458427187_1034658812002667_1605771651732375115_n"
+    },
+    {
+      "id": "3d66e95d-d58e-4510-a1a3-dd708d8d1372",
+      "src": "/assets/optimized-images/home/458617543_1034658782002670_3997675761254531132_n.webp",
+      "alt": "458617543_1034658782002670_3997675761254531132_n"
+    },
+    {
+      "id": "48f229ca-a598-4e68-bd94-f90af57b4494",
+      "src": "/assets/optimized-images/home/466465753_1087995496668998_830498003795057319_n.webp",
+      "alt": "466465753_1087995496668998_830498003795057319_n"
+    },
+    {
+      "id": "b1b905c4-c6a9-4dc6-b505-92c1eb9e1b35",
+      "src": "/assets/optimized-images/home/469423787_1152375529643691_836322702145800918_n.webp",
+      "alt": "469423787_1152375529643691_836322702145800918_n"
+    },
+    {
+      "id": "902af189-d48f-455e-858e-75caa73f6ef9",
+      "src": "/assets/optimized-images/home/469576257_1155142149367029_7940658638269281804_n.webp",
+      "alt": "469576257_1155142149367029_7940658638269281804_n"
+    },
+    {
+      "id": "204c2b60-9dac-4315-93dc-ab347066e910",
+      "src": "/assets/optimized-images/home/469577618_1155146729366571_4951841368970976273_n.webp",
+      "alt": "469577618_1155146729366571_4951841368970976273_n"
+    },
+    {
+      "id": "a9d15e8f-9d22-4f52-b582-0496e723d670",
+      "src": "/assets/optimized-images/home/469634649_1109638477838033_4846289493454038271_n.webp",
+      "alt": "469634649_1109638477838033_4846289493454038271_n"
+    },
+    {
+      "id": "b1e15f75-86e3-48b0-8c1d-d1b9d41b9a56",
+      "src": "/assets/optimized-images/home/469775585_1154372086110702_6369428918199728081_n.webp",
+      "alt": "469775585_1154372086110702_6369428918199728081_n"
+    },
+    {
+      "id": "d3de3f49-9c7f-4cd7-ac58-7e6a4dce75c9",
+      "src": "/assets/optimized-images/home/474183907_1181403406740903_5347610546260646416_n.webp",
+      "alt": "474183907_1181403406740903_5347610546260646416_n"
+    },
+    {
+      "id": "d3de3f49-9c7f-4cd7-ac58-7e6a4dce78",
+      "src": "/assets/optimized-images/home/banner.png",
+      "alt": "Hero banner1"
+    }
+  ],
+  "inchideriTerase": [
+    {
+      "id": "4e9f1d49-aae6-4e57-bf40-bd87bbdd61a4",
+      "src": "/assets/optimized-images/inchideriTerase/313010601_534044095397477_1204754685391409270_n.webp",
+      "alt": "313010601_534044095397477_1204754685391409270_n"
+    },
+    {
+      "id": "9644d531-7296-4fe8-934b-e37674691246",
+      "src": "/assets/optimized-images/inchideriTerase/398670454_821126520022565_2027791579160078506_n.webp",
+      "alt": "398670454_821126520022565_2027791579160078506_n"
+    },
+    {
+      "id": "29778a82-77b6-4609-be98-c371480daca6",
+      "src": "/assets/optimized-images/inchideriTerase/440960803_944561267679089_2951694251704996277_n.webp",
+      "alt": "440960803_944561267679089_2951694251704996277_n"
+    },
+    {
+      "id": "e412ea9c-cede-458d-b1bc-f00730a27efc",
+      "src": "/assets/optimized-images/inchideriTerase/441169151_958655236269692_8916860067109571490_n.webp",
+      "alt": "441169151_958655236269692_8916860067109571490_n"
+    },
+    {
+      "id": "9083895c-5281-4002-9fad-fef4ca499174",
+      "src": "/assets/optimized-images/inchideriTerase/448588587_978891017579447_5835334523985855580_n.webp",
+      "alt": "448588587_978891017579447_5835334523985855580_n"
+    },
+    {
+      "id": "9b30fda6-9773-45d4-97c5-0e3c22b2aaea",
+      "src": "/assets/optimized-images/inchideriTerase/448661415_978891020912780_2413461543209823555_n.webp",
+      "alt": "448661415_978891020912780_2413461543209823555_n"
+    },
+    {
+      "id": "7cb41e19-d004-4bf6-b0c2-84aa8802469c",
+      "src": "/assets/optimized-images/inchideriTerase/456404333_1023034183165130_4315283798776795947_n.webp",
+      "alt": "456404333_1023034183165130_4315283798776795947_n"
+    },
+    {
+      "id": "f716f40e-48ed-4665-a923-79b8dc304bc6",
+      "src": "/assets/optimized-images/inchideriTerase/465645905_1082462560555625_3806144408934748873_n.webp",
+      "alt": "465645905_1082462560555625_3806144408934748873_n"
+    },
+    {
+      "id": "c9ded005-61ac-4eb3-82d4-60e9ecf524ea",
+      "src": "/assets/optimized-images/inchideriTerase/466465753_1087995496668998_830498003795057319_n.webp",
+      "alt": "466465753_1087995496668998_830498003795057319_n"
+    },
+    {
+      "id": "4cb97e83-e9eb-4390-a9ce-0439d34576e4",
+      "src": "/assets/optimized-images/inchideriTerase/466602265_1087995493335665_4809333235662157204_n.webp",
+      "alt": "466602265_1087995493335665_4809333235662157204_n"
+    },
+    {
+      "id": "c4edc46e-03b3-41c0-873a-bc51a0fd0cc4",
+      "src": "/assets/optimized-images/inchideriTerase/468941329_1104052065063341_982070909523270608_n.webp",
+      "alt": "468941329_1104052065063341_982070909523270608_n"
+    },
+    {
+      "id": "4e64e12a-a5e0-48cc-8745-a1663fd49962",
+      "src": "/assets/optimized-images/inchideriTerase/469634649_1109638477838033_4846289493454038271_n.webp",
+      "alt": "469634649_1109638477838033_4846289493454038271_n"
+    }
+  ],
+  "mosquitoNets": [
+    {
+      "id": "b1f7aeca-f1cd-4a44-8d67-29daf865591b",
+      "src": "/assets/optimized-images/mosquitoNets/zanzariere1.webp",
+      "alt": "zanzariere1"
+    },
+    {
+      "id": "09543f2a-99e6-401e-a6bc-00275f865061",
+      "src": "/assets/optimized-images/mosquitoNets/zanzariere2.webp",
+      "alt": "zanzariere2"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "b6157d94-418c-4e72-87df-53bcacc45374",
+      "src": "/assets/optimized-images/reviews/foto1.webp",
+      "alt": "foto1"
+    },
+    {
+      "id": "127d2d64-6631-4fe4-91eb-91cfc0c7e5b6",
+      "src": "/assets/optimized-images/reviews/foto10.webp",
+      "alt": "foto10"
+    },
+    {
+      "id": "a7dd548e-7a4b-472c-b858-441f77df332f",
+      "src": "/assets/optimized-images/reviews/foto2.webp",
+      "alt": "foto2"
+    },
+    {
+      "id": "910ebcce-0a59-431a-ae3e-6ef6aac2700d",
+      "src": "/assets/optimized-images/reviews/foto3.webp",
+      "alt": "foto3"
+    },
+    {
+      "id": "73828bd0-5f5e-48cd-b2e6-348dd3950fda",
+      "src": "/assets/optimized-images/reviews/foto4.webp",
+      "alt": "foto4"
+    },
+    {
+      "id": "0be3b7fe-7e2f-415b-9a09-1f8b21cbeae5",
+      "src": "/assets/optimized-images/reviews/foto5.webp",
+      "alt": "foto5"
+    },
+    {
+      "id": "10c969b6-fa19-4d28-a6e1-dafc55886400",
+      "src": "/assets/optimized-images/reviews/foto6.webp",
+      "alt": "foto6"
+    },
+    {
+      "id": "98672963-92a4-482b-9efb-c6683ccdd31c",
+      "src": "/assets/optimized-images/reviews/foto7.webp",
+      "alt": "foto7"
+    },
+    {
+      "id": "88f5a48f-fbc4-4e65-8a35-e5d729d8e5af",
+      "src": "/assets/optimized-images/reviews/foto8.webp",
+      "alt": "foto8"
+    },
+    {
+      "id": "7c5e3eab-e564-43a8-b3d9-7d8410def93c",
+      "src": "/assets/optimized-images/reviews/foto9.webp",
+      "alt": "foto9"
+    }
+  ],
+  "rollerShutterBoxes": [
+    {
+      "id": "82f56247-105d-42da-9967-5bee43236cf7",
+      "src": "/assets/optimized-images/rollerShutterBoxes/473740401_1145287987606415_2766204652045219282_n.webp",
+      "alt": "473740401_1145287987606415_2766204652045219282_n"
+    },
+    {
+      "id": "c1891ca1-727f-4867-9937-6e7bf9269b79",
+      "src": "/assets/optimized-images/rollerShutterBoxes/473740537_1145288014273079_5156421671976798703_n.webp",
+      "alt": "473740537_1145288014273079_5156421671976798703_n"
+    },
+    {
+      "id": "eb9b8a61-ff9e-480c-8892-1b67ee5a9fea",
+      "src": "/assets/optimized-images/rollerShutterBoxes/cassonetto-2.webp",
+      "alt": "cassonetto-2"
+    },
+    {
+      "id": "1ba1d7c0-85b6-480e-a61d-72ab4c2804c9",
+      "src": "/assets/optimized-images/rollerShutterBoxes/cassonetto-dasmartermo-1.webp",
+      "alt": "cassonetto-dasmartermo-1"
+    }
+  ],
+  "rollerShuttersElectric": [
+    {
+      "id": "bae18c8d-3bc7-4925-83c2-cc21ee339f1a",
+      "src": "/assets/optimized-images/rollerShuttersElectric/AF1QipMtEcxWEIntT0XKb20qjoOyVBF344vDjEC1mYh8w2000-h2000-k-no-p-ezgif.com-webp-to-jpg-converter.webp",
+      "alt": "AF1QipMtEcxWEIntT0XKb20qjoOyVBF344vDjEC1mYh8w2000-h2000-k-no-p-ezgif.com-webp-to-jpg-converter"
+    },
+    {
+      "id": "a09ce782-ea3f-40c1-98db-2c18780c1220",
+      "src": "/assets/optimized-images/rollerShuttersElectric/antracit-7016-rulou-1.webp",
+      "alt": "antracit-7016-rulou-1"
+    },
+    {
+      "id": "e62a04f6-df13-479f-802f-714b294ed5aa",
+      "src": "/assets/optimized-images/rollerShuttersElectric/Rulouri-electrice-Rulourile-exterioare-din-aluminiu-electrice-2.webp",
+      "alt": "Rulouri-electrice-Rulourile-exterioare-din-aluminiu-electrice-2"
+    }
+  ],
+  "rollerShuttersManual": [
+    {
+      "id": "cab930f7-8189-4bac-8f0e-d853fb4c8636",
+      "src": "/assets/optimized-images/rollerShuttersManual/reparatii-rulouri-in-galati.webp",
+      "alt": "reparatii-rulouri-in-galati"
+    },
+    {
+      "id": "36b3b91a-45cb-4532-9f63-b5ccf218d9d5",
+      "src": "/assets/optimized-images/rollerShuttersManual/rulou-exterior-alexiana-ezgif.com-webp-to-jpg-converter.webp",
+      "alt": "rulou-exterior-alexiana-ezgif.com-webp-to-jpg-converter"
+    },
+    {
+      "id": "97bf6811-8fcf-4be5-90ca-bd9fb2977b8e",
+      "src": "/assets/optimized-images/rollerShuttersManual/rulouri-exterioare-duras_5757.webp",
+      "alt": "rulouri-exterioare-duras_5757"
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "c01b241e-4cd1-487f-b15d-f31668af2ed9",
+      "src": "/assets/optimized-images/sponsors/alutech.webp",
+      "alt": "alutech"
+    },
+    {
+      "id": "0e4ca87d-48f4-4507-9ff9-1d945c3db643",
+      "src": "/assets/optimized-images/sponsors/kurtoglu.webp",
+      "alt": "kurtoglu"
+    },
+    {
+      "id": "c268077c-018a-4bd6-b13b-c7ce965a9fd2",
+      "src": "/assets/optimized-images/sponsors/maco.webp",
+      "alt": "maco"
+    },
+    {
+      "id": "09fd745a-7262-4dda-bbf1-6a0fb1b7a0e1",
+      "src": "/assets/optimized-images/sponsors/veka.webp",
+      "alt": "veka"
+    },
+    {
+      "id": "2efc6567-e4c6-468e-964c-e0e20c570d15",
+      "src": "/assets/optimized-images/sponsors/wds.webp",
+      "alt": "wds"
+    },
+    {
+      "id": "dc4d1209-4231-4d48-8b2d-eff662915f8d",
+      "src": "/assets/optimized-images/sponsors/winkhaus.webp",
+      "alt": "winkhaus"
+    }
+  ],
+  "usiAluminiu": [
+    {
+      "id": "2e221383-e3b0-4ebf-b1d7-6149931c0e1b",
+      "src": "/assets/optimized-images/usiAluminiu/328440221_2155396911515748_8507084883971806811_n.webp",
+      "alt": "328440221_2155396911515748_8507084883971806811_n"
+    },
+    {
+      "id": "4cd1039d-e0de-483e-b196-35cdc36487b9",
+      "src": "/assets/optimized-images/usiAluminiu/332495294_1173894046823376_5341053066968023001_n.webp",
+      "alt": "332495294_1173894046823376_5341053066968023001_n"
+    },
+    {
+      "id": "e0ae0891-959e-44d8-b0c8-178afd42adfc",
+      "src": "/assets/optimized-images/usiAluminiu/438696417_939733078161908_7055474784753745242_n.webp",
+      "alt": "438696417_939733078161908_7055474784753745242_n"
+    },
+    {
+      "id": "0ee4d8e6-6a1d-47c9-92fd-fbd0536ab991",
+      "src": "/assets/optimized-images/usiAluminiu/458617543_1034658782002670_3997675761254531132_n.webp",
+      "alt": "458617543_1034658782002670_3997675761254531132_n"
+    },
+    {
+      "id": "4d9132e2-4cce-49a9-8d58-f4fc7f886eaa",
+      "src": "/assets/optimized-images/usiAluminiu/460451584_1043829791085569_4879110894201972794_n.webp",
+      "alt": "460451584_1043829791085569_4879110894201972794_n"
+    },
+    {
+      "id": "d289bb66-4ea4-4d10-a42b-85887e33ba8c",
+      "src": "/assets/optimized-images/usiAluminiu/466976899_1096460989155782_5716559196717875248_n.webp",
+      "alt": "466976899_1096460989155782_5716559196717875248_n"
+    },
+    {
+      "id": "88267489-3299-42d4-b714-9bd20d72724f",
+      "src": "/assets/optimized-images/usiAluminiu/469400952_1152376889643555_7876767124645519913_n.webp",
+      "alt": "469400952_1152376889643555_7876767124645519913_n"
+    },
+    {
+      "id": "401891b8-68a0-46a9-a85f-7528e2ffe6a3",
+      "src": "/assets/optimized-images/usiAluminiu/469576257_1155142149367029_7940658638269281804_n.webp",
+      "alt": "469576257_1155142149367029_7940658638269281804_n"
+    },
+    {
+      "id": "03136e7c-42ee-459c-a340-f7cf42b96224",
+      "src": "/assets/optimized-images/usiAluminiu/469951136_1155142332700344_1935821750022467918_n.webp",
+      "alt": "469951136_1155142332700344_1935821750022467918_n"
+    },
+    {
+      "id": "74636575-89a9-41ee-b225-cb88a139116b",
+      "src": "/assets/optimized-images/usiAluminiu/472659096_1171444534403457_7107176618785843978_n.webp",
+      "alt": "472659096_1171444534403457_7107176618785843978_n"
+    },
+    {
+      "id": "aae96e50-5c59-4471-bbcb-4fe2e30a45a1",
+      "src": "/assets/optimized-images/usiAluminiu/474079156_1181403380074239_620194792612853034_n.webp",
+      "alt": "474079156_1181403380074239_620194792612853034_n"
+    }
+  ],
+  "usiPvc": [
+    {
+      "id": "ce220bb8-fd50-48d7-8003-df5737ba26d9",
+      "src": "/assets/optimized-images/usiPvc/258775400_459600615587856_7829957922868390632_n.webp",
+      "alt": "258775400_459600615587856_7829957922868390632_n"
+    },
+    {
+      "id": "e8ebf609-48cc-4ecf-87b8-db5ea9bf2de8",
+      "src": "/assets/optimized-images/usiPvc/259476775_459600852254499_3247817297610075682_n.webp",
+      "alt": "259476775_459600852254499_3247817297610075682_n"
+    },
+    {
+      "id": "65b7833f-78bd-40d6-b9d7-f03baf219513",
+      "src": "/assets/optimized-images/usiPvc/312875445_532089992259554_4115337278065535719_n.webp",
+      "alt": "312875445_532089992259554_4115337278065535719_n"
+    },
+    {
+      "id": "ca61112c-fd33-4d1c-bf01-ec542ad87a3b",
+      "src": "/assets/optimized-images/usiPvc/338167606_3366351786956808_7494187896635925552_n.webp",
+      "alt": "338167606_3366351786956808_7494187896635925552_n"
+    },
+    {
+      "id": "42af988e-786f-4013-8595-5c6087ff00cd",
+      "src": "/assets/optimized-images/usiPvc/370369801_770921768376374_7417255383154585536_n.webp",
+      "alt": "370369801_770921768376374_7417255383154585536_n"
+    },
+    {
+      "id": "a2703fba-0a4a-45d2-9d9a-6a3e3c6235ce",
+      "src": "/assets/optimized-images/usiPvc/447997396_970837118384837_4654726697512508494_n.webp",
+      "alt": "447997396_970837118384837_4654726697512508494_n"
+    },
+    {
+      "id": "b3430f12-ee0a-49f5-aa92-3f2c3746f358",
+      "src": "/assets/optimized-images/usiPvc/468812759_1150839309797313_169176547247502981_n.webp",
+      "alt": "468812759_1150839309797313_169176547247502981_n"
+    },
+    {
+      "id": "36d56f63-fb86-4161-9587-dd29f2243076",
+      "src": "/assets/optimized-images/usiPvc/468836692_1150831096464801_2198425074385494359_n.webp",
+      "alt": "468836692_1150831096464801_2198425074385494359_n"
+    },
+    {
+      "id": "79d4e2e7-4c3b-49e4-a9f7-59c4b5bdba64",
+      "src": "/assets/optimized-images/usiPvc/468854710_1150831146464796_787382063636335334_n.webp",
+      "alt": "468854710_1150831146464796_787382063636335334_n"
+    },
+    {
+      "id": "7cf9e123-0293-4d2d-b9c8-be0913637ef7",
+      "src": "/assets/optimized-images/usiPvc/468938824_1150839409797303_2208280920886864659_n.webp",
+      "alt": "468938824_1150839409797303_2208280920886864659_n"
+    },
+    {
+      "id": "a66b1c48-69b0-46a2-852d-4d013e487c8d",
+      "src": "/assets/optimized-images/usiPvc/468976013_1150839323130645_5390688902653418432_n.webp",
+      "alt": "468976013_1150839323130645_5390688902653418432_n"
+    },
+    {
+      "id": "31337420-5b74-4d07-898e-a8b67e8e1d99",
+      "src": "/assets/optimized-images/usiPvc/469021227_1150839593130618_8526644952842328151_n.webp",
+      "alt": "469021227_1150839593130618_8526644952842328151_n"
+    },
+    {
+      "id": "4ba3ccfb-61fc-4a62-bde0-070d84bedac3",
+      "src": "/assets/optimized-images/usiPvc/469187491_1150839503130627_1413968440143530337_n.webp",
+      "alt": "469187491_1150839503130627_1413968440143530337_n"
+    },
+    {
+      "id": "371c39d3-266d-418f-88f2-475dbf28af3b",
+      "src": "/assets/optimized-images/usiPvc/469569336_1153846922829885_2537851633899721529_n.webp",
+      "alt": "469569336_1153846922829885_2537851633899721529_n"
+    },
+    {
+      "id": "e0f7dbdb-cffd-4926-91ec-e8b886b37cf7",
+      "src": "/assets/optimized-images/usiPvc/469775585_1154372086110702_6369428918199728081_n.webp",
+      "alt": "469775585_1154372086110702_6369428918199728081_n"
+    }
+  ]
+}

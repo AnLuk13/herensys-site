@@ -1,0 +1,40 @@
+.mobileMenuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 4px;
+  cursor: pointer;
+  border-radius: 99px;
+  width: 48px;
+  height: 48px;
+  box-sizing: border-box;
+  background: var(--accent);
+
+  div {
+    background: var(--primary);
+    border-radius: 0.5rem;
+    height: 2px;
+    transition: transform 0.3s ease;
+    width: 20px;
+  }
+
+  &.active {
+    row-gap: 0;
+
+    .firstbar:nth-child(1) {
+      transform: rotate(45deg) translateX(1px) translateY(1px);
+      row-gap: 0;
+    }
+
+    .secondbar:nth-child(2) {
+      transform: rotate(-45deg) translateX(0.5px) translateY(-0.4px);
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .mobileMenuIcon {
+    display: none !important;
+  }
+}

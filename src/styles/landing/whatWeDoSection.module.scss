@@ -1,0 +1,103 @@
+.twoColumnGrid {
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.card {
+  border: 1px solid #e5eaf4;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  min-height: 221px;
+  background: var(--white);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardTitle {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.cardDescription {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1f1e2a;
+}
+
+.cardButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 12px 24px;
+  background: #ff9d7a;
+  border: 1px solid #e17f5c;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #e17f5c;
+  }
+}
+
+@media (max-width: 860px) {
+  .card {
+    padding: 32px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .cardDescription {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .cardHeader {
+    gap: 12px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+}

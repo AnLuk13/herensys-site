@@ -1,0 +1,118 @@
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+
+  .swiper {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 50px;
+
+    :global(.swiper-button-prev),
+    :global(.swiper-button-next) {
+      color: var(--black);
+      width: 16px;
+      height: 16px;
+      padding: 12px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 1px solid #e5eaf4;
+
+      &::after {
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+
+    :global(.swiper-button-prev) {
+      left: 0px;
+    }
+
+    :global(.swiper-button-next) {
+      right: 0px;
+    }
+
+    :global(.swiper-pagination) {
+      bottom: 0;
+    }
+
+    :global(.swiper-pagination-bullet) {
+      background: var(--black);
+      opacity: 0.3;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      opacity: 1;
+      background: var(--black);
+    }
+  }
+
+  .countryCard {
+    border: 1px solid #e5eaf4;
+    border-radius: 10px;
+    padding: 24px;
+    background: var(--white);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    min-height: 200px;
+
+    .countryCardHeader {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        object-fit: cover;
+        background: #e5eaf4;
+      }
+
+      .countryCardInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .countryCardName {
+          font-family: var(--font-family);
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          color: var(--black);
+        }
+
+        .countryCardCompany {
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          color: #666666;
+        }
+      }
+    }
+
+    .countryCardText {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #1f1e2a;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .swiperWrapper {
+    .swiper {
+      padding: 20px 0;
+
+      :global(.swiper-button-prev),
+      :global(.swiper-button-next) {
+        display: none;
+      }
+    }
+  }
+}

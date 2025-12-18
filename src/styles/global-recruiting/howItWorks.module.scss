@@ -1,0 +1,154 @@
+.sectionTitle {
+  font-family: var(--font-family);
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-primary);
+
+  @media (max-width: 860px) {
+    font-size: 1.875rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.625rem;
+  }
+}
+
+.stepsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+
+  // @media (max-width: 1140px) {
+  //   grid-template-columns: repeat(3, 1fr);
+  //   gap: 32px;
+  // }
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+.timelineLine {
+  position: absolute;
+  top: 248px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  z-index: 0;
+  width: 100%;
+
+  @media (max-width: 860px) {
+    display: none;
+  }
+}
+
+.stepCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 138px;
+
+  @media (max-width: 860px) {
+    height: 100px;
+  }
+
+  @media (max-width: 640px) {
+    text-align: left;
+    padding-left: 20px;
+    border-left: 2px solid var(--accent);
+  }
+}
+
+.stepNumber {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: left;
+
+  @media (max-width: 860px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+  }
+}
+
+.stepDetailBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .stepDetail {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background: #ff9d7a;
+
+    @media (max-width: 860px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 860px) {
+    display: none;
+  }
+}
+
+.stepText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+
+  @media (min-width: 861px) {
+    height: 66px;
+  }
+}
+
+.stepTitle {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: left;
+  width: 100%;
+
+  @media (max-width: 860px) {
+    border-top: 2px solid var(--accent);
+    padding-top: 8px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.stepDescription {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+  text-align: left;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}

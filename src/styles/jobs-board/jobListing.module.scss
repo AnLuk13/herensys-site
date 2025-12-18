@@ -1,0 +1,386 @@
+.jobListingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0;
+
+  @media (max-width: 860px) {
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 640px) {
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+}
+
+.mainTitle {
+  font-family: var(--font-family);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary, #000);
+  margin: 0;
+  line-height: 1.2;
+
+  @media (max-width: 860px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.75rem;
+  }
+}
+
+.searchSection {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  color: var(--text-primary, #000);
+  margin: 0;
+  line-height: 1.5;
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+    br {
+      display: none;
+    }
+  }
+}
+
+.searchBar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  box-sizing: border-box;
+  height: 70px;
+  flex: 1;
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 100%;
+  }
+}
+
+.locationSelect {
+  min-width: 160px;
+  box-sizing: border-box;
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.searchInput {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  padding: 0.875rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: var(--white);
+  box-sizing: border-box;
+  height: 100%;
+
+  svg {
+    color: #666;
+    flex-shrink: 0;
+  }
+
+  input {
+    font-family: var(--font-family);
+    font-size: 0.9375rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--text-primary, #000);
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.searchButton {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: var(--accent-secondary);
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.jobShortInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+}
+
+.jobCard {
+  background: var(--white);
+}
+
+.jobHeader {
+  cursor: pointer;
+}
+
+.jobHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+  }
+}
+
+.jobTitle {
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent, #e17f5c);
+  margin: 0;
+  line-height: 1.3;
+
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+  }
+}
+
+.jobMeta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.metaLabel {
+  font-family: var(--font-family);
+  font-size: 0.8125rem;
+  color: #666;
+  line-height: 1.4;
+
+  @media (max-width: 640px) {
+    font-size: 0.75rem;
+  }
+}
+
+.metaValue {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary, #000);
+  line-height: 1.4;
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+.jobActions {
+  display: flex;
+  gap: 0.75rem;
+  height: fit-content;
+}
+
+.applyButton {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #e17f5c;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 81px;
+  height: 37px;
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--accent-secondary);
+  }
+}
+
+.accordionButton {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: var(--accent);
+  background: var(--white);
+  color: var(--accent, #e17f5c);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  border: 1px solid #e17f5c;
+  border-radius: 8px;
+  width: 102px;
+  height: 37px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: rgba(225, 127, 92, 0.1);
+  }
+
+  @media (max-width: 860px) {
+    flex: 1;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+  }
+}
+
+.jobDetails {
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.detailsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @media (max-width: 640px) {
+    gap: 1.25rem;
+  }
+}
+
+.detailSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detailTitle {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary, #000);
+  margin: 0;
+  line-height: 1.4;
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+  }
+}
+
+.detailSubtitle {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  color: var(--text-primary, #000);
+  margin: 0;
+  line-height: 1.6;
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+.detailList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+
+  li {
+    font-family: var(--font-family);
+    font-size: 0.9375rem;
+    color: var(--text-primary, #000);
+    line-height: 1.6;
+
+    @media (max-width: 640px) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.detailsLessInfoButton {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid var(--accent, #e17f5c);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--accent, #e17f5c);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+
+  &:hover {
+    background: var(--accent, #e17f5c);
+    color: var(--white);
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,31 @@
+.offerBtn {
+  border: 1px solid #e17f5c;
+  border-radius: 8px;
+  padding: 16px 26px;
+  // width: 128px;
+  width: fit-content;
+  height: 49px;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-family);
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #fc8f67;
+  }
+}
+
+@media (max-width: 860px) {
+  .offerBtn {
+    padding: 12px 20px !important;
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,131 @@
+.candidateCard {
+  background: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+
+  @media (max-width: 860px) {
+    height: 240px;
+  }
+
+  @media (max-width: 640px) {
+    height: 200px;
+  }
+}
+
+.candidateImage {
+  transition: transform 0.3s ease;
+
+  .candidateCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.candidateInfo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (max-width: 640px) {
+    padding: 16px;
+  }
+}
+
+.candidateHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.candidateName {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+.flagImage {
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.candidatePosition {
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--black);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+  }
+}
+
+.candidateRole {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--black);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}
+
+.findOutMoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: var(--font-family);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent);
+
+    svg {
+      transform: translateX(4px);
+    }
+  }
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.875rem;
+  }
+}

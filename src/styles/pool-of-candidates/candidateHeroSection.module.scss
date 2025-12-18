@@ -1,0 +1,316 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px 50px;
+  background: var(--gray-background);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+
+  @media (max-width: 860px) {
+    padding: 90px 20px 40px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 80px 20px 30px;
+  }
+}
+
+.heroSectionBox {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: clamp(0px, calc((100vw - 1240px) * 0.7 + 50px), 50px);
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 640px) {
+    gap: 32px;
+  }
+}
+
+.candidateProfile {
+  flex: 1;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.profileImageWrapper {
+  border-radius: 10px;
+  max-width: 234px;
+  width: 100%;
+  height: 284px;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--white);
+
+  // @media (max-width: 860px) {
+  //   width: 100%;
+  //   height: 320px;
+  // }
+
+  // @media (max-width: 640px) {
+  //   height: 280px;
+  // }
+}
+
+.profileImage {
+  object-fit: cover;
+}
+
+.candidateInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nameWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.candidateName {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 860px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+  }
+}
+
+.flag {
+  font-size: 1.5rem;
+
+  @media (max-width: 640px) {
+    font-size: 1.25rem;
+  }
+}
+
+.candidatePosition {
+  font-family: var(--font-family);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 1rem;
+  }
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionLabel {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+  }
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  background: var(--white);
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+    padding: 6px 12px;
+  }
+}
+
+.bookingCard {
+  width: 340px;
+  flex-shrink: 0;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+
+  @media (max-width: 860px) {
+    width: 100%;
+  }
+
+  @media (max-width: 640px) {
+    padding: 24px;
+    gap: 20px;
+  }
+}
+
+.cardTitle {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 1.25rem;
+  }
+}
+
+.cardSubtitle {
+  font-family: var(--font-family);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 0.8125rem;
+  }
+}
+
+.currencySelector {
+  display: flex;
+  gap: 8px;
+  justify-content: space-around;
+}
+
+.currencyLabel {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+.currencyButton {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: var(--black);
+}
+
+.ratesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rateRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rateLabel {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+  }
+}
+
+.rateValue {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-primary);
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+  }
+}
+
+.feesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.feesTitle {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 640px) {
+    font-size: 0.9375rem;
+  }
+}
+
+.feeRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feeLabel {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--black);
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.feeValue {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--black);
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
+}

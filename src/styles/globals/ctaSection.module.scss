@@ -1,0 +1,98 @@
+.ctaContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+
+  &.withGlobe {
+    justify-content: flex-start;
+
+    .textContent {
+      max-width: 690px;
+      z-index: 1;
+    }
+
+    @media (max-width: 860px) {
+      .globeIcon {
+        opacity: 0.5;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .globeIcon {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  @media (max-width: 860px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 640px) {
+    gap: 1.25rem;
+  }
+}
+
+.textContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 860px) {
+    gap: 12px;
+  }
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin: 0;
+
+  @media (max-width: 860px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+  }
+}
+
+.description {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--black);
+  margin: 0;
+
+  @media (max-width: 860px) {
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 0.9rem;
+  }
+}
+
+.buttonWrapper {
+  @media (max-width: 860px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.globeIcon {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.8;
+}
