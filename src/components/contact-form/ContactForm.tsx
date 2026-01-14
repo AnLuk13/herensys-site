@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styles from '@/styles/globals/contactForm.module.scss';
 import PhoneInputField from '@/components/form/PhoneInputField';
 import phone from 'phone';
+import OfferButton from '../buttons/OfferButton';
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ function ContactForm() {
     email: '',
     phone: '',
     message: '',
+    agreeToTerms: false,
   });
   const [errors, setErrors] = useState({
     firstName: '',
@@ -69,14 +71,19 @@ function ContactForm() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     if (!validateInputs()) return;
+    if (!formData.agreeToTerms) {
+      alert('You must agree to the data protection policy.');
+      return;
+    }
 
     setIsSubmitting(true);
 
     try {
-      await fetch('/api/send-email', {
+      const phoneWithPlus = formData.phone.startsWith('+') ? formData.phone : `+${formData.phone}`;
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, phone: phoneWithPlus }),
       });
 
       setFormData({
@@ -85,6 +92,7 @@ function ContactForm() {
         email: '',
         phone: '',
         message: '',
+        agreeToTerms: false,
       });
       setIsSuccess(true);
       setTimeout(() => {
@@ -114,7 +122,7 @@ function ContactForm() {
                   id="firstName"
                   value={formData.firstName}
                   onChange={e => handleInputChange('firstName', e.target.value)}
-                  placeholder="Julia William"
+                  placeholder="Julia"
                   className={`${styles.input} ${errors.firstName ? styles.inputError : ''}`}
                 />
                 {errors.firstName && <span className={styles.errorText}>{errors.firstName}</span>}
@@ -129,7 +137,7 @@ function ContactForm() {
                   id="lastName"
                   value={formData.lastName}
                   onChange={e => handleInputChange('lastName', e.target.value)}
-                  placeholder="Last name"
+                  placeholder="William"
                   className={`${styles.input} ${errors.lastName ? styles.inputError : ''}`}
                 />
                 {errors.lastName && <span className={styles.errorText}>{errors.lastName}</span>}
@@ -183,15 +191,41 @@ function ContactForm() {
               {errors.message && <span className={styles.errorText}>{errors.message}</span>}
             </div>
 
+            <label className={styles.checkboxLabel}>
+              <input
+                type="checkbox"
+                checked={formData.agreeToTerms}
+                onChange={e => handleInputChange('agreeToTerms' as any, e.target.checked as any)}
+                className={styles.checkbox}
+                required
+              />
+              <span className={styles.checkboxText}>
+                I confirm that I have read and understood the{' '}
+                <a
+                  href="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.privacyLink}
+                >
+                  data protection policy
+                </a>{' '}
+                and agree to the terms and conditions.
+              </span>
+            </label>
+
             {isSuccess && (
               <div className={styles.successMessage}>
                 Thank you! Your message has been sent successfully.
               </div>
             )}
 
-            <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
-              {isSubmitting ? 'Sending...' : 'Book a call'}
-            </button>
+            <OfferButton
+              text={`${isSubmitting ? 'Sending...' : 'Send message'}`}
+              customClass={styles.submitButton}
+              disabled={isSubmitting}
+              onClick={handleSubmit}
+              href=""
+            />
           </form>
         </div>
       </div>

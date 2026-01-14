@@ -85,13 +85,15 @@ export const customDropdownStyles = (isCountry = false) => ({
     boxSizing: 'border-box',
     width: isCountry ? 172 : 337, //new
     height: isCountry ? 182 : 'auto',
+    borderRadius: isCountry ? 8 : 0,
     padding: 0,
     borderBottom: !isCountry ? '1px solid #ccc' : 'none',
     backgroundColor: state.isSelected ? 'var(--gray-background)' : 'transparent',
     '&:hover': {
       // color: 'var(--black)',
-      backgroundColor: 'transparent',
+      // backgroundColor: 'transparent',
       cursor: 'pointer',
+      backgroundColor: 'var(--gray-background)',
     },
     '&:last-child': {
       borderBottom: 'none',
@@ -101,6 +103,7 @@ export const customDropdownStyles = (isCountry = false) => ({
 
 export const phoneInputStyles = {
   inputStyle: {
+    fontWeight: 600,
     fontFamily: 'var(--font-family)',
     fontSize: 16,
     padding: '10px 20px 10px 70px',

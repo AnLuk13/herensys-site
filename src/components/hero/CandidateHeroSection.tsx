@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Radio from '@mui/material/Radio';
 import styles from '@/styles/pool-of-candidates/candidateHeroSection.module.scss';
-import Image from 'next/image';
+import BlurImage from '@/components/helper/BlurImage';
 import OfferButton from '@/components/buttons/OfferButton';
 import type { Candidate } from '@/types/sections';
 
@@ -37,12 +37,12 @@ function CandidateHeroSection({
       <div className={styles.heroSectionBox}>
         <div className={styles.candidateProfile}>
           <div className={styles.profileImageWrapper}>
-            <Image src={image} alt={name} fill className={styles.profileImage} />
+            <BlurImage src={image} alt={name} fill className={styles.profileImage} />
           </div>
           <div className={styles.candidateInfo}>
             <div className={styles.nameWrapper}>
               <h1 className={styles.candidateName}>{name}</h1>
-              <Image
+              <BlurImage
                 src={`https://flagcdn.com/w40/${flag.toLowerCase()}.png`}
                 alt={flag}
                 width={40}

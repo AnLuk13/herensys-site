@@ -1,19 +1,17 @@
 'use client';
 
-import { recentBlogPosts } from '@/lib/consts/common';
-import styles from '@/styles/countries/presentCountries.module.scss';
-import BlogPostCard from './BlogPostCard';
+import styles from '@/styles/blog/allBlogPosts.module.scss';
+import BlogListCard from '@/components/blog/BlogListCard';
 import type { RecentBlogPostsSectionProps } from '@/types/sections';
 
 function RecentBlogPostsSection({ data }: RecentBlogPostsSectionProps) {
   return (
     <section className="sectionWrapper">
       <div className="contentContainer">
-        <h2 className="sectionTitle">Recent blog posts</h2>
-
-        <div className={styles.countriesGrid}>
+        <h2 className={styles.sectionTitle}>Recent blog posts</h2>
+        <div className={styles.blogGrid}>
           {data?.map((post, index) => (
-            <BlogPostCard key={index} {...post} />
+            <BlogListCard key={index} {...post} featured={false} isFromAllBlogPosts={true} />
           ))}
         </div>
       </div>

@@ -26,9 +26,9 @@
 .logoImage {
   filter: grayscale(100%);
   opacity: 0.7;
-  transition:
-    filter 0.3s ease,
-    opacity 0.3s ease;
+  transition: 0.3s ease;
+  // filter 0.3s ease,
+  // opacity 0.3s ease;
 
   .brandLogo:hover & {
     filter: grayscale(0%);

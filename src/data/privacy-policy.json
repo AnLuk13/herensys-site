@@ -1,0 +1,28 @@
+{
+  "heroSection": {
+    "titleLines": [{ "text": "Privacy Policy" }],
+    "descriptions": [
+      "Your privacy matters to us. Learn how we collect, use, and protect your personal information."
+    ],
+    "showArrow": false,
+    "showDecorations": true
+  },
+  "sections": [
+    {
+      "title": "Privacy Policy",
+      "content": [
+        "Confidential data refers to any information that is sensitive or private, and which, if disclosed without authorization, could harm individuals, the company, or clients. In the context of our company, confidential data includes, but is not limited to:"
+      ],
+      "list": [
+        "Personal Information: Data such as names, addresses, phone numbers, social security numbers, dates of birth, and other personally identifiable information (PII) of our clients, employees, and contractors.",
+        "Employee Data: Any information related to our employees, including payroll details, employment contracts, performance evaluations, and health-related information.",
+        "Client Data: Information about our clients' businesses, including financial data, tax information, employee records, contracts, and business operations.",
+        "Business Information: Internal company data such as financial records, strategic plans, pricing, and proprietary software or methodologies.",
+        "Sensitive Financial Data: Accounting and payroll information, including salary data, tax information, bank account details, and other financial records that we handle on behalf of our clients."
+      ],
+      "contentTwo": [
+        "All employees and contractors must treat this information with the highest level of confidentiality and protect it from unauthorized access or disclosure."
+      ]
+    }
+  ]
+}

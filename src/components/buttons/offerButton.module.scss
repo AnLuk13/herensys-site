@@ -17,10 +17,16 @@
   box-sizing: border-box;
   text-decoration: none;
   transition: all 0.3s ease;
+  justify-content: center;
 
   &:hover {
     background: #fc8f67;
   }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 @media (max-width: 860px) {

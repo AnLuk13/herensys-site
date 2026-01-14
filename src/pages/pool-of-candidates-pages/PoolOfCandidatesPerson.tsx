@@ -4,7 +4,6 @@ import FirestoreSection from '@/components/wrapper/FireStoreSection';
 import CandidateDetailsSection from '@/components/candidate-details/CandidateDetailsSection';
 import CandidateHeroSection from '@/components/hero/CandidateHeroSection';
 import SimilarRolesSection from '@/components/pool-of-candidates/SimilarRolesSection';
-import { ctaSectionData } from '@/lib/consts/servicesContent';
 import CTASection from '@/components/CTASection';
 import { useApiQuery } from '@/lib/hooks/useRetrieveData';
 import type { Candidate } from '@/types/sections';
@@ -20,14 +19,12 @@ function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> })
     error: candidateError,
   } = useApiQuery(`/candidates/${id}`, `/candidates/${id}`);
 
-  // Fetch all candidates for similar roles
   const {
     data: allCandidatesData,
     isLoading: allCandidatesLoading,
     error: allCandidatesError,
   } = useApiQuery('/candidates', '/candidates');
 
-  // Filter out the current candidate from similar roles
   const similarCandidates = allCandidatesData?.filter((c: Candidate) => c.id !== id) || [];
 
   const isLoading = candidateLoading || allCandidatesLoading;
@@ -50,7 +47,7 @@ function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> })
   }
 
   if (error) {
-    console.error('API error:', error);
+    console.error(`API error:`, error);
     return (
       <div
         style={{
@@ -64,11 +61,23 @@ function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> })
       >
         <div>
           <p
-            style={{ fontSize: '1.125rem', marginBottom: '0.5rem', color: 'var(--error, #d32f2f)' }}
+            style={{
+              fontFamily: 'var(--font-family)',
+              fontWeight: 'bold',
+              fontSize: '4rem',
+              marginBottom: '0.5rem',
+              color: 'var(--accent)',
+            }}
           >
             Failed to load content
           </p>
-          <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary, #666)' }}>
+          <p
+            style={{
+              fontFamily: 'var(--font-family)',
+              fontSize: '2rem',
+              color: 'var(--text-secondary)',
+            }}
+          >
             {error?.message || 'An unexpected error occurred'}
           </p>
         </div>
@@ -80,12 +89,19 @@ function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> })
     return null;
   }
 
+  const ctaSection = {
+    title: `Ready For Business in ${candidate.region}? Start Here`,
+    description: `Get started with human resources best practices and hiring in ${candidate.region}.`,
+    buttonText: 'Schedule a Call',
+    background: 'var(--gray-background)',
+  };
+
   return (
     <main>
       <CandidateHeroSection data={candidate} />
       <CandidateDetailsSection data={candidate} />
       <SimilarRolesSection data={similarCandidates} />
-      <CTASection {...ctaSectionData} displayGlobe />
+      <CTASection {...ctaSection} displayGlobe />
     </main>
   );
 }

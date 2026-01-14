@@ -27,7 +27,7 @@ function WhatWeDoCard({
         <h3 className={styles.cardTitle}>{title}</h3>
       </div>
       <p className={styles.cardDescription}>{description}</p>
-      {buttonText && <OfferButton text={buttonText} />}
+      {buttonText && <OfferButton text={buttonText} href={buttonHref} />}
     </div>
   );
 }

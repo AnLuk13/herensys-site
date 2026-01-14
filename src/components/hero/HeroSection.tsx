@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '@/styles/globals/heroSection.module.scss';
-import Image from 'next/image';
+import BlurImage from '@/components/helper/BlurImage';
 import OfferButton from '@/components/buttons/OfferButton';
 import CircleIcon from '../svg-icons/hero/CicleIcon';
 import DecorativeDots from '../svg-icons/hero/DecorativeDots';
@@ -18,6 +18,7 @@ interface HeroSectionProps {
   imageAlt?: string;
   showArrow?: boolean;
   showDecorations?: boolean;
+  smallFonts?: boolean;
 }
 
 function HeroSection({
@@ -29,6 +30,7 @@ function HeroSection({
   imageAlt = 'Hero banner',
   showArrow = true,
   showDecorations = true,
+  smallFonts = false,
 }: HeroSectionProps) {
   return (
     <section className={styles.heroSection}>
@@ -38,7 +40,9 @@ function HeroSection({
             {titleLines.map((line, index) => (
               <div
                 key={index}
-                className={styles.heroSectionContentTitle}
+                className={
+                  smallFonts ? styles.heroSectionContentTitleSmall : styles.heroSectionContentTitle
+                }
                 style={line.CSSProperties ? line.CSSProperties : undefined} // or {...line.CSSProperties, additionalStyles} if you want to merge with other styles
               >
                 {line.text}
@@ -65,7 +69,7 @@ function HeroSection({
           )}
         </div>
         <div className={`${styles.heroSectionImageBox}`}>
-          <Image
+          <BlurImage
             src={imageSrc}
             alt={imageAlt}
             priority

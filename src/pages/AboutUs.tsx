@@ -1,53 +1,51 @@
-import {
-  ctaSectionData,
-  faqSectionData,
-  globalHiringSection,
-  goGlobalSection,
-  heroSectionData,
-} from '@/lib/consts/servicesContent';
+import FAQSection from '@/components/FAQSection';
+import ContactForm from '@/components/contact-form/ContactForm';
+import CTASection from '@/components/CTASection';
 import manifest from '@/lib/assets-manifest.json';
 import HeroSection from '@/components/hero/HeroSection';
 import ImageContentSection from '@/components/ImageContentSection';
 import BuildDreamTeamSection from '@/components/build-your-team/BuildDreamTeamSection';
 import TeamSection from '@/components/team/TeamSection';
 import BrandsSection from '@/components/brands/BrandsSection';
-import { teamMembers, brands } from '@/lib/consts/common';
-import FAQSection from '@/components/FAQSection';
-import ContactForm from '@/components/contact-form/ContactForm';
-import CTASection from '@/components/CTASection';
+import aboutUsData from '@/data/about-us.json';
+import eorData from '@/data/employer-of-record.json';
+import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function AboutUs() {
-  const heroImage = manifest.home.find(image => image.alt === 'Hero banner1');
+  const heroImage = manifest.home.find(image => image.alt === 'banner');
+
+  const goGlobalSection = {
+    ...aboutUsData.goGlobalSection,
+    cards: mapCardsWithIcons(aboutUsData.goGlobalSection.cards),
+  };
 
   return (
     <main>
-      <HeroSection {...heroSectionData} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
+      <HeroSection {...aboutUsData.heroSection} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
       <ImageContentSection
-        {...globalHiringSection}
+        {...aboutUsData.openingTheWorldSection}
         imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
+        imageAlt="Opening the world to opportunity"
       />
       <BuildDreamTeamSection {...goGlobalSection} />
       <ImageContentSection
-        {...globalHiringSection}
+        {...aboutUsData.weGetThingsDoneSection}
         imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
-        reverse={true}
-        background="var(--gray-background)"
+        imageAlt="We Get Things Done"
       />
       <TeamSection
         sectionTitle="Team of action"
-        teamMembers={teamMembers}
+        teamMembers={aboutUsData.teamMembers}
         background="var(--white)"
       />
       <BrandsSection
         sectionTitle="Brands We Work With"
-        brands={brands}
+        brands={aboutUsData.brands}
         background="var(--gray-background)"
       />
-      <FAQSection {...faqSectionData} />
+      <FAQSection {...aboutUsData.faqSection} />
       <ContactForm />
-      <CTASection {...ctaSectionData} />
+      <CTASection {...eorData.ctaSection} />
     </main>
   );
 }

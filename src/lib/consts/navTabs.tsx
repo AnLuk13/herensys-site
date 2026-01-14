@@ -21,7 +21,7 @@ export const navTabs = [
         ),
       },
       {
-        value: '/eor',
+        value: '/employer-of-record',
         label: renderToStaticMarkup(
           <DropdownSelect
             title="EOR"
@@ -73,20 +73,20 @@ export const navTabs = [
     defaultValue: { value: 'countries', label: 'Countries' },
     options: [
       {
-        value: '/north-africa',
+        value: '/countries/north-africa',
         label: renderToStaticMarkup(
           <CountrySelect ComponentSVG={NorthAfrica} label="North Africa" />,
         ),
       },
       {
-        value: '/eastern-europe',
+        value: '/countries/eastern-europe',
         label: renderToStaticMarkup(
           <CountrySelect ComponentSVG={EasternEurope} label="Eastern Europe" />,
         ),
       },
       {
-        value: '/franta-belgia',
-        label: renderToStaticMarkup(<CountrySelect ComponentSVG={Balkans} label="Franța/Belgia" />),
+        value: '/countries/balkans',
+        label: renderToStaticMarkup(<CountrySelect ComponentSVG={Balkans} label="Balkans" />),
       },
     ],
     isCountry: true,
@@ -136,7 +136,7 @@ export const mobileNavTabs = [
         ),
       },
       {
-        value: '/eor',
+        value: '/employer-of-record',
         label: renderToStaticMarkup(
           <DropdownSelect
             title="EOR"
@@ -188,15 +188,15 @@ export const mobileNavTabs = [
     defaultValue: { value: 'countries', label: 'Countries' },
     options: [
       {
-        value: '/north-africa',
+        value: '/countries/north-africa',
         label: renderToStaticMarkup(<DropdownSelect title="North Africa" />),
       },
       {
-        value: '/eastern-europe',
+        value: '/countries/eastern-europe',
         label: renderToStaticMarkup(<DropdownSelect title="Eastern Europe" />),
       },
       {
-        value: '/balkans',
+        value: '/countries/balkans',
         label: renderToStaticMarkup(<DropdownSelect title="Balkans" />),
       },
     ],

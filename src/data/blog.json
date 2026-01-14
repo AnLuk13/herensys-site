@@ -1,0 +1,11 @@
+{
+  "heroSection": {
+    "titleLines": [{ "text": "Your Global" }, { "text": "Growth" }, { "text": "Playbook" }],
+    "descriptions": [
+      "Your potential shouldn't be defined by geography. We're shaping a future where opportunity travels farther than ever before"
+    ],
+    "buttonText": "Book a call",
+    "showArrow": false,
+    "showDecorations": true
+  }
+}

@@ -39,11 +39,23 @@
 .textContent {
   flex: 1;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 20px;
 
   @media (max-width: 860px) {
     gap: 12px;
+  }
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @media (max-width: 860px) {
+      gap: 8px;
+    }
   }
 }
 
@@ -81,6 +93,8 @@
 }
 
 .buttonWrapper {
+  height: fit-content;
+
   @media (max-width: 860px) {
     width: 100%;
     display: flex;

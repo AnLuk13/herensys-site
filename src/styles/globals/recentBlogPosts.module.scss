@@ -93,6 +93,13 @@
   margin: 0;
 }
 
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
 .tag {
   display: inline-block;
   font-family: var(--font-family);

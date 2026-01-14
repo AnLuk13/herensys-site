@@ -104,13 +104,13 @@ export interface SendCVModalProps {
 // ============================================
 
 export interface BlogPost {
-  id?: string;
+  id: string;
   author: string;
   date: string;
   title: string;
   description: string;
   image: string;
-  tag: string;
+  tags: string[];
   link: string;
   createdAt?: Date;
   updatedAt?: Date;
@@ -128,7 +128,7 @@ export interface AllBlogPostsSectionProps {
 }
 
 export interface BlogContentSectionProps {
-  data?: string;
+  data?: BlogPost;
 }
 
 export interface RecentBlogPostsSectionProps {

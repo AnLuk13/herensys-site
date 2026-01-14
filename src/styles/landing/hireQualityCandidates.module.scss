@@ -19,7 +19,6 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: #ffebe5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,12 +26,14 @@
 }
 
 .cardTitle {
-  font-family: var(--font-family);
-  font-weight: 900;
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 20px;
   line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-family: var(--font-family);
   color: var(--black);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .itemsList {

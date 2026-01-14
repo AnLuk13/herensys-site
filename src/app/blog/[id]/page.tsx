@@ -2,11 +2,11 @@ import BlogPost from '@/pages/blog-pages/BlogPost';
 import { Metadata } from 'next';
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 // export async function generateMetadata({ params }: Props): Promise<Metadata> {
-//   const { id } = params;
+//   const { id } = await params;
 //   const blog = await getBlog(id);
 
 //   return {
@@ -22,7 +22,7 @@ type Props = {
 
 // export const revalidate = 3600;
 
-function BlogPostPage({ params }: { params: { id: string } }) {
+function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
   return <BlogPost params={params} />;
 }
 

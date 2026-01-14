@@ -1,18 +1,20 @@
-import Image from 'next/image';
+import BlurImage from '@/components/helper/BlurImage';
 import Link from 'next/link';
 import styles from '@/styles/pool-of-candidates/candidateCard.module.scss';
-import { objectFit } from '@/lib/consts/common';
+import { objectFit } from '@/lib/utils/cssHelpers';
 import { Candidate } from '@/types/sections';
 import ArrowRight from '../svg-icons/ArrowRight';
+import { CSSProperties } from 'react';
 
 function CandidateCard({ id, name, image, flag, position, region }: Candidate) {
   return (
     <div className={styles.candidateCard}>
       <div className={styles.imageWrapper}>
-        <Image
+        <BlurImage
           src={image}
           alt={name}
-          fill
+          width={200}
+          height={200}
           className={styles.candidateImage}
           style={objectFit.cover}
         />
@@ -20,12 +22,13 @@ function CandidateCard({ id, name, image, flag, position, region }: Candidate) {
       <div className={styles.candidateInfo}>
         <div className={styles.candidateHeader}>
           <h3 className={styles.candidateName}>{name}</h3>
-          <Image
+          <BlurImage
             src={`https://flagcdn.com/${flag}.svg`}
             alt={`${name} country flag`}
-            width={28}
-            height={20}
+            width={25}
+            height={15}
             className={styles.flagImage}
+            style={objectFit.cover}
           />
         </div>
         <p className={styles.candidatePosition}>{position}</p>

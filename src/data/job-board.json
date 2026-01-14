@@ -1,0 +1,13 @@
+{
+  "heroSection": {
+    "titleLines": [
+      { "text": "JOIN HERENSYS" },
+      { "text": "— WE'RE HIRING" },
+      { "text": "WORLDWIDE" }
+    ],
+    "descriptions": ["International projects, strong teams, clear growth paths."],
+    "buttonText": "Apply Now",
+    "showArrow": false,
+    "showDecorations": true
+  }
+}

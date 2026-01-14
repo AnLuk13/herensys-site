@@ -9,13 +9,24 @@ import type { AllBlogPostsSectionProps } from '@/types/sections';
 function AllBlogPostsSection({ data, background }: AllBlogPostsSectionProps) {
   const [activeFilter, setActiveFilter] = useState('All blog posts');
 
-  // Get unique tags from posts
-  const allTags = Array.from(new Set(data?.map(post => post.tag)));
+  // Get unique tags from posts (flatten tags arrays)
+  const allTags = Array.from(new Set(data?.flatMap(post => post.tags) || []));
   const filters = ['All blog posts', ...allTags];
 
   // Filter posts based on active filter
   const filteredPosts =
-    activeFilter === 'All blog posts' ? data : data?.filter(post => post.tag === activeFilter);
+    activeFilter === 'All blog posts'
+      ? data
+      : data?.filter(post => post.tags.includes(activeFilter));
+
+  // Determine newsletter card position: after 4th post if available, otherwise after last post
+  const newsletterPosition = Math.min(4, filteredPosts?.length || 0);
+
+  // Insert newsletter card into the grid items
+  const gridItems = filteredPosts ? [...filteredPosts] : [];
+  if (gridItems.length > 0) {
+    gridItems.splice(newsletterPosition, 0, { isNewsletter: true } as any);
+  }
 
   return (
     <section className="sectionWrapper" style={{ background }}>
@@ -35,12 +46,13 @@ function AllBlogPostsSection({ data, background }: AllBlogPostsSectionProps) {
         </div>
 
         <div className={styles.blogGrid}>
-          {filteredPosts?.map((post, index) => (
-            <div key={index}>
-              <BlogListCard key={index} {...post} isFromAllBlogPosts={true} />
-              {index === 2 && <NewsletterCard key="newsletter" />}
-            </div>
-          ))}
+          {gridItems.map((item: any, index) =>
+            item.isNewsletter ? (
+              <NewsletterCard key="newsletter" />
+            ) : (
+              <BlogListCard key={index} {...item} isFromAllBlogPosts={true} />
+            )
+          )}
         </div>
       </div>
     </section>

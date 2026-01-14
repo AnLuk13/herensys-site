@@ -2,35 +2,82 @@
 
 import { useState } from 'react';
 import styles from '@/styles/jobs-board/sendCVModal.module.scss';
+import OfferButton from '../buttons/OfferButton';
+import PhoneInputField from '@/components/form/PhoneInputField';
 
 interface SendCVModalProps {
-  isOpen: boolean;
+  isOpen?: boolean;
   onClose: () => void;
   jobTitle?: string;
 }
 
-function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
+export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
     phone: '',
     cvFile: null as File | null,
+    cvFileBase64: '',
     agreeToTerms: false,
   });
+  const [selectedCountry, setSelectedCountry] = useState('md');
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    onClose();
+  const convertFileToBase64 = (file: File): Promise<string> => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result as string);
+      reader.onerror = error => reject(error);
+    });
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const { agreeToTerms, cvFile, ...newFormData } = formData;
+    if (!agreeToTerms) {
+      alert('You must agree to the terms and conditions.');
+      return;
+    }
+    try {
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact/send-cv`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...newFormData,
+          jobTitle,
+          cvFileType: cvFile?.type,
+          cvFile: formData.cvFileBase64,
+        }),
+      });
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        cvFile: null,
+        cvFileBase64: '',
+        agreeToTerms: false,
+      });
+    } catch (error) {
+      console.error('Send CV error:', error);
+    } finally {
+      onClose();
+    }
+  };
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
-      setFormData({ ...formData, cvFile: e.target.files[0] });
+      const file = e.target.files[0];
+      try {
+        const base64 = await convertFileToBase64(file);
+        setFormData({ ...formData, cvFile: file, cvFileBase64: base64 });
+        // console.log(file.type);
+      } catch (error) {
+        console.error('Error converting file to base64:', error);
+      }
     }
   };
 
@@ -43,9 +90,12 @@ function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
           </svg>
         </button>
 
-        <h2 className={styles.modalTitle}>Send CV</h2>
+        <h2 className={styles.modalTitle}>Send CV for {jobTitle} position</h2>
 
-        <form onSubmit={handleSubmit} className={styles.form}>
+        <form
+          //  onSubmit={handleSubmit}
+          className={styles.form}
+        >
           <div className={styles.formRow}>
             <div className={styles.formGroup}>
               <label htmlFor="firstName" className={styles.label}>
@@ -98,14 +148,13 @@ function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
               <label htmlFor="phone" className={styles.label}>
                 Phone <span className={styles.required}>*</span>
               </label>
-              <input
-                type="tel"
-                id="phone"
+              <PhoneInputField
                 value={formData.phone}
-                onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                placeholder="julia@gmail.com"
-                className={styles.input}
-                required
+                selectedCountry={selectedCountry}
+                onChange={(value: string, country: any) => {
+                  setFormData({ ...formData, phone: value });
+                  if (country) setSelectedCountry(country.countryCode);
+                }}
               />
             </div>
           </div>
@@ -121,7 +170,9 @@ function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span>{formData.cvFile ? formData.cvFile.name : 'julia@gmail.com'}</span>
+                <span>
+                  {formData.cvFile ? formData.cvFile.name : 'Choose file (PDF, DOC, DOCX)'}
+                </span>
               </div>
               <input
                 type="file"
@@ -143,19 +194,28 @@ function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalProps) {
                 required
               />
               <span className={styles.checkboxText}>
-                I confirm that I have read and understood the data protection policy and agree to
-                the terms and conditions.
+                I confirm that I have read and understood the{' '}
+                <a
+                  href="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.privacyLink}
+                >
+                  data protection policy
+                </a>{' '}
+                and agree to the terms and conditions.
               </span>
             </label>
           </div>
 
-          <button type="submit" className={styles.submitButton}>
-            Send CV
-          </button>
+          <OfferButton
+            text="Send CV"
+            customClass={styles.submitButton}
+            onClick={handleSubmit}
+            href=""
+          />
         </form>
       </div>
     </div>
   );
 }
-
-export default SendCVModal;

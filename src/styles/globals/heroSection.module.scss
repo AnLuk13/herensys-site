@@ -23,26 +23,38 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 16px;
+    gap: 64px;
     box-sizing: border-box;
     padding-top: clamp(0px, calc((100vw - 1240px) * 0.7 + 50px), 50px);
+    z-index: 10;
 
     .heroSectionContent {
       color: white;
       display: flex;
       flex-direction: column;
-      gap: 48px;
+      gap: 32px;
       width: 50%;
 
       .heroSectionContentTitle {
+        font-size: 56px;
+        letter-spacing: 0em;
         color: var(--black);
         font-family: var(--font-family);
         font-weight: 900;
+        line-height: 1.1;
+      }
+
+      .heroSectionContentTitleSmall {
         font-size: 32px;
-        letter-spacing: 0.01em;
+        letter-spacing: 0em;
+        color: var(--black);
+        font-family: var(--font-family);
+        font-weight: 900;
+        line-height: 1;
       }
 
       .heroSectionContentDescription {
+        line-height: 150%;
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 16px;

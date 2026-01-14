@@ -3,36 +3,52 @@
   font-size: 2.25rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 3rem;
   color: var(--text-primary);
 
   @media (max-width: 860px) {
     font-size: 1.875rem;
-    margin-bottom: 2.5rem;
   }
 
   @media (max-width: 640px) {
     font-size: 1.625rem;
-    margin-bottom: 2rem;
   }
 }
 
-.teamGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+}
 
-  @media (max-width: 1140px) {
-    grid-template-columns: repeat(3, 1fr);
+.swiper {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 50px;
+  border-radius: 9px;
+
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    transform: translateY(-50%);
+    color: var(--accent);
+    top: 50%;
+    width: 20px;
+    height: 20px;
+
+    &::after {
+      font-size: 10px;
+      font-weight: bold;
+    }
   }
 
-  @media (max-width: 860px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  :global(.swiper-pagination) {
+    bottom: 0;
   }
 
-  @media (max-width: 640px) {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  :global(.swiper-pagination-bullet) {
+    background: var(--accent);
+    opacity: 0.5;
+
+    &:global(.swiper-pagination-bullet-active) {
+      opacity: 1;
+    }
   }
 }

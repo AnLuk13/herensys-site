@@ -1,0 +1,161 @@
+{
+  "heroSection": {
+    "titleLines": [{ "text": "Global Payroll" }],
+    "descriptions": [
+      "Accurate, compliant payroll in multiple countries—one dashboard.",
+      "Pay teams on time and in full compliance. We handle calculations, filings, benefits, and reporting."
+    ],
+    "buttonText": "Schedule a Call",
+    "showArrow": false,
+    "showDecorations": true
+  },
+  "goGlobalSection": {
+    "sectionTitle": "Go Global with Herensys",
+    "sectionSubtitle": "Take your business beyond borders with confidence. Herensys empowers you to hire, manage, and pay employees anywhere in the world—without worrying about legal barriers or HR complexity. We take care of compliance and administration, so you can stay focused on driving growth and results.",
+    "cards": [
+      {
+        "title": "Lightning-Fast Onboarding",
+        "subtitle": "",
+        "roles": [
+          "Expand your global reach without bureaucratic red tape. Herensys makes it easy to onboard talent globally—no paperwork, no setup delays, no hassle."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Total Compliance Coverage",
+        "subtitle": "",
+        "roles": [
+          "We navigate every employment regulation and local labor laws. From contracts to tax obligations, we ensure your global operations meet every legal requirement in 100+ countries."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Expand Smarter, Spend Less",
+        "subtitle": "",
+        "roles": [
+          "Skip the complexity, time, and heavy investment of setting up local entities. Test opportunities and scale your workforce flexibly, anywhere you choose."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Support That Moves With You",
+        "subtitle": "",
+        "roles": [
+          "Get real-time help from a dedicated Herensys expert in your region—your go-to partner for everything from onboarding to compliance and beyond."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Payroll, Simplified Worldwide",
+        "subtitle": "",
+        "roles": [
+          "Pay your international teams accurately, on time, and in their local currencies. Herensys ensures seamless global payroll operations—compliant, transparent, and worry-free."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Effortless HR Management",
+        "subtitle": "",
+        "roles": [
+          "Oversee your entire global team through a single, intuitive platform that simplifies HR, payroll, and compliance into one seamless experience."
+        ],
+        "icon": "circle",
+        "isList": false
+      }
+    ],
+    "background": "var(--gray-background)"
+  },
+  "keyFeaturesSection": {
+    "title": "Key Features",
+    "description": "Make payroll effortless.",
+    "features": [
+      {
+        "title": "Multi-currency pay runs and FX optimization",
+        "description": ""
+      },
+      {
+        "title": "Time & attendance with leave tracking via mobile app—clock-ins/outs, overtime, leave balances—flow straight into payroll.",
+        "description": ""
+      },
+      {
+        "title": "Benefits administration and local contributions",
+        "description": ""
+      },
+      {
+        "title": "Payroll calendars and cut-off alerts",
+        "description": ""
+      },
+      {
+        "title": "Manager and employee self-service portals",
+        "description": ""
+      },
+      {
+        "title": "Audit trails and role-based access",
+        "description": ""
+      }
+    ],
+    "buttonText": "Book a call",
+    "reverse": false,
+    "background": "var(--white)"
+  },
+  "howItWorksSection": {
+    "sectionTitle": "How It Works?",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Country setup and employee data import",
+        "description": ""
+      },
+      {
+        "number": "02",
+        "title": "Employees clock in via the app",
+        "description": ""
+      },
+      {
+        "number": "03",
+        "title": "Gross-to-net calculations and deductions",
+        "description": ""
+      },
+      {
+        "number": "04",
+        "title": "Payments, payslips, and statutory filings",
+        "description": ""
+      },
+      {
+        "number": "05",
+        "title": "Month-end reconciliation and reporting",
+        "description": ""
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "faqSection": {
+    "sectionTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "How fast can we hire?",
+        "answer": "Typically 7 days from brief to offer."
+      },
+      {
+        "question": "Can you match our time zone?",
+        "answer": "Yes. Our payroll team operates across multiple time zones to ensure timely processing and support during your business hours. We coordinate payroll runs to meet local payment deadlines regardless of your location."
+      },
+      {
+        "question": "Do you handle background checks?",
+        "answer": "Yes. We can integrate employment verification and compliance checks as part of the onboarding process, ensuring all necessary documentation is in place before the first payroll run."
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "ctaSection": {
+    "title": "Build teams anywhere. No local entities required",
+    "description": "Expand your global workforce effortlessly with our Employer of Record (EOR) solution",
+    "buttonText": "Schedule a Call",
+    "background": "var(--gray-background)"
+  }
+}

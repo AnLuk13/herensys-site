@@ -17,20 +17,20 @@ function PoolOfCandidatesSection({ data, background }: PoolOfCandidatesSectionPr
   ];
 
   const filteredCandidates =
-    activeFilter === 'all'
-      ? data
-      : data?.filter(candidate => candidate.region === activeFilter);
+    activeFilter === 'all' ? data : data?.filter(candidate => candidate.region === activeFilter);
 
   return (
     <section className="sectionWrapper" style={{ background }}>
       <div className="contentContainer">
         <h2 className={styles.sectionTitle}>Pool of Candidates</h2>
 
-        <FilterButtons
-          filters={filters}
-          activeFilter={activeFilter}
-          onFilterChange={setActiveFilter}
-        />
+        <div style={{ width: '100%', justifyContent: 'center', display: 'flex' }}>
+          <FilterButtons
+            filters={filters}
+            activeFilter={activeFilter}
+            onFilterChange={setActiveFilter}
+          />
+        </div>
 
         <div className={styles.candidatesGrid}>
           {filteredCandidates?.map((candidate, index) => (

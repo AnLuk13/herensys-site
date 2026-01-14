@@ -3,7 +3,7 @@ import styles from '@/styles/global-recruiting/howItWorks.module.scss';
 interface Step {
   number: string;
   title: string;
-  description: string;
+  description?: string;
 }
 
 interface HowItWorksSectionProps {
@@ -22,7 +22,7 @@ function HowItWorksSection({ sectionTitle, steps, background }: HowItWorksSectio
       <div className="contentContainer">
         <h2 className={styles.sectionTitle}>{sectionTitle}</h2>
 
-        <div className={styles.stepsContainer}>
+        <div className={styles.stepsContainer} style={{ gridTemplateColumns: `repeat(${steps.length}, 1fr)` }}>
           {steps.map((step, index) => (
             <div key={index} className={styles.stepCard}>
               <div className={styles.stepNumber}>{step.number}</div>

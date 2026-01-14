@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import BlurImage from '@/components/helper/BlurImage';
 import styles from '@/styles/globals/imageContentSection.module.scss';
 import OfferButton from './buttons/OfferButton';
 
@@ -33,7 +33,7 @@ function ImageContentSection({
       <div className="contentContainer">
         <div className={`${styles.contentWrapper} ${reverse ? styles.reverse : ''}`}>
           <div className={styles.imageBox}>
-            <Image
+            <BlurImage
               src={imageSrc}
               alt={imageAlt}
               fill
@@ -43,18 +43,22 @@ function ImageContentSection({
           </div>
           <div className={styles.textContent}>
             <h2 className={styles.title}>{title}</h2>
-            <p className={styles.description}>{description}</p>
-            <ul className={styles.featuresList}>
-              {features.map((feature, index) => (
-                <li key={index}>
-                  <strong>{feature.title}</strong>
-                  <span>{feature.description}</span>
-                </li>
-              ))}
-            </ul>
+            {features.length > 0 && (
+              <ul className={styles.featuresList}>
+                {features.map((feature, index) => (
+                  <li key={index}>
+                    <span style={{ fontWeight: '600', color: 'var(--black)' }}>
+                      {feature.title}
+                    </span>
+                    <span>{feature.description}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {description && <p className={styles.description}>{description}</p>}
             {buttonText && (
               <div className={styles.buttonWrapper}>
-                <OfferButton text={buttonText} />
+                <OfferButton text={buttonText} href={buttonHref} />
               </div>
             )}
           </div>

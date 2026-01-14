@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '@/styles/countries/countryHeroSection.module.scss';
-import Image from 'next/image';
+import BlurImage from '@/components/helper/BlurImage';
 import OfferButton from '@/components/buttons/OfferButton';
 import DecorativeDots from '@/components/svg-icons/hero/DecorativeDots';
 import CircleIcon from '@/components/svg-icons/hero/CicleIcon';
@@ -33,7 +33,14 @@ function CountryHeroSection({
           </div>
         </div>
         <div className={styles.heroSectionImageBox}>
-          <Image src={imageSrc} alt={imageAlt} priority fill className={styles.heroSectionImage} />
+          <BlurImage
+            src={imageSrc}
+            alt={imageAlt}
+            priority
+            fill
+            className={styles.heroSectionImage}
+            quality={100}
+          />
           {showDecorations && (
             <>
               <DecorativeDots style={{ position: 'absolute', top: '40%', left: '-10%' }} />

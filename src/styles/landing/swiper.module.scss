@@ -5,7 +5,7 @@
   .swiper {
     box-sizing: border-box;
     width: 100%;
-    padding: 20px 50px;
+    padding: 20px 50px 40px;
 
     :global(.swiper-button-prev),
     :global(.swiper-button-next) {
@@ -32,7 +32,7 @@
     }
 
     :global(.swiper-pagination) {
-      bottom: 0;
+      bottom: 0px;
     }
 
     :global(.swiper-pagination-bullet) {
@@ -41,8 +41,12 @@
     }
 
     :global(.swiper-pagination-bullet-active) {
-      opacity: 1;
+      opacity: 0.5;
       background: var(--black);
+
+      &:global(.swiper-pagination-bullet-active) {
+        opacity: 1;
+      }
     }
   }
 

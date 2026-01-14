@@ -1,18 +1,21 @@
 .sectionTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
   font-family: var(--font-family);
-  font-size: 2.25rem;
-  font-weight: 700;
   text-align: left;
-  color: var(--text-primary);
+  color: var(--black);
 
   @media (max-width: 860px) {
-    font-size: 1.875rem;
+    font-size: 20px;
   }
 
   @media (max-width: 640px) {
-    font-size: 1.625rem;
+    font-size: 18px;
   }
 }
+
+
 
 // .blogGrid {
 //   display: grid;

@@ -21,14 +21,25 @@ function CTASection({
   return (
     <section
       className="sectionWrapper"
-      style={{ background, position: 'relative', overflow: 'hidden' }}
+      style={{
+        background,
+        position: 'relative',
+        overflow: 'hidden',
+        boxSizing: 'border-box',
+        minHeight: '280px',
+      }}
     >
       <div className="contentContainer">
         <div className={`${styles.ctaContent} ${displayGlobe ? styles.withGlobe : ''}`}>
-          <div className={styles.textContent}>
-            <h2 className={styles.title}>{title}</h2>
-            <p className={styles.description}>{description}</p>
-            <div className={styles.buttonWrapper}>
+          <div
+            className={styles.textContent}
+            style={displayGlobe ? { flexDirection: 'column' } : {}}
+          >
+            <div className={styles.textBox}>
+              <h2 className={styles.title}>{title}</h2>
+              <p className={styles.description}>{description}</p>
+            </div>
+            <div className={styles.buttonWrapper} style={displayGlobe ? { width: '100%' } : {}}>
               <OfferButton text={buttonText} />
             </div>
           </div>

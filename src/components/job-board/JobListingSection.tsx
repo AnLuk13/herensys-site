@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { Activity, useState } from 'react';
 import Select from 'react-select';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -262,11 +262,13 @@ function JobListingSection({ data }: JobListingSectionProps) {
         </div>
       </div>
 
+      {/* <Activity mode={isModalOpen ? 'visible' : 'hidden'}> */}
       <SendCVModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         jobTitle={selectedJobTitle}
       />
+      {/* </Activity> */}
     </section>
   );
 }

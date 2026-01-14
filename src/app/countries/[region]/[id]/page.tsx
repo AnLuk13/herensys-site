@@ -1,15 +1,18 @@
 import CountryDetails from '@/pages/countries-pages/CountryDetails';
 import { Metadata } from 'next';
-import { countriesData } from '@/lib/consts/common';
+import countriesData from '@/data/countries.json';
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ region: string; id: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
-  const countryName = id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  
+  const { id } = await params;
+  const countryName = id
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+
   return {
     title: countryName,
     description: `Hire top talent in ${countryName} with Herensys employer of record services. Compliant, efficient, and hassle-free international employment solutions.`,
@@ -17,15 +20,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return countriesData.map((country) => ({
+  return countriesData.countriesData.map(country => ({
+    region: country.region,
     id: country.name.toLowerCase().replace(/\s+/g, '-'),
   }));
 }
 
 export const revalidate = 3600;
 
-function CountryDetailsPage() {
-  return <CountryDetails />;
+function CountryDetailsPage({ params }: Props) {
+  return <CountryDetails params={params} />;
 }
 
 export default CountryDetailsPage;

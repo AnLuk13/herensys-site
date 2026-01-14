@@ -1,0 +1,170 @@
+{
+  "heroSection": {
+    "titleLines": [
+      { "text": "Breaking boundaries " },
+      { "text": "in work and opportunity", "CSSProperties": { "color": "var(--accent)" } }
+    ],
+    "descriptions": [
+      "Your potential shouldn't be defined by geography. We're shaping a future where opportunity travels farther than ever before"
+    ],
+    "buttonText": "Schedule a Call",
+    "showArrow": false,
+    "showDecorations": true
+  },
+  "goGlobalSection": {
+    "sectionTitle": "Go Global with Herensys",
+    "sectionSubtitle": "Take your business beyond borders with confidence. Herensys empowers you to hire, manage, and pay employees anywhere in the world—without worrying about legal barriers or HR complexity. We take care of compliance and administration, so you can stay focused on driving growth and results.",
+    "cards": [
+      {
+        "title": "Global hiring made simple",
+        "subtitle": "",
+        "roles": [
+          "Hire employees or contractors across borders with ease. Our extensive global coverage ensures seamless onboarding, compliance, and local expertise—no need to navigate multiple vendors or legal red tape yourself."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Unified global payroll",
+        "subtitle": "",
+        "roles": [
+          "Say goodbye to the complexity of managing multiple payroll systems. Pay your teams seamlessly, compliantly and on time—across different countries, currencies, and regulations—through one automated platform."
+        ],
+        "icon": "triangle",
+        "isList": false
+      },
+      {
+        "title": "Tailored benefits for every market",
+        "subtitle": "",
+        "roles": [
+          "Want to stand out as an employer? Offer region-specific perks and benefits designed to attract, motivate, and retain the best global talent in every market you operate."
+        ],
+        "icon": "rectangular",
+        "isList": false
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "brands": [
+    {
+      "name": "ADS",
+      "logo": "/assets/optimized-images/brands/ADS_logo.webp"
+    },
+    {
+      "name": "Emirates",
+      "logo": "/assets/images/brands/emirates.svg"
+    },
+    {
+      "name": "Ritz Carlton",
+      "logo": "/assets/images/brands/ritz-carlton.svg"
+    },
+    {
+      "name": "American Airlines",
+      "logo": "/assets/images/brands/american-airlines.svg"
+    },
+    {
+      "name": "TAJ Hotels",
+      "logo": "/assets/images/brands/taj.svg"
+    },
+    {
+      "name": "Hilton",
+      "logo": "/assets/images/brands/hilton.svg"
+    }
+  ],
+  "openingTheWorldSection": {
+    "title": "Opening the world to opportunity",
+    "description": "In 2019, we started with a simple idea: what if hiring great people anywhere was as easy as hiring locally?\n\nWe believe world-class talent isn't confined by geography. Our mission is to help forward-thinking companies hire the best people—no matter where they are.\n\nToday, we support distributed team across more than 60 countries and continues to grow. We've experienced the power of borderless work firsthand, and we're here to make that same freedom possible for you.",
+    "features": [],
+    "buttonText": "Schedule a Call",
+    "reverse": false,
+    "background": "var(--white)"
+  },
+  "weGetThingsDoneSection": {
+    "title": "We Get Things Done",
+    "description": "We're a hands-on team that thrives on challenges. When faced with complexity, we lean in—driven by passion, integrity, and a commitment to deliver excellence.",
+    "features": [
+      {
+        "title": "Your Goals = Our Mission",
+        "description": "Everything we do starts with your success in mind."
+      },
+      {
+        "title": "Driven by Impact",
+        "description": "We love fast and act with purpose, ensuring results that truly matter."
+      },
+      {
+        "title": "Always Evolving",
+        "description": "We move fast and act with purpose, ensuring results that truly matter."
+      },
+      {
+        "title": "Innovation fuels us",
+        "description": "We stay curious, improving every step of the way."
+      },
+      {
+        "title": "Raising the Bar",
+        "description": "We never settle for 'good enough.' We push boundaries to find smarter, stronger ways to help you win."
+      }
+    ],
+    "buttonText": "Schedule a Call",
+    "reverse": true,
+    "background": "var(--gray-background)"
+  },
+  "teamMembers": [
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member1.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member2.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member3.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member4.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member5.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member6.jpg"
+    },
+    {
+      "name": "Ecaterina Zidu",
+      "role": "CEO",
+      "image": "/assets/images/team/member7.jpg"
+    }
+  ],
+  "faqSection": {
+    "sectionTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "Will an EOR recruit candidates for me?",
+        "answer": "We don't find the people, but once you do, we make it legal to employ them. If you need help sourcing, we can connect you to recruiters we trust."
+      },
+      {
+        "question": "Does an EOR hire global candidates for me?",
+        "answer": "An EOR does not recruit candidates. However, once you identify the talent you want to hire, the EOR handles all the legal and administrative aspects of employment, including contracts, payroll, taxes, and compliance with local labor laws."
+      },
+      {
+        "question": "Do you help with paying the required in-country contributions?",
+        "answer": "Yes, we handle all mandatory in-country contributions, including social security, health insurance, pension funds, and other statutory benefits required by local employment laws. Everything is calculated and paid accurately and on time."
+      },
+      {
+        "question": "Is an EOR the same as a professional employer organization (PEO)?",
+        "answer": "No, an EOR and a PEO are different. An EOR becomes the legal employer of your workers, handling all compliance and HR responsibilities in countries where you do not have a legal entity. A PEO, on the other hand, works with your existing entity to co-employ workers and help manage HR tasks, but you remain the legal employer."
+      }
+    ],
+    "background": "var(--white)"
+  }
+}

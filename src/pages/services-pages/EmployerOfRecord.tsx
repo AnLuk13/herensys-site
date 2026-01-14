@@ -5,32 +5,37 @@ import ImageContentSection from '@/components/ImageContentSection';
 import FAQSection from '@/components/FAQSection';
 import CTASection from '@/components/CTASection';
 import manifest from '@/lib/assets-manifest.json';
-import {
-  heroSectionData,
-  goGlobalSection,
-  globalHiringSection,
-  faqSectionData,
-  ctaSectionData,
-} from '@/lib/consts/servicesContent';
+import eorData from '@/data/employer-of-record.json';
 import RecentBlogPostsSection from '@/components/recent-blog-posts/RecentBlogPostsSection';
+import FirestoreSection from '@/components/wrapper/FireStoreSection';
+import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function EmployerOfRecord() {
-  const heroImage = manifest.home.find(image => image.alt === 'Hero banner1');
+  const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
+
+  const valuePropsSection = {
+    ...eorData.valuePropsSection,
+    cards: mapCardsWithIcons(eorData.valuePropsSection.cards),
+  };
 
   return (
     <main>
-      <HeroSection {...heroSectionData} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
-      <BuildDreamTeamSection {...goGlobalSection} />
+      <HeroSection
+        {...eorData.heroSection}
+        imageSrc={heroImage!.src}
+        imageAlt="Services hero banner"
+      />
+      <BuildDreamTeamSection {...valuePropsSection} />
       <ImageContentSection
-        {...globalHiringSection}
+        {...eorData.keyFeaturesSection}
         imageSrc={heroImage!.src}
         imageAlt="Global hiring services"
         reverse={true}
         background="var(--gray-background)"
       />
-      <FAQSection {...faqSectionData} />
-      <CTASection {...ctaSectionData} />
-      <RecentBlogPostsSection />
+      <FAQSection {...eorData.faqSection} />
+      <CTASection {...eorData.ctaSection} />
+      <FirestoreSection route="/blogs/latest" Component={RecentBlogPostsSection} />
     </main>
   );
 }

@@ -37,7 +37,7 @@ function FirestoreSection({ route, Component, additionalProps = {} }: FirestoreS
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          minHeight: '80dvh',
+          minHeight: '50dvh',
           padding: '2rem',
           textAlign: 'center',
         }}

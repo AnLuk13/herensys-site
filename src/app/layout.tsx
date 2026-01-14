@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: '/assets/images/meta-logo.jpg',
+        url: '/assets/images/meta-logo.jpg', //TODO
         width: 1200,
         height: 630,
         alt: 'Herensys',

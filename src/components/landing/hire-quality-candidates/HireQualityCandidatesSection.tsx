@@ -1,8 +1,8 @@
 import styles from '@/styles/landing/hireQualityCandidates.module.scss';
 import QualityCard from './QualityCard';
 import OfferButton from '../../buttons/OfferButton';
-import { hireQualityCandidatesData } from '@/lib/consts/common';
 import FragmentedWorld from '../../svg-icons/details/FragmentedWorld';
+import home from '@/data/home.json';
 
 function HireQualityCandidatesSection() {
   return (
@@ -13,12 +13,12 @@ function HireQualityCandidatesSection() {
       <div className="contentContainer">
         <h2 className="sectionTitle">Hire High Quality Candidates</h2>
         <div className="cardsGrid">
-          {hireQualityCandidatesData.map((card, index) => (
+          {home.hireQualityCandidatesData.map((card, index) => (
             <QualityCard key={index} {...card} />
           ))}
         </div>
         <div className={styles.callToAction}>
-          <OfferButton text="Schedule a Call" />
+          <OfferButton text="See Our Talent Network" href="/pool-of-candidates" />
         </div>
       </div>
       <div className={styles.fragmentedWorld}>

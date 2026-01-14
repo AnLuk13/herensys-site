@@ -1,0 +1,134 @@
+{
+  "heroSection": {
+    "titleLines": [
+      { "text": "Employer" },
+      { "text": "of Record", "CSSProperties": { "color": "var(--accent)" } },
+      { "text": "(EOR)" }
+    ],
+    "descriptions": [
+      "Hire, pay, and support full-time employees compliantly—without opening local entities. We handle contracts, payroll, benefits, and administration so you can focus on growth.",
+      "What is an Employer of Record? An EOR is a licensed local employer that hires talent on your behalf. You manage day-to-day work; we handle employment compliance, payroll, taxes, benefits, and ongoing admin in each country."
+    ],
+    "buttonText": "Book a call",
+    "showArrow": false,
+    "showDecorations": true
+  },
+  "valuePropsSection": {
+    "sectionTitle": "Value Props",
+    "sectionSubtitle": "",
+    "cards": [
+      {
+        "title": "Lightning-fast onboarding",
+        "subtitle": "",
+        "roles": ["Offer, contract, and start dates in days, not months."],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Total compliance",
+        "subtitle": "",
+        "roles": ["Local labor laws, taxes, and statutory policies covered end-to-end."],
+        "icon": "triangle",
+        "isList": false
+      },
+      {
+        "title": "No entity required",
+        "subtitle": "",
+        "roles": ["Enter new markets without the cost and complexity of local setup."],
+        "icon": "rectangular",
+        "isList": false
+      },
+      {
+        "title": "Transparent payroll",
+        "subtitle": "",
+        "roles": ["Clear gross-to-net, calendars, deadlines, and approvals."],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Benefits handled",
+        "subtitle": "",
+        "roles": ["Statutory and market-standard plans with guided enrollment."],
+        "icon": "triangle",
+        "isList": false
+      },
+      {
+        "title": "Local support",
+        "subtitle": "",
+        "roles": ["In-country specialists for onboarding, payroll, and ongoing HR."],
+        "icon": "rectangular",
+        "isList": false
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "keyFeaturesSection": {
+    "title": "Key Features",
+    "description": "",
+    "features": [
+      {
+        "title": "Localized employment contracts with IP and confidentiality",
+        "description": ""
+      },
+      {
+        "title": "Consolidated payroll funding and FX transparency",
+        "description": ""
+      },
+      {
+        "title": "Filings, remittances, and statutory reporting",
+        "description": ""
+      },
+      {
+        "title": "Time off, holidays, and leave policies built-in",
+        "description": ""
+      },
+      {
+        "title": "Expense submission, approvals, and reimbursements",
+        "description": ""
+      },
+      {
+        "title": "Employee and manager self-service portals",
+        "description": ""
+      },
+      {
+        "title": "Immigration support where eligible",
+        "description": ""
+      },
+      {
+        "title": "Reports, analytics, and GL exports",
+        "description": ""
+      }
+    ],
+    "buttonText": "Schedule a Call",
+    "reverse": false,
+    "background": "var(--white)"
+  },
+  "faqSection": {
+    "sectionTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "Will an EOR recruit candidates for me?",
+        "answer": "We don't find the people, but once you do, we make it legal to employ them. If you need help sourcing, we can connect you to recruiters we trust."
+      },
+      {
+        "question": "Does an EOR hire global candidates for me?",
+        "answer": "An EOR does not recruit candidates. However, once you identify the talent you want to hire, the EOR handles all the legal and administrative aspects of employment, including contracts, payroll, taxes, and compliance with local labor laws."
+      },
+      {
+        "question": "Do you help with paying the required in-country contributions?",
+        "answer": "Yes, we handle all mandatory in-country contributions, including social security, health insurance, pension funds, and other statutory benefits required by local employment laws. Everything is calculated and paid accurately and on time."
+      },
+      {
+        "question": "Is an EOR the same as a professional employer organization (PEO)?",
+        "answer": "No, an EOR and a PEO are different. An EOR becomes the legal employer of your workers, handling all compliance and HR responsibilities in countries where you do not have a legal entity. A PEO, on the other hand, works with your existing entity to co-employ workers and help manage HR tasks, but you remain the legal employer."
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "ctaSection": {
+    "title": "Build teams anywhere. No local entities required",
+    "description": "Expand your global workforce effortlessly with our Employer of Record (EOR) solution",
+    "buttonText": "Schedule a Call",
+    "background": "var(--gray-background)"
+  }
+}

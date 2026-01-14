@@ -23,9 +23,8 @@
 }
 
 .iconWrapper {
-  width: 48px;
-  height: 48px;
-  background: white;
+  width: 40px;
+  height: 40px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -45,7 +44,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 12px;
+  gap: 20px;
   max-height: 300px;
   height: 100%;
 
@@ -79,7 +78,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
 }
 
 .input {
@@ -115,12 +114,24 @@
 }
 
 .privacyLink {
-  color: var(--black-primary);
+  color: var(--accent);
   text-decoration: underline;
 
   &:hover {
     color: var(--accent);
   }
+}
+
+.successMessage {
+  font-family: var(--font4);
+  font-size: 0.875rem;
+  color: #10b981;
+  margin: 0;
+  padding: 8px 12px;
+  background: #d1fae5;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
 }
 
 @media (max-width: 860px) {
@@ -141,16 +152,6 @@
   .newsletterCard {
     padding: 24px 20px;
     gap: 14px;
-  }
-
-  .iconWrapper {
-    width: 44px;
-    height: 44px;
-
-    svg {
-      width: 22px;
-      height: 22px;
-    }
   }
 
   .title {

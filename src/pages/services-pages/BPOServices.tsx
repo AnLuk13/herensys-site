@@ -1,35 +1,30 @@
 import HeroSection from '@/components/hero/HeroSection';
 import HowItWorksSection from '@/components/how-it-works/HowItWorksSection';
-import {
-  ctaSectionData,
-  faqSectionData,
-  globalHiringSection,
-  heroSectionData,
-  howItWorksSectionData,
-} from '@/lib/consts/servicesContent';
 import manifest from '@/lib/assets-manifest.json';
 import ImageContentSection from '@/components/ImageContentSection';
 import FAQSection from '@/components/FAQSection';
 import RecentBlogPostsSection from '@/components/recent-blog-posts/RecentBlogPostsSection';
+import FirestoreSection from '@/components/wrapper/FireStoreSection';
 import CTASection from '@/components/CTASection';
+import bpoData from '@/data/bpo-services.json';
 
 function BPOServices() {
-  const heroImage = manifest.home.find(image => image.alt === 'Hero banner1');
+  const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
 
   return (
     <main>
-      <HeroSection {...heroSectionData} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
-      <HowItWorksSection {...howItWorksSectionData} />
+      <HeroSection {...bpoData.heroSection} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
+      <HowItWorksSection {...bpoData.howItWorksSection} />
       <ImageContentSection
-        {...globalHiringSection}
+        {...bpoData.keyFeaturesSection}
         imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
+        imageAlt="BPO services"
         reverse={true}
         background="var(--gray-background)"
       />
-      <FAQSection {...faqSectionData} />
-      <CTASection {...ctaSectionData} />
-      <RecentBlogPostsSection />
+      <FAQSection {...bpoData.faqSection} />
+      <CTASection {...bpoData.ctaSection} />
+      <FirestoreSection route="/blogs/latest" Component={RecentBlogPostsSection} />
     </main>
   );
 }

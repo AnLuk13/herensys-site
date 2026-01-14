@@ -1,0 +1,102 @@
+{
+  "heroSection": {
+    "titleLines": [
+      {
+        "text": "Herensys helps you navigate global expansion with ease",
+        "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
+      }
+    ],
+    "descriptions": [
+      "Explore our comprehensive country guides covering everything from taxes, leave, and benefits to local HR, accounting, and tax regulations across 185+ countries. Whether you're hiring abroad or expanding internationally, Herensys provides the insights you need to make informed and compliant decisions."
+    ],
+    "buttonText": "Book a call"
+  },
+  "countriesData": [
+    {
+      "name": "Albania",
+      "image": "/assets/optimized-images/countries/albania.webp",
+      "flag": "al",
+      "region": "balkans"
+    },
+    {
+      "name": "Algeria",
+      "image": "/assets/optimized-images/countries/algeria.webp",
+      "flag": "dz",
+      "region": "north-africa"
+    },
+    {
+      "name": "Armenia",
+      "image": "/assets/optimized-images/countries/armenia.webp",
+      "flag": "am",
+      "region": "eastern-europe"
+    },
+    {
+      "name": "Georgia",
+      "image": "/assets/optimized-images/countries/georgia.webp",
+      "flag": "ge",
+      "region": "eastern-europe"
+    },
+    {
+      "name": "Kosovo",
+      "image": "/assets/optimized-images/countries/kosovo.webp",
+      "flag": "xk",
+      "region": "balkans"
+    },
+    {
+      "name": "Moldova",
+      "image": "/assets/optimized-images/countries/moldova.webp",
+      "flag": "md",
+      "region": "eastern-europe"
+    },
+    {
+      "name": "Morocco",
+      "image": "/assets/optimized-images/countries/morocco.webp",
+      "flag": "ma",
+      "region": "north-africa"
+    },
+    {
+      "name": "North Macedonia",
+      "image": "/assets/optimized-images/countries/north-macedonia.webp",
+      "flag": "mk",
+      "region": "balkans"
+    },
+    {
+      "name": "Romania",
+      "image": "/assets/optimized-images/countries/romania.webp",
+      "flag": "ro",
+      "region": "balkans"
+    },
+    {
+      "name": "Tunisia",
+      "image": "/assets/optimized-images/countries/tunisia.webp",
+      "flag": "tn",
+      "region": "north-africa"
+    }
+  ],
+  "regionFilters": [
+    { "label": "All", "value": "all" },
+    { "label": "North Africa", "value": "north-africa" },
+    { "label": "Balkans", "value": "balkans" },
+    { "label": "Eastern Europe", "value": "eastern-europe" }
+  ],
+  "countriesPresenceCards": [
+    {
+      "name": "LATAM Coffee Maker",
+      "company": "LATAM Coffee Maker",
+      "image": "https://picsum.photos/200/300",
+      "text": "Outsourcing sales to local experts was a smart move. In the first month, we saw positive by connecting with customers who understand the market."
+    },
+    {
+      "name": "LATAM Coffee Maker",
+      "company": "LATAM Coffee Maker",
+      "image": "https://picsum.photos/200/300",
+      "text": "Outsourcing sales to local experts was a smart move. In the first month, we saw positive by connecting with customers who understand the market."
+    },
+    {
+      "name": "LATAM Coffee Maker",
+      "company": "LATAM Coffee Maker",
+      "image": "https://picsum.photos/200/300",
+      "text": "Outsourcing sales to local experts was a smart move. In the first month, we saw positive by connecting with customers who understand the market."
+    }
+  ]
+}

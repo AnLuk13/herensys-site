@@ -1,0 +1,153 @@
+{
+  "heroSection": {
+    "titleLines": [{ "text": "Global Recruiting" }],
+    "descriptions": [
+      "Hire vetted local talent fast, with zero admin friction.",
+      "Build high-performing teams across North Africa, Eastern Europe and the Balkans without opening an entity. We source, assess, and present candidates that match your stack, time zone, and culture."
+    ],
+    "buttonText": "See Our Talent Network",
+    "showArrow": false,
+    "showDecorations": true
+  },
+  "goGlobalSection": {
+    "sectionTitle": "Go Global with Herensys",
+    "sectionSubtitle": "Take your business beyond borders with confidence. Herensys empowers you to hire, manage, and pay employees anywhere in the world—without worrying about legal barriers or HR complexity. We take care of compliance and administration, so you can stay focused on driving growth and results.",
+    "cards": [
+      {
+        "title": "Lightning-Fast Onboarding",
+        "subtitle": "",
+        "roles": [
+          "Expand your global reach without bureaucratic red tape. Herensys makes it easy to onboard talent globally—no paperwork, no setup delays, no hassle."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Total Compliance Coverage",
+        "subtitle": "",
+        "roles": [
+          "We navigate every employment regulation and local labor laws. From contracts to tax obligations, we ensure your global operations meet every legal requirement in 100+ countries."
+        ],
+        "icon": "triangle",
+        "isList": false
+      },
+      {
+        "title": "Expand Smarter, Spend Less",
+        "subtitle": "",
+        "roles": [
+          "Skip the complexity, time, and heavy investment of setting up local entities. Test opportunities and scale your workforce flexibly, anywhere you choose."
+        ],
+        "icon": "rectangular",
+        "isList": false
+      },
+      {
+        "title": "Support That Moves With You",
+        "subtitle": "",
+        "roles": [
+          "Get real-time help from a dedicated Herensys expert in your region—your go-to partner for everything from onboarding to compliance and beyond."
+        ],
+        "icon": "triangle",
+        "isList": false
+      },
+      {
+        "title": "Payroll, Simplified Worldwide",
+        "subtitle": "",
+        "roles": [
+          "Pay your international teams accurately, on time, and in their local currencies. Herensys ensures seamless global payroll operations—compliant, transparent, and worry-free."
+        ],
+        "icon": "circle",
+        "isList": false
+      },
+      {
+        "title": "Effortless HR Management",
+        "subtitle": "",
+        "roles": [
+          "Oversee your entire global team through a single, intuitive platform that simplifies HR, payroll, and compliance into one seamless experience."
+        ],
+        "icon": "circle",
+        "isList": false
+      }
+    ],
+    "background": "var(--gray-background)"
+  },
+  "globalHiringSection": {
+    "title": "Key Features",
+    "description": "Join 200+ teams outsourcing smarter.",
+    "features": [
+      {
+        "title": "Pre-hire skills testing and live interviews",
+        "description": ""
+      },
+      {
+        "title": "Background and reference checks",
+        "description": ""
+      },
+      {
+        "title": "Role-specific scorecards and video notes",
+        "description": ""
+      },
+      {
+        "title": "Ongoing training and quarterly performance reviews",
+        "description": ""
+      }
+    ],
+    "buttonText": "Book a call",
+    "reverse": false,
+    "background": "var(--white)"
+  },
+  "howItWorksSection": {
+    "sectionTitle": "How It Works?",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Discovery",
+        "description": "30-minute brief to map roles and KPIs"
+      },
+      {
+        "number": "02",
+        "title": "Sourcing",
+        "description": "curated shortlist in 48-72 hours"
+      },
+      {
+        "number": "03",
+        "title": "Interviews",
+        "description": "coordinated in your time zone"
+      },
+      {
+        "number": "04",
+        "title": "Offer & references",
+        "description": "fast turnaround"
+      },
+      {
+        "number": "05",
+        "title": "Onboarding",
+        "description": "start as soon as tomorrow"
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "faqSection": {
+    "sectionTitle": "Frequently asked questions",
+    "faqs": [
+      {
+        "question": "How fast can we hire?",
+        "answer": "Typically 7 days from brief to offer."
+      },
+      {
+        "question": "Can you match our time zone?",
+        "answer": "Yes. We source talent across Eastern Europe, the Balkans, and North Africa, ensuring minimal or zero time zone differences with your team. All candidates are pre-screened for availability during your working hours."
+      },
+      {
+        "question": "Do you handle background checks?",
+        "answer": "Absolutely. Every candidate goes through comprehensive background and reference checks before we present them to you. This includes employment history verification, professional references, and any role-specific screenings you require."
+      }
+    ],
+    "background": "var(--white)"
+  },
+  "ctaSection": {
+    "title": "Build teams anywhere. No local entities required",
+    "description": "Expand your global workforce effortlessly with our Employer of Record (EOR) solution",
+    "buttonText": "Schedule a Call",
+    "background": "var(--gray-background)"
+  }
+}

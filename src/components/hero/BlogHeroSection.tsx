@@ -1,17 +1,12 @@
 import React from 'react';
 import styles from '@/styles/blog/blogHeroSection.module.scss';
-import Image from 'next/image';
-import OfferButton from '@/components/buttons/OfferButton';
+import BlurImage from '@/components/helper/BlurImage';
 import CircleIcon from '../svg-icons/hero/CicleIcon';
 import DecorativeDots from '../svg-icons/hero/DecorativeDots';
-import ArrowIcon from '../svg-icons/ArrowIcon';
 import { formatDate } from '@/lib/utils/dateMethods';
 
 interface BlogHeroSection {
-  titleLines: Array<{
-    text: string;
-    CSSProperties?: React.CSSProperties;
-  }>;
+  title: string;
   descriptions: string[];
   imageSrc: string;
   imageAlt?: string;
@@ -23,7 +18,7 @@ interface BlogHeroSection {
 }
 
 function BlogHeroSection({
-  titleLines,
+  title,
   descriptions,
   imageSrc,
   imageAlt = 'Hero banner',
@@ -39,15 +34,12 @@ function BlogHeroSection({
           <div className={styles.blogContent}>
             <div className={styles.blogAuthor}>{`${author} • ${formatDate(date)}`}</div>
             <div>
-              {titleLines.map((line, index) => (
-                <div
-                  key={index}
-                  className={styles.blogTitle}
-                  style={line.CSSProperties ? line.CSSProperties : undefined}
-                >
-                  {line.text}
-                </div>
-              ))}
+              <div
+                className={styles.blogTitle}
+                // style={line.CSSProperties ? line.CSSProperties : undefined}
+              >
+                {title}
+              </div>
             </div>
             <div className={'flexColumn'}>
               {descriptions.map((desc, index) => (
@@ -60,7 +52,7 @@ function BlogHeroSection({
           </div>
         </div>
         <div className={styles.blogImageWrapper}>
-          <Image src={imageSrc} alt={imageAlt} priority fill className={styles.blogImage} />
+          <BlurImage src={imageSrc} alt={imageAlt} priority fill className={styles.blogImage} />
           {showDecorations && (
             <>
               <DecorativeDots style={{ position: 'absolute', top: '40%', left: '-10%' }} />

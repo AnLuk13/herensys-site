@@ -1,0 +1,49 @@
+{
+  "buildDreamTeamCards": [
+    {
+      "title": "IT",
+      "subtitle": "Information Technology",
+      "roles": [
+        "IT Engineers",
+        "Front End Developers",
+        "Back End Developers",
+        "UI & UX Designers",
+        "Full Stack Engineers"
+      ],
+      "icon": "circle"
+    },
+    {
+      "title": "OPERATIONS",
+      "subtitle": "Finance & Back Office",
+      "roles": [
+        "Accountants",
+        "Payroll Specialists",
+        "HR & Recruiters",
+        "Operation Managers",
+        "Project Managers"
+      ],
+      "icon": "triangle"
+    },
+    {
+      "title": "SALES",
+      "subtitle": "Lead Generation",
+      "roles": [
+        "Lead Gen Specialists",
+        "Content Managers",
+        "Social Media Managers",
+        "Community Managers",
+        "Copywriters"
+      ],
+      "icon": "rectangular"
+    }
+  ],
+  "iconComponents": {
+    "recruitment": "RecruitmentIcon",
+    "bpo": "BPOIcon",
+    "eor": "EORIcon",
+    "consulting": "ConsultingIcon",
+    "circle": "OrangeCircleIcon",
+    "triangle": "OrangeTriangleIcon",
+    "rectangular": "OrangeRectangularIcon"
+  }
+}

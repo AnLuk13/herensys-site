@@ -21,7 +21,7 @@
   background: #f0f0f0;
 
   @media (max-width: 860px) {
-    height: 240px;
+    height: 280px;
   }
 
   @media (max-width: 640px) {
@@ -30,6 +30,7 @@
 }
 
 .memberImage {
+  object-fit: cover;
   transition: transform 0.3s ease;
 
   .teamMemberCard:hover & {
