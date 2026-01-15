@@ -1,78 +1,83 @@
 {
   "brands": [
     {
-      "id": "51458ae3-6406-4510-acf1-ed01e528a524",
+      "id": "96c2252a-aa81-4a98-bc3b-a54f538e6e2e",
+      "src": "/assets/optimized-images/brands/ACVIAN_logo.webp",
+      "alt": "ACVIAN_logo"
+    },
+    {
+      "id": "ac7143f7-c675-48ca-880f-681a9b47d703",
       "src": "/assets/optimized-images/brands/ADS_logo.webp",
       "alt": "ADS_logo"
     }
   ],
   "countries": [
     {
-      "id": "5646f444-4248-4886-a2b0-5ff9b40bb91a",
+      "id": "6a73557b-d791-4f53-992e-5263a1ccbf46",
       "src": "/assets/optimized-images/countries/albania.webp",
       "alt": "albania"
     },
     {
-      "id": "07ef4b5d-92a9-4a7e-a610-c5c526c21f88",
+      "id": "480d80d3-16be-4028-a020-a7748c1d2792",
       "src": "/assets/optimized-images/countries/algeria.webp",
       "alt": "algeria"
     },
     {
-      "id": "f816316e-d553-4f65-b5b8-f06db3e6feba",
+      "id": "16359688-1392-49da-b171-21821c0c0a7d",
       "src": "/assets/optimized-images/countries/armenia.webp",
       "alt": "armenia"
     },
     {
-      "id": "6b03936d-96e5-4697-8058-bd2a00035711",
+      "id": "13b7f03a-f83a-469f-9e41-03a5f581d96c",
       "src": "/assets/optimized-images/countries/georgia.webp",
       "alt": "georgia"
     },
     {
-      "id": "2b8eeac7-3c55-434f-af24-5270a09a7930",
+      "id": "9b9c0c35-49e9-42c4-bdf2-fad6c4e097d7",
       "src": "/assets/optimized-images/countries/kosovo.webp",
       "alt": "kosovo"
     },
     {
-      "id": "5bebcff7-6267-42af-b776-0cee35ea91f0",
+      "id": "b26b5fcc-bfd1-4255-9010-3ee61a0ebfec",
       "src": "/assets/optimized-images/countries/moldova.webp",
       "alt": "moldova"
     },
     {
-      "id": "3ab5793a-ae87-418b-abb8-3ca42985082b",
+      "id": "b1f0edfb-2f13-46b1-972a-a90d1a2dd689",
       "src": "/assets/optimized-images/countries/morocco.webp",
       "alt": "morocco"
     },
     {
-      "id": "ac84c23d-539c-4bed-b4e3-c1c230f6e16f",
+      "id": "69d4360a-6c16-47da-aa30-d7327ffba8c0",
       "src": "/assets/optimized-images/countries/north-macedonia.webp",
       "alt": "north-macedonia"
     },
     {
-      "id": "78293723-aab5-455f-8d6b-3859bd12891d",
+      "id": "97e4aeeb-6864-4480-9271-710df2421d62",
       "src": "/assets/optimized-images/countries/romania.webp",
       "alt": "romania"
     },
     {
-      "id": "a8d7caa8-0c22-423d-b059-03d6223849bf",
+      "id": "356b4ad8-00d0-4f1b-b53e-9d75255f7079",
       "src": "/assets/optimized-images/countries/tunisia.webp",
       "alt": "tunisia"
     }
   ],
   "hero": [
     {
-      "id": "63d35cab-305e-41a9-a659-90a6107cc2b1",
+      "id": "2ae6612d-07dc-43c1-80ac-24d05d2e882e",
       "src": "/assets/optimized-images/hero/countries-banner.webp",
       "alt": "countries-banner"
     },
     {
-      "id": "8435bc9e-3ad1-42a2-8fd3-b56f80ea5cb9",
+      "id": "4c64a995-41d9-4712-95f6-4f5674f1a4d2",
       "src": "/assets/optimized-images/hero/global-recruiting-banner.webp",
       "alt": "global-recruiting-banner"
     }
   ],
   "home": [
     {
-      "id": "c8c01aef-0ec0-4a13-86e9-682efe022a8e",
+      "id": "e2d9223b-b34c-4a7c-ade1-9c6d18d97bac",
       "src": "/assets/optimized-images/home/banner.webp",
       "alt": "banner"
     }

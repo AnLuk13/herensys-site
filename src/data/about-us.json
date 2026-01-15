@@ -51,24 +51,24 @@
       "logo": "/assets/optimized-images/brands/ADS_logo.webp"
     },
     {
-      "name": "Emirates",
-      "logo": "/assets/images/brands/emirates.svg"
+      "name": "ACVIAN",
+      "logo": "/assets/optimized-images/brands/ACVIAN_logo.webp"
     },
     {
       "name": "Ritz Carlton",
-      "logo": "/assets/images/brands/ritz-carlton.svg"
+      "logo": "/assets/images/brands/ritz-carlton.webp"
     },
     {
       "name": "American Airlines",
-      "logo": "/assets/images/brands/american-airlines.svg"
+      "logo": "/assets/images/brands/american-airlines.webp"
     },
     {
       "name": "TAJ Hotels",
-      "logo": "/assets/images/brands/taj.svg"
+      "logo": "/assets/images/brands/taj.webp"
     },
     {
       "name": "Hilton",
-      "logo": "/assets/images/brands/hilton.svg"
+      "logo": "/assets/images/brands/hilton.webp"
     }
   ],
   "openingTheWorldSection": {
