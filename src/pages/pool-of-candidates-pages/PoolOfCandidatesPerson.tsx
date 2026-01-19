@@ -10,20 +10,26 @@ import type { Candidate } from '@/types/sections';
 import { use } from 'react';
 import { MoonLoader } from 'react-spinners';
 
-function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> }) {
+type PoolOfCandidatesPersonProps = {
+  params: Promise<{ id: string }>;
+  initialCandidate?: any;
+  initialAllCandidates?: any[];
+};
+
+function PoolOfCandidatesPerson({ params, initialCandidate, initialAllCandidates }: PoolOfCandidatesPersonProps) {
   const { id } = use(params);
 
   const {
     data: candidate,
     isLoading: candidateLoading,
     error: candidateError,
-  } = useApiQuery(`/candidates/${id}`, `/candidates/${id}`);
+  } = useApiQuery(`/candidates/${id}`, `/candidates/${id}`, initialCandidate);
 
   const {
     data: allCandidatesData,
     isLoading: allCandidatesLoading,
     error: allCandidatesError,
-  } = useApiQuery('/candidates', '/candidates');
+  } = useApiQuery('/candidates', '/candidates', initialAllCandidates);
 
   const similarCandidates = allCandidatesData?.filter((c: Candidate) => c.id !== id) || [];
 
@@ -97,7 +103,7 @@ function PoolOfCandidatesPerson({ params }: { params: Promise<{ id: string }> })
   };
 
   return (
-    <main>
+    <main id="main-content">
       <CandidateHeroSection data={candidate} />
       <CandidateDetailsSection data={candidate} />
       <SimilarRolesSection data={similarCandidates} />

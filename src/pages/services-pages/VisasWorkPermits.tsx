@@ -12,7 +12,7 @@ function VisasWorkPermits() {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...visasData.heroSection}
         imageSrc={heroImage!.src}

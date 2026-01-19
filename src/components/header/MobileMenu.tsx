@@ -62,15 +62,18 @@ function MobileMenu({
                 <>
                   <button
                     type="button"
-                    onClick={() => toggleDropdown(item.defaultValue!.label)}
+                    onClick={() => toggleDropdown(item.defaultValue!.label as string)}
                     className={styles.navigationLinks}
+                    aria-expanded={activeDropdown === item.defaultValue?.label}
+                    aria-haspopup="true"
+                    aria-label={`${item.defaultValue?.label} menu`}
                   >
                     {item.defaultValue?.label} ↓
                   </button>
                   {activeDropdown === item.defaultValue?.label && (
                     <DropdownMenu
                       items={item.options!.map((option: Option) => ({
-                        label: option.label,
+                        label: option.label as string,
                         path: option.value,
                       }))}
                       handleItemClick={handleItemClick}

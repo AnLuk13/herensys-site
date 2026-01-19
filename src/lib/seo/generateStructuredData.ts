@@ -9,7 +9,7 @@ export function generateStructuredData(baseUrl: string) {
         url: baseUrl,
         logo: {
           '@type': 'ImageObject',
-          url: `${baseUrl}/assets/images/meta-logo.jpg`, //replace with actual logo URL
+          url: `${baseUrl}/assets/images/meta-logo.jpg`, //TODO
         },
         sameAs: [
           'https://www.facebook.com/herensys',
@@ -58,15 +58,15 @@ export function generateStructuredData(baseUrl: string) {
           {
             '@type': 'ListItem',
             position: 4,
-            name: 'BPO',
+            name: 'BPO Services',
             item: `${baseUrl}/bpo`,
           },
-          {
-            '@type': 'ListItem',
-            position: 5,
-            name: 'HR Consulting',
-            item: `${baseUrl}/hr-consulting`,
-          },
+          // {
+          //   '@type': 'ListItem',
+          //   position: 5,
+          //   name: 'HR Consulting',
+          //   item: `${baseUrl}/hr-consulting`,
+          // },
           {
             '@type': 'ListItem',
             position: 6,

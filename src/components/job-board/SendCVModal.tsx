@@ -1,9 +1,10 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from '@/styles/jobs-board/sendCVModal.module.scss';
 import OfferButton from '../buttons/OfferButton';
 import PhoneInputField from '@/components/form/PhoneInputField';
+import phone from 'phone';
 
 interface SendCVModalProps {
   isOpen?: boolean;
@@ -21,7 +22,98 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
     cvFileBase64: '',
     agreeToTerms: false,
   });
+  const [errors, setErrors] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    cvFile: '',
+  });
   const [selectedCountry, setSelectedCountry] = useState('md');
+  const firstInputRef = useRef<HTMLInputElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const handleInputChange = (field: keyof typeof formData, value: any) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+    setErrors(prev => ({ ...prev, [field]: '' }));
+  };
+
+  const isPhoneValid = () => {
+    const result = phone(formData.phone, {
+      country: selectedCountry,
+      validateMobilePrefix: false,
+    });
+    return result.isValid;
+  };
+
+  const validateInputs = () => {
+    const newErrors = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phone: '',
+      cvFile: '',
+    };
+
+    if (formData.firstName.trim().length < 2) {
+      newErrors.firstName = 'First name is required';
+    }
+    if (formData.lastName.trim().length < 2) {
+      newErrors.lastName = 'Last name is required';
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Valid email is required';
+    }
+    if (!isPhoneValid()) {
+      newErrors.phone = 'Valid phone is required';
+    }
+    if (!formData.cvFile) {
+      newErrors.cvFile = 'CV file is required';
+    }
+
+    setErrors(newErrors);
+    return !Object.values(newErrors).some(error => error !== '');
+  };
+
+  // Focus first input when modal opens
+  useEffect(() => {
+    if (isOpen && firstInputRef.current) {
+      firstInputRef.current.focus();
+    }
+  }, [isOpen]);
+
+  // Trap focus within modal
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+
+      if (e.key === 'Tab') {
+        const modal = modalRef.current;
+        if (!modal) return;
+
+        const focusableElements = modal.querySelectorAll(
+          'button, input, textarea, select, a[href]',
+        );
+        const firstElement = focusableElements[0] as HTMLElement;
+        const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+        if (e.shiftKey && document.activeElement === firstElement) {
+          e.preventDefault();
+          lastElement?.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+          e.preventDefault();
+          firstElement?.focus();
+        }
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
 
   if (!isOpen) return null;
 
@@ -36,11 +128,16 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const { agreeToTerms, cvFile, ...newFormData } = formData;
-    if (!agreeToTerms) {
-      alert('You must agree to the terms and conditions.');
+
+    if (!validateInputs()) {
       return;
     }
+
+    if (!formData.agreeToTerms) {
+      return;
+    }
+
+    const { agreeToTerms, cvFile, ...newFormData } = formData;
     try {
       await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact/send-cv`, {
         method: 'POST',
@@ -74,7 +171,7 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
       try {
         const base64 = await convertFileToBase64(file);
         setFormData({ ...formData, cvFile: file, cvFileBase64: base64 });
-        // console.log(file.type);
+        setErrors(prev => ({ ...prev, cvFile: '' }));
       } catch (error) {
         console.error('Error converting file to base64:', error);
       }
@@ -82,15 +179,45 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
   };
 
   return (
-    <div className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-        <button className={styles.closeButton} onClick={onClose} aria-label="Close modal">
+    <div
+      className={styles.modalOverlay}
+      onClick={() => {
+        onClose();
+        setErrors({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phone: '',
+          cvFile: '',
+        });
+      }}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div className={styles.modalContent} onClick={e => e.stopPropagation()} ref={modalRef}>
+        <button
+          className={styles.closeButton}
+          onClick={() => {
+            onClose();
+            setErrors({
+              firstName: '',
+              lastName: '',
+              email: '',
+              phone: '',
+              cvFile: '',
+            });
+          }}
+          aria-label="Close modal"
+        >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M18 6L6 18M6 6l12 12" strokeWidth="2" strokeLinecap="round" />
           </svg>
         </button>
 
-        <h2 className={styles.modalTitle}>Send CV for {jobTitle} position</h2>
+        <h2 className={styles.modalTitle} id="modal-title">
+          Send CV for {jobTitle} position
+        </h2>
 
         <form
           //  onSubmit={handleSubmit}
@@ -104,12 +231,13 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
               <input
                 type="text"
                 id="firstName"
+                ref={firstInputRef}
                 value={formData.firstName}
-                onChange={e => setFormData({ ...formData, firstName: e.target.value })}
+                onChange={e => handleInputChange('firstName', e.target.value)}
                 placeholder="Julia"
-                className={styles.input}
-                required
+                className={`${styles.input} ${errors.firstName ? styles.inputError : ''}`}
               />
+              {errors.firstName && <span className={styles.errorText}>{errors.firstName}</span>}
             </div>
 
             <div className={styles.formGroup}>
@@ -120,11 +248,11 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
                 type="text"
                 id="lastName"
                 value={formData.lastName}
-                onChange={e => setFormData({ ...formData, lastName: e.target.value })}
+                onChange={e => handleInputChange('lastName', e.target.value)}
                 placeholder="William"
-                className={styles.input}
-                required
+                className={`${styles.input} ${errors.lastName ? styles.inputError : ''}`}
               />
+              {errors.lastName && <span className={styles.errorText}>{errors.lastName}</span>}
             </div>
           </div>
 
@@ -137,11 +265,11 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
                 type="email"
                 id="email"
                 value={formData.email}
-                onChange={e => setFormData({ ...formData, email: e.target.value })}
+                onChange={e => handleInputChange('email', e.target.value)}
                 placeholder="julia@gmail.com"
-                className={styles.input}
-                required
+                className={`${styles.input} ${errors.email ? styles.inputError : ''}`}
               />
+              {errors.email && <span className={styles.errorText}>{errors.email}</span>}
             </div>
 
             <div className={styles.formGroup}>
@@ -152,16 +280,20 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
                 value={formData.phone}
                 selectedCountry={selectedCountry}
                 onChange={(value: string, country: any) => {
-                  setFormData({ ...formData, phone: value });
+                  handleInputChange('phone', value);
                   if (country) setSelectedCountry(country.countryCode);
                 }}
+                hasError={!!errors.phone}
+                id="phone"
+                name="phone"
               />
+              {errors.phone && <span className={styles.errorText}>{errors.phone}</span>}
             </div>
           </div>
 
           <div className={styles.formGroup}>
             <label htmlFor="cvFile" className={styles.fileInputWrapper}>
-              <div className={styles.fileInput}>
+              <div className={`${styles.fileInput} ${errors.cvFile ? styles.inputError : ''}`}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path
                     d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"
@@ -182,6 +314,7 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
                 className={styles.hiddenFileInput}
               />
             </label>
+            {errors.cvFile && <span className={styles.errorText}>{errors.cvFile}</span>}
           </div>
 
           <div className={styles.checkboxGroup}>
@@ -189,9 +322,8 @@ export default function SendCVModal({ isOpen, onClose, jobTitle }: SendCVModalPr
               <input
                 type="checkbox"
                 checked={formData.agreeToTerms}
-                onChange={e => setFormData({ ...formData, agreeToTerms: e.target.checked })}
+                onChange={e => handleInputChange('agreeToTerms', e.target.checked)}
                 className={styles.checkbox}
-                required
               />
               <span className={styles.checkboxText}>
                 I confirm that I have read and understood the{' '}

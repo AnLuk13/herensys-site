@@ -70,9 +70,12 @@ function ContactForm() {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    if (!validateInputs()) return;
+    
+    if (!validateInputs()) {
+      return;
+    }
+    
     if (!formData.agreeToTerms) {
-      alert('You must agree to the data protection policy.');
       return;
     }
 
@@ -171,6 +174,9 @@ function ContactForm() {
                     handleInputChange('phone', value);
                     if (country) setSelectedCountry(country.countryCode);
                   }}
+                  hasError={!!errors.phone}
+                  id="phone"
+                  name="phone"
                 />
                 {errors.phone && <span className={styles.errorText}>{errors.phone}</span>}
               </div>

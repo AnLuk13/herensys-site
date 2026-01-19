@@ -8,10 +8,11 @@ type FirestoreSectionProps = {
   route: string;
   Component: React.FC<{ data: any; [key: string]: any }>;
   additionalProps?: Record<string, any>;
+  initialData?: any;
 };
 
-function FirestoreSection({ route, Component, additionalProps = {} }: FirestoreSectionProps) {
-  const { data, isLoading, error } = useApiQuery(route, `${route}`);
+function FirestoreSection({ route, Component, additionalProps = {}, initialData }: FirestoreSectionProps) {
+  const { data, isLoading, error } = useApiQuery(route, `${route}`, initialData);
 
   if (isLoading) {
     return (

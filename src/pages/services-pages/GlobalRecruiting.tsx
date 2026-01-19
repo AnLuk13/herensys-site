@@ -12,7 +12,7 @@ function GlobalRecruiting() {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection {...globalRecruitingData.heroSection} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
       <HowItWorksSection {...globalRecruitingData.howItWorksSection} />
       <ImageContentSection

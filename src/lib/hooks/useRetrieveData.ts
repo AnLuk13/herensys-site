@@ -47,10 +47,11 @@ export const fetchApiData = async (endpoint: string) => {
 //   return docSnap.data();
 // };
 
-export function useApiQuery(endpoint: string, queryKey: string) {
+export function useApiQuery(endpoint: string, queryKey: string, initialData?: any) {
   return useQuery({
     queryKey: [queryKey],
     queryFn: () => fetchApiData(endpoint),
+    initialData,
     staleTime: Infinity,
     gcTime: 30 * 60 * 1000,
     retry: 2,

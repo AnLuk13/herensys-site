@@ -120,8 +120,11 @@ function JobListingSection({ data }: JobListingSectionProps) {
                   placeholder="Search Positions"
                   value={searchQuery}
                   onChange={e => setSearchQuery(e.target.value)}
+                  aria-label="Job search query"
                 />
-                <button className={styles.searchButton}>Search</button>
+                <button className={styles.searchButton} type="button" aria-label="Search jobs">
+                  Search
+                </button>
               </div>
             </div>
           </div>
@@ -131,133 +134,136 @@ function JobListingSection({ data }: JobListingSectionProps) {
             activeFilter={selectedCategory}
             onFilterChange={setSelectedCategory}
           />
-
           <div className={styles.jobList}>
-            {filteredJobs?.map(job => (
-              <Accordion
-                key={job.id}
-                expanded={expanded === job.id}
-                onChange={handleChange(job.id)}
-                disableGutters
-                elevation={0}
-                className={styles.jobCard}
-                sx={{
-                  '&:before': { display: 'none' },
-                  backgroundColor: 'transparent',
-                  border: '1px solid #e0e0e0',
-                  borderRadius: '8px',
-                  marginBottom: '1rem',
-                  '&.Mui-expanded': {
-                    margin: '0 0 1rem 0',
-                  },
-                }}
-              >
-                <AccordionSummary
-                  expandIcon={null}
-                  className={styles.jobHeader}
+            {filteredJobs && filteredJobs?.length > 0 ? (
+              filteredJobs?.map(job => (
+                <Accordion
+                  key={job.id}
+                  expanded={expanded === job.id}
+                  onChange={handleChange(job.id)}
+                  disableGutters
+                  elevation={0}
+                  className={styles.jobCard}
                   sx={{
-                    padding: '1.5rem',
-                    minHeight: 'auto',
-                    '& .MuiAccordionSummary-content': {
-                      margin: 0,
-                      width: '100%',
-                    },
+                    '&:before': { display: 'none' },
+                    backgroundColor: 'transparent',
+                    border: '1px solid #e0e0e0',
+                    borderRadius: '8px',
+                    marginBottom: '1rem',
                     '&.Mui-expanded': {
-                      minHeight: 'auto',
+                      margin: '0 0 1rem 0',
                     },
                   }}
                 >
-                  <div className={styles.jobHeaderContent}>
-                    <h3 className={styles.jobTitle}>{job.title}</h3>
-                    <div className={styles.jobShortInfo}>
-                      <div className={styles.jobMeta}>
-                        <div className={styles.metaItem}>
-                          <span className={styles.metaLabel}>Salary</span>
-                          <span className={styles.metaValue}>{job.salary}</span>
+                  <AccordionSummary
+                    expandIcon={null}
+                    className={styles.jobHeader}
+                    sx={{
+                      padding: '1.5rem',
+                      minHeight: 'auto',
+                      '& .MuiAccordionSummary-content': {
+                        margin: 0,
+                        width: '100%',
+                      },
+                      '&.Mui-expanded': {
+                        minHeight: 'auto',
+                      },
+                    }}
+                  >
+                    <div className={styles.jobHeaderContent}>
+                      <h3 className={styles.jobTitle}>{job.title}</h3>
+                      <div className={styles.jobShortInfo}>
+                        <div className={styles.jobMeta}>
+                          <div className={styles.metaItem}>
+                            <span className={styles.metaLabel}>Salary</span>
+                            <span className={styles.metaValue}>{job.salary}</span>
+                          </div>
+                          <div className={styles.metaItem}>
+                            <span className={styles.metaLabel}>Job Type</span>
+                            <span className={styles.metaValue}>{job.jobType}</span>
+                          </div>
+                          <div className={styles.metaItem}>
+                            <span className={styles.metaLabel}>Location</span>
+                            <span className={styles.metaValue}>{job.location}</span>
+                          </div>
+                          <div className={styles.metaItem}>
+                            <span className={styles.metaLabel}>Headquarter</span>
+                            <span className={styles.metaValue}>{job.headquarter}</span>
+                          </div>
                         </div>
-                        <div className={styles.metaItem}>
-                          <span className={styles.metaLabel}>Job Type</span>
-                          <span className={styles.metaValue}>{job.jobType}</span>
-                        </div>
-                        <div className={styles.metaItem}>
-                          <span className={styles.metaLabel}>Location</span>
-                          <span className={styles.metaValue}>{job.location}</span>
-                        </div>
-                        <div className={styles.metaItem}>
-                          <span className={styles.metaLabel}>Headquarter</span>
-                          <span className={styles.metaValue}>{job.headquarter}</span>
+                        <div className={styles.jobActions}>
+                          <div
+                            className={styles.applyButton}
+                            onClick={e => {
+                              e.stopPropagation();
+                              setSelectedJobTitle(job.title);
+                              setIsModalOpen(true);
+                            }}
+                          >
+                            Apply
+                          </div>
+                          <div
+                            className={styles.accordionButton}
+                            onClick={e => {
+                              e.stopPropagation();
+                              handleChange(job.id)(e, expanded !== job.id);
+                            }}
+                          >
+                            {expanded === job.id ? 'Less Info' : 'More Info'}
+                          </div>
                         </div>
                       </div>
-                      <div className={styles.jobActions}>
-                        <div
-                          className={styles.applyButton}
-                          onClick={e => {
-                            e.stopPropagation();
-                            setSelectedJobTitle(job.title);
-                            setIsModalOpen(true);
-                          }}
-                        >
-                          Apply
-                        </div>
-                        <div
-                          className={styles.accordionButton}
-                          onClick={e => {
-                            e.stopPropagation();
-                            handleChange(job.id)(e, expanded !== job.id);
-                          }}
-                        >
-                          {expanded === job.id ? 'Less Info' : 'More Info'}
-                        </div>
+                    </div>
+                  </AccordionSummary>
+
+                  <AccordionDetails className={styles.jobDetails}>
+                    <div className={styles.detailsContent}>
+                      <div className={styles.detailSection}>
+                        <h4 className={styles.detailTitle}>Your duties</h4>
+                        <p className={styles.detailSubtitle}>
+                          As a Senior Solutions Consultant, you will be responsible for:
+                        </p>
+                        <ul className={styles.detailList}>
+                          {job.duties.map((duty, index) => (
+                            <li key={index}>{duty}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className={styles.detailSection}>
+                        <h4 className={styles.detailTitle}>Requirements</h4>
+                        <ul className={styles.detailList}>
+                          {job.requirements.map((req, index) => (
+                            <li key={index}>{req}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className={styles.detailSection}>
+                        <h4 className={styles.detailTitle}>Nice to have</h4>
+                        <ul className={styles.detailList}>
+                          {job.niceToHave.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div
+                        className={styles.accordionButton}
+                        onClick={e => {
+                          e.stopPropagation();
+                          setExpanded(false);
+                        }}
+                      >
+                        Less Info
                       </div>
                     </div>
-                  </div>
-                </AccordionSummary>
-
-                <AccordionDetails className={styles.jobDetails}>
-                  <div className={styles.detailsContent}>
-                    <div className={styles.detailSection}>
-                      <h4 className={styles.detailTitle}>Your duties</h4>
-                      <p className={styles.detailSubtitle}>
-                        As a Senior Solutions Consultant, you will be responsible for:
-                      </p>
-                      <ul className={styles.detailList}>
-                        {job.duties.map((duty, index) => (
-                          <li key={index}>{duty}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className={styles.detailSection}>
-                      <h4 className={styles.detailTitle}>Requirements</h4>
-                      <ul className={styles.detailList}>
-                        {job.requirements.map((req, index) => (
-                          <li key={index}>{req}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className={styles.detailSection}>
-                      <h4 className={styles.detailTitle}>Nice to have</h4>
-                      <ul className={styles.detailList}>
-                        {job.niceToHave.map((item, index) => (
-                          <li key={index}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div
-                      className={styles.accordionButton}
-                      onClick={e => {
-                        e.stopPropagation();
-                        setExpanded(false);
-                      }}
-                    >
-                      Less Info
-                    </div>
-                  </div>
-                </AccordionDetails>
-              </Accordion>
-            ))}
+                  </AccordionDetails>
+                </Accordion>
+              ))
+            ) : (
+              <p className={styles.noJobsMessage}>No job listings found.</p>
+            )}
           </div>
         </div>
       </div>

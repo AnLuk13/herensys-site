@@ -138,6 +138,14 @@
   }
 }
 
+.noJobsMessage {
+  font-family: var(--font-family);
+  font-size: 22px;
+  color: var(--black, #000);
+  text-align: center;
+  font-weight: 600;
+}
+
 .jobShortInfo {
   display: flex;
   justify-content: space-between;

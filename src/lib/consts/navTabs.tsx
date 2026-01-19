@@ -38,15 +38,15 @@ export const navTabs = [
           />,
         ),
       },
-      {
-        value: '/hr-consulting',
-        label: renderToStaticMarkup(
-          <DropdownSelect
-            title="HR Consulting"
-            description="Tap into HR services across the employment lifespan."
-          />,
-        ),
-      },
+      // {
+      //   value: '/hr-consulting',
+      //   label: renderToStaticMarkup(
+      //     <DropdownSelect
+      //       title="HR Consulting"
+      //       description="Tap into HR services across the employment lifespan."
+      //     />,
+      //   ),
+      // },
       {
         value: '/global-payroll',
         label: renderToStaticMarkup(
@@ -153,15 +153,15 @@ export const mobileNavTabs = [
           />,
         ),
       },
-      {
-        value: '/hr-consulting',
-        label: renderToStaticMarkup(
-          <DropdownSelect
-            title="HR Consulting"
-            description="Tap into HR services across the employment lifespan."
-          />,
-        ),
-      },
+      // {
+      //   value: '/hr-consulting',
+      //   label: renderToStaticMarkup(
+      //     <DropdownSelect
+      //       title="HR Consulting"
+      //       description="Tap into HR services across the employment lifespan."
+      //     />,
+      //   ),
+      // },
       {
         value: '/global-payroll',
         label: renderToStaticMarkup(

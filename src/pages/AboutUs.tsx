@@ -20,7 +20,7 @@ function AboutUs() {
   };
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection {...aboutUsData.heroSection} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
       <ImageContentSection
         {...aboutUsData.openingTheWorldSection}

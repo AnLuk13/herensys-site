@@ -10,6 +10,7 @@
   height: 48px;
   box-sizing: border-box;
   background: var(--accent);
+  transition: all 0.3s ease;
 
   div {
     background: var(--primary);
@@ -30,6 +31,10 @@
     .secondbar:nth-child(2) {
       transform: rotate(-45deg) translateX(0.5px) translateY(-0.4px);
     }
+  }
+
+  &:hover {
+    background: var(--accent-secondary);
   }
 }
 

@@ -12,7 +12,7 @@ function GlobalPayroll() {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...globalPayrollData.heroSection}
         imageSrc={heroImage!.src}

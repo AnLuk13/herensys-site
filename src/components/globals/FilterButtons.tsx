@@ -15,12 +15,14 @@ interface FilterButtonsProps {
 
 function FilterButtons({ filters, activeFilter, onFilterChange }: FilterButtonsProps) {
   return (
-    <div className={styles.filterButtons}>
+    <div className={styles.filterButtons} role="group" aria-label="Filter options">
       {filters.map(filter => (
         <button
           key={filter.value}
           className={`${styles.filterButton} ${activeFilter === filter.value ? styles.active : ''}`}
           onClick={() => onFilterChange(filter.value)}
+          aria-pressed={activeFilter === filter.value}
+          type="button"
         >
           {filter.label}
         </button>

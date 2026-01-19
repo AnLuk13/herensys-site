@@ -7,7 +7,7 @@ function PrivacyPolicy() {
   const heroImage = manifest.home.find(image => image.alt === 'banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...privacyPolicyData.heroSection}
         imageSrc={heroImage!.src}

@@ -19,7 +19,7 @@ function EmployerOfRecord() {
   };
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...eorData.heroSection}
         imageSrc={heroImage!.src}

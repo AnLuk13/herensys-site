@@ -6,10 +6,10 @@ import CTASection from '@/components/CTASection';
 import poolData from '@/data/pool-of-candidates.json';
 import eorData from '@/data/employer-of-record.json';
 
-function PoolOfCandidates() {
+function PoolOfCandidates({ initialCandidates }: { initialCandidates?: any[] }) {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...poolData.heroSection}
         imageSrc={heroImage!.src}
@@ -19,6 +19,7 @@ function PoolOfCandidates() {
         route="/candidates"
         Component={PoolOfCandidatesSection}
         additionalProps={{ background: 'var(--white)' }}
+        initialData={initialCandidates}
       />
       <CTASection {...eorData.ctaSection} displayGlobe />
     </main>

@@ -5,11 +5,11 @@ import BlogListSection from '@/components/blog/BlogListSection';
 import AllBlogPostsSection from '@/components/blog/AllBlogPostsSection';
 import blogData from '@/data/blog.json';
 
-function Blog() {
+function Blog({ initialBlogs }: { initialBlogs?: any[] }) {
   const heroImage = manifest.home.find(image => image.alt === 'banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...blogData.heroSection}
         imageSrc={heroImage!.src}
@@ -19,8 +19,9 @@ function Blog() {
         route="/blogs"
         Component={BlogListSection}
         additionalProps={{ background: 'var(--white)' }}
+        initialData={initialBlogs}
       />
-      <FirestoreSection route="/blogs" Component={AllBlogPostsSection} />
+      <FirestoreSection route="/blogs" Component={AllBlogPostsSection} initialData={initialBlogs} />
     </main>
   );
 }

@@ -12,7 +12,7 @@ function BPOServices() {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection {...bpoData.heroSection} imageSrc={heroImage!.src} imageAlt="Services hero banner" />
       <HowItWorksSection {...bpoData.howItWorksSection} />
       <ImageContentSection

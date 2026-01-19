@@ -204,3 +204,12 @@
   font-size: 16px;
   font-family: var(--font-family);
 }
+
+/* Phone input error state */
+.phone-input-error .form-control {
+  border-color: #e74c3c !important;
+}
+
+.phone-input-error .flag-dropdown {
+  border-color: #e74c3c !important;
+}

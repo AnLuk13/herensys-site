@@ -13,7 +13,7 @@ function Countries({ params }: { params?: Promise<{ region: string }> }) {
   const region = params ? use(params).region : undefined;
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection
         {...countriesData.heroSection}
         showArrow={false}

@@ -22,7 +22,7 @@ function Home() {
   };
 
   return (
-    <main>
+    <main id="main-content">
       <HeroSection imageSrc={heroImage!.src} imageAlt="Hero banner" {...homeData.heroSection} />
       <MountainDetails />
       <WhatWeDoSection />

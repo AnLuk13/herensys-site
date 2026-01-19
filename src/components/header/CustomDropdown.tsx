@@ -20,8 +20,8 @@ function CustomDropdown({ options, defaultValue, isCountry = false }: CustomDrop
     if (React.isValidElement(option.label)) {
       return option.label;
     }
-    // Check if label contains HTML tags
-    if (option.label && option.label.includes('<')) {
+    // Check if label is a string containing HTML tags
+    if (typeof option.label === 'string' && option.label.includes('<')) {
       return (
         <div
           style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
@@ -34,11 +34,13 @@ function CustomDropdown({ options, defaultValue, isCountry = false }: CustomDrop
 
   return (
     <Select
+      aria-label="Navigate to section"
       options={options}
       styles={customDropdownStyles(isCountry)}
       value={defaultValue}
-      defaultValue={defaultValue}
+      // defaultValue={defaultValue}
       onChange={selected => {
+        if (!selected) return;
         router.push(`${process.env.NEXT_PUBLIC_BASE_APP_URL}/${selected?.value}`);
       }}
       formatOptionLabel={formatOptionLabel}

@@ -46,6 +46,9 @@ export const metadata: Metadata = {
     'compliance',
     'Herensys',
   ],
+  authors: [{ name: 'Herensys', url: baseUrl }],
+  creator: 'Herensys',
+  publisher: 'Herensys',
   alternates: {
     canonical: baseUrl,
   },
@@ -62,14 +65,33 @@ export const metadata: Metadata = {
         url: '/assets/images/meta-logo.jpg', //TODO
         width: 1200,
         height: 630,
-        alt: 'Herensys',
+        alt: 'Herensys - Global Employer of Record & Recruitment Services',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Herensys - Global Employer of Record & Recruitment Services',
+    description:
+      'Expand your business globally with Herensys. We provide EOR, BPO, recruitment, and HR consulting services across Eastern Europe, Balkans, and North Africa.',
+    images: ['/assets/images/meta-logo.jpg'], //TODO
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
+  icons: {
+    icon: '/favicon.ico', //TODO
+    apple: '/apple-touch-icon.png', //TODO
+  },
+  manifest: '/site.webmanifest',
   other: { structuredData: JSON.stringify(structuredData) },
 };
 

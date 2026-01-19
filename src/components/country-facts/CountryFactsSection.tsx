@@ -143,13 +143,14 @@ function CountryFactsSection({ mainTitle, sections, background }: CountryFactsSe
         <div className={styles.contentLayout}>
           <aside className={styles.tableOfContents}>
             <h3 className={styles.tocTitle}>{mainTitle}</h3>
-            <nav className={styles.tocNav}>
+            <nav className={styles.tocNav} aria-label="Table of contents">
               {sections.map(section => (
                 <a
                   key={section.id}
                   href={`#${section.id}`}
                   className={`${styles.tocItem} ${activeSection === section.id ? styles.active : ''}`}
                   onClick={e => handleTocClick(e, section.id)}
+                  aria-current={activeSection === section.id ? 'location' : undefined}
                 >
                   {section.title}
                 </a>

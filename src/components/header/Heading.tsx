@@ -22,15 +22,19 @@ function Heading() {
   };
 
   return (
-    <header className={styles.header}>
-      <MobileMenuWrapper
-        navTabs={mobileNavTabs}
-        isMobileNav={isMobileNav}
-        activeDropdown={activeDropdown}
-        setActiveDropdown={setActiveDropdown}
-        handleItemClick={handleItemClick}
-      />
-      <nav className={styles.navigationSection}>
+    <>
+      <a href="#main-content" className={styles.skipLink}>
+        Skip to main content
+      </a>
+      <header className={styles.header}>
+        <MobileMenuWrapper
+          navTabs={mobileNavTabs}
+          isMobileNav={isMobileNav}
+          activeDropdown={activeDropdown}
+          setActiveDropdown={setActiveDropdown}
+          handleItemClick={handleItemClick}
+        />
+        <nav className={styles.navigationSection}>
         <Link
           href="/"
           style={{ cursor: 'pointer', alignSelf: isLargeScreen ? 'start' : 'center' }}
@@ -62,6 +66,7 @@ function Heading() {
         />
       </nav>
     </header>
+    </>
   );
 }
 

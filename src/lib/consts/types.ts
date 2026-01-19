@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type NavTab = {
   type: 'link' | 'dropdown' | string;
   label: string;
@@ -9,5 +11,5 @@ export type NavTab = {
 
 export type Option = {
   value: string;
-  label: string;
+  label: string | React.ReactNode;
 };

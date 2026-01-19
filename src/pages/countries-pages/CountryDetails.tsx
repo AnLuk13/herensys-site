@@ -57,7 +57,7 @@ function CountryDetails({ params }: { params: Promise<{ region: string; id: stri
   };
 
   return (
-    <main>
+    <main id="main-content">
       <CountryHeroSection
         title={`${countryData.name} at a Glance`}
         description={`Here's where you get started with human resources best practices and hiring in ${countryData.name}.`}

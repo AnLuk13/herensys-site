@@ -9,20 +9,26 @@ import { use } from 'react';
 import { MoonLoader } from 'react-spinners';
 import eorData from '@/data/employer-of-record.json';
 
-function BlogPost({ params }: { params: Promise<{ id: string }> }) {
+type BlogPostProps = {
+  params: Promise<{ id: string }>;
+  initialBlog?: any;
+  initialLatestPosts?: any[];
+};
+
+function BlogPost({ params, initialBlog, initialLatestPosts }: BlogPostProps) {
   const { id } = use(params);
 
   const {
     data: blogData,
     isLoading: blogLoading,
     error: blogError,
-  } = useApiQuery(`/blogs/${id}`, `/blogs/${id}`);
+  } = useApiQuery(`/blogs/${id}`, `/blogs/${id}`, initialBlog);
 
   const {
     data: latestPostsData,
     isLoading: latestLoading,
     error: latestError,
-  } = useApiQuery('/blogs/latest', '/blogs/latest');
+  } = useApiQuery('/blogs/latest', '/blogs/latest', initialLatestPosts);
 
   const isLoading = blogLoading || latestLoading;
   const error = blogError || latestError;
@@ -87,7 +93,7 @@ function BlogPost({ params }: { params: Promise<{ id: string }> }) {
   }
 
   return (
-    <main>
+    <main id="main-content">
       <BlogHeroSection
         {...blogData}
         descriptions={[blogData.description]}

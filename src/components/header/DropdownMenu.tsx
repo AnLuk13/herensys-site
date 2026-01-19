@@ -12,8 +12,8 @@ function DropdownMenu({ items, handleItemClick }: DropdownMenuProps) {
   return (
     <ul className={styles.dropdownMenu}>
       {items.map(subItem => (
-        <li key={subItem.path} onClick={handleItemClick} className={styles.dropdownMenuItem}>
-          <Link href={subItem.path} className={styles.navigationLinks}>
+        <li key={subItem.path} className={styles.dropdownMenuItem}>
+          <Link href={subItem.path} className={styles.navigationLinks} onClick={handleItemClick}>
             <div dangerouslySetInnerHTML={{ __html: subItem.label }} />
           </Link>
         </li>

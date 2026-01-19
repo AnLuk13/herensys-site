@@ -262,3 +262,15 @@
   justify-content: center;
   font-size: 18px;
 }
+
+.inputError {
+  border-color: #e74c3c !important;
+}
+
+.errorText {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  font-family: var(--font-family);
+}
