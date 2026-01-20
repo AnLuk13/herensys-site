@@ -9,6 +9,11 @@ import pluginReactHooks from 'eslint-plugin-react-hooks';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import pluginImport from 'eslint-plugin-import';
 import next from '@next/eslint-plugin-next';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default [
   {
@@ -47,7 +52,7 @@ export default [
       },
       parserOptions: {
         ecmaFeatures: { jsx: true },
-        tsconfigRootDir: '.',
+        tsconfigRootDir: __dirname,
       },
     },
     plugins: {
@@ -116,7 +121,6 @@ export default [
       '@typescript-eslint/no-require-imports': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
-      '@typescript-eslint/noImplicitAny': 'warn',
 
       // Import rules
       'import/no-unresolved': 'off',

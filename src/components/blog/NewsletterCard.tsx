@@ -7,21 +7,51 @@ import OfferButton from '@/components/buttons/OfferButton';
 
 function NewsletterCard() {
   const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
+  const [subscribedMessage, setSubscribedMessage] = useState('');
+  const [messageType, setMessageType] = useState<'success' | 'error'>('success');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim()) {
+      setSubscribedMessage('Email is required');
+      setMessageType('error');
+      setTimeout(() => setSubscribedMessage(''), 5000);
+      return;
+    }
+    if (!emailRegex.test(email)) {
+      setSubscribedMessage('Please enter a valid email address');
+      setMessageType('error');
+      setTimeout(() => setSubscribedMessage(''), 5000);
+      return;
+    }
+
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/newsletter/subscribe`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/newsletter/subscribe`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
       });
+      if (!response.ok) {
+        setSubscribedMessage('Subscription failed. Please try again.');
+        setMessageType('error');
+        return;
+      }
+      if (response.status === 200) {
+        setSubscribedMessage('You are already subscribed.');
+        setMessageType('success');
+        return;
+      }
       setEmail('');
-      setIsSubscribed(true);
-      setTimeout(() => setIsSubscribed(false), 5000); // Hide message after 5 seconds
+      setSubscribedMessage('Subscribed successfully!');
+      setMessageType('success');
     } catch (error) {
       console.error('Newsletter subscription error:', error);
+      setSubscribedMessage('Subscription failed. Please try again.');
+      setMessageType('error');
+    } finally {
+      setTimeout(() => setSubscribedMessage(''), 5000); // Hide message after 5 seconds
     }
   };
 
@@ -63,7 +93,13 @@ function NewsletterCard() {
             </a>
             .
           </p>
-          {isSubscribed && <p className={styles.successMessage}>Subscribed successfully!</p>}
+          {subscribedMessage && (
+            <p
+              className={`${styles.successMessage} ${messageType === 'error' ? styles.errorMessage : ''}`}
+            >
+              {subscribedMessage}
+            </p>
+          )}
           <OfferButton
             text="Subscribe"
             customClass={styles.subscriptionButton}

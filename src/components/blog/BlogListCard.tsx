@@ -30,7 +30,6 @@ function BlogListCard({
 }: BlogListCardProps) {
   const truncateWords = (text: string, textLimit: number) => {
     const textLength = text.length;
-    console.log(textLength);
     if (textLength <= textLimit) return text;
     return text.slice(0, textLimit) + '...';
   };
@@ -50,6 +49,7 @@ function BlogListCard({
           fill
           className={styles.blogImage}
           style={{ objectFit: 'cover' }}
+          quality={80}
         />
         {/* <div className={styles.imageOverlay}>
           <h3 className={styles.imageTitle}>{truncatedTitle}</h3>

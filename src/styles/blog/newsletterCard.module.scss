@@ -134,6 +134,11 @@
   font-weight: 500;
 }
 
+.errorMessage {
+  color: #e74c3c;
+  background: #fee;
+}
+
 @media (max-width: 860px) {
   .newsletterCard {
     padding: 28px 20px;
