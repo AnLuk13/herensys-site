@@ -80,6 +80,30 @@ pnpm run generate-optimized-manifest
 pnpm build
 ```
 
+## Running Locally in Production Mode
+
+To test the app locally with SSR, ISR, and API routes exactly as in production:
+
+```bash
+pnpm run generate-optimized-manifest
+pnpm build
+pnpm start
+```
+
+The app will be available at: `http://localhost:3000`
+
+**Note:** ISR behavior is only accurate in production mode (`pnpm start`), not in `pnpm dev`.
+
+## Deployment
+
+> ⚠️ **Important**
+>
+> This application **cannot be deployed as a static site**.
+> Do **not** attempt to serve the `.next/` folder directly with Nginx or Apache.
+>
+> The `.next` directory is **internal build output** consumed by the Next.js Node.js server.
+> You must run `pnpm start` (or `next start`) to serve the application.
+
 **Deploy to Vercel** (recommended):
 
 - Connect repository to Vercel
@@ -97,7 +121,7 @@ pnpm build
 
 2. **Upload these files/folders to your server:**
    - `.next/` - Build output (required)
-   - `node_modules/` - Dependencies (or run `pnpm install --prod` on server)
+   - `node_modules/` - Dependencies (recommended: run `pnpm install --prod` on the server instead of uploading)
    - `package.json` - Package configuration
    - `next.config.mjs` - Next.js configuration
    - `public/` - Static assets
@@ -135,6 +159,7 @@ pnpm build
    ```
 
 6. **Configure reverse proxy** (Nginx example):
+
    ```nginx
    server {
        listen 80;
