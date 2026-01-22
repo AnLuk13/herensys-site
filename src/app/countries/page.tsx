@@ -1,5 +1,5 @@
-import Countries from '@/pages/countries-pages/Countries';
-import { Metadata } from 'next';
+import Countries from '@/page-components/countries-pages/Countries';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Countries',

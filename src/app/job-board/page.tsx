@@ -1,9 +1,10 @@
-import JobBoard from '@/pages/JobBoard';
-import { Metadata } from 'next';
+import JobBoard from '@/page-components/JobBoard';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Job Board',
-  description: 'Explore career opportunities at Herensys. Join our global team and work on exciting projects with international clients.',
+  description:
+    'Explore career opportunities at Herensys. Join our global team and work on exciting projects with international clients.',
   alternates: {
     canonical: '/job-board',
   },

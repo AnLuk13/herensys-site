@@ -7,7 +7,6 @@ import CountryHeroSection from '@/components/hero/CountryHeroSection';
 import RecentBlogPostsSection from '@/components/recent-blog-posts/RecentBlogPostsSection';
 import CTASection from '@/components/CTASection';
 import FAQSection from '@/components/FAQSection';
-import manifest from '@/lib/assets-manifest.json';
 import { use } from 'react';
 import FirestoreSection from '@/components/wrapper/FireStoreSection';
 import balkansData from '@/data/balkans.json';
@@ -15,7 +14,6 @@ import easternEuropeData from '@/data/eastern-europe.json';
 import northAfricaData from '@/data/north-africa.json';
 import countriesData from '@/data/countries.json';
 import globalRecruitingData from '@/data/global-recruiting.json';
-import eorData from '@/data/employer-of-record.json';
 import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function CountryDetails({ params }: { params: Promise<{ region: string; id: string }> }) {

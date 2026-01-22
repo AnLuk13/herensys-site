@@ -1,5 +1,5 @@
-import BPOServices from '@/pages/services-pages/BPOServices';
-import { Metadata } from 'next';
+import BPOServices from '@/page-components/services-pages/BPOServices';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'BPO Services',

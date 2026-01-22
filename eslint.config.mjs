@@ -115,7 +115,7 @@ export default [
       // TypeScript specific rules
       '@typescript-eslint/no-use-before-define': ['warn'],
       '@typescript-eslint/no-shadow': ['error'],
-      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-duplicate-enum-values': 'warn',
       '@typescript-eslint/no-var-requires': 'off',
       '@typescript-eslint/no-require-imports': 'off',

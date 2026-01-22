@@ -1,5 +1,5 @@
-import PoolOfCandidatesPerson from '@/pages/pool-of-candidates-pages/PoolOfCandidatesPerson';
-import { Metadata } from 'next';
+import PoolOfCandidatesPerson from '@/page-components/pool-of-candidates-pages/PoolOfCandidatesPerson';
+import type { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
 
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-  
+
   try {
     const res = await fetch(`${apiUrl}/candidates/${id}`, {
       next: { revalidate: 3600 },
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const candidate = await res.json();
 
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://herensys.com';
-    
+
     return {
       title: `${candidate.name} - ${candidate.role}`,
       description: `${candidate.experience} professional in ${candidate.region}. ${candidate.summary || `View the full profile and hire through Herensys global recruitment services.`}`,
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         canonical: `/pool-of-candidates/${id}`,
       },
       openGraph: {
-         images: [
+        images: [
           {
             url: '/assets/optimized-images/home/banner.webp', //TODO
             width: 1200,

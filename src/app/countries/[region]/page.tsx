@@ -1,5 +1,5 @@
-import Countries from '@/pages/countries-pages/Countries';
-import { Metadata } from 'next';
+import Countries from '@/page-components/countries-pages/Countries';
+import type { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ region: string }>;
@@ -8,8 +8,11 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { region } = await params;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://herensys.com';
-  
-  const regionName = region.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  const regionName = region
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
   return {
     title: `${region} Countries`,
@@ -57,11 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return [
-    { region: 'balkans' },
-    { region: 'eastern-europe' },
-    { region: 'north-africa' },
-  ];
+  return [{ region: 'balkans' }, { region: 'eastern-europe' }, { region: 'north-africa' }];
 }
 
 // export const revalidate = 3600;

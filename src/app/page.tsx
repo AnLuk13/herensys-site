@@ -1,5 +1,5 @@
-import Home from '@/pages/Home';
-import { Metadata } from 'next';
+import Home from '@/page-components/Home';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   alternates: {

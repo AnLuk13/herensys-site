@@ -1,9 +1,10 @@
-import GlobalRecruiting from '@/pages/services-pages/GlobalRecruiting';
-import { Metadata } from 'next';
+import GlobalRecruiting from '@/page-components/services-pages/GlobalRecruiting';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Global Recruiting',
-  description: 'Access top global talent with our international recruitment services. Find skilled professionals across IT, operations, sales, and more.',
+  description:
+    'Access top global talent with our international recruitment services. Find skilled professionals across IT, operations, sales, and more.',
   alternates: {
     canonical: '/global-recruiting',
   },

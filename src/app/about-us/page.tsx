@@ -1,9 +1,10 @@
-import AboutUs from '@/pages/AboutUs';
-import { Metadata } from 'next';
+import AboutUs from '@/page-components/AboutUs';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Herensys - your trusted partner for global talent acquisition, employer of record services, and international workforce solutions.',
+  description:
+    'Learn about Herensys - your trusted partner for global talent acquisition, employer of record services, and international workforce solutions.',
   alternates: {
     canonical: '/about-us',
   },

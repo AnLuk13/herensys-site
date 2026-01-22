@@ -1,6 +1,5 @@
 'use client';
 
-import FirestoreSection from '@/components/wrapper/FireStoreSection';
 import CandidateDetailsSection from '@/components/candidate-details/CandidateDetailsSection';
 import CandidateHeroSection from '@/components/hero/CandidateHeroSection';
 import SimilarRolesSection from '@/components/pool-of-candidates/SimilarRolesSection';
@@ -16,7 +15,11 @@ type PoolOfCandidatesPersonProps = {
   initialAllCandidates?: any[];
 };
 
-function PoolOfCandidatesPerson({ params, initialCandidate, initialAllCandidates }: PoolOfCandidatesPersonProps) {
+function PoolOfCandidatesPerson({
+  params,
+  initialCandidate,
+  initialAllCandidates,
+}: PoolOfCandidatesPersonProps) {
   const { id } = use(params);
 
   const {

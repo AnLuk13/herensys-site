@@ -1,5 +1,5 @@
-import CountryDetails from '@/pages/countries-pages/CountryDetails';
-import { Metadata } from 'next';
+import CountryDetails from '@/page-components/countries-pages/CountryDetails';
+import type { Metadata } from 'next';
 import countriesData from '@/data/countries.json';
 
 type Props = {
@@ -13,9 +13,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const country = countriesData.countriesData.find(
     c => c.name.toLowerCase().replace(/\s+/g, '-') === id,
   );
-  
-  const countryName = country?.name || id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  const regionName = region.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  const countryName =
+    country?.name ||
+    id
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  const regionName = region
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 
   return {
     title: id,
@@ -75,7 +83,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export const revalidate = 3600 * 24 * 30; // Revalidate once a month
+export const revalidate = 2592000; // Revalidate once a month (30 days)
 
 function CountryDetailsPage({ params }: Props) {
   return <CountryDetails params={params} />;

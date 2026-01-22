@@ -1,5 +1,5 @@
-import BlogPost from '@/pages/blog-pages/BlogPost';
-import { Metadata } from 'next';
+import BlogPost from '@/page-components/blog-pages/BlogPost';
+import type { Metadata } from 'next';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const blog = await res.json();
 
     const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://herensys.com';
-    
+
     return {
       title: blog.title,
       description: blog.description || `Read ${blog.title} on Herensys blog`,
@@ -102,13 +102,7 @@ async function getBlogData(id: string) {
 async function BlogPostPage({ params }: Props) {
   const { id } = await params;
   const { blog, latestPosts } = await getBlogData(id);
-  return (
-    <BlogPost
-      params={params}
-      initialBlog={blog}
-      initialLatestPosts={latestPosts}
-    />
-  );
+  return <BlogPost params={params} initialBlog={blog} initialLatestPosts={latestPosts} />;
 }
 
 export default BlogPostPage;

@@ -1,9 +1,10 @@
-import PoolOfCandidates from '@/pages/pool-of-candidates-pages/PoolOfCandidates';
-import { Metadata } from 'next';
+import PoolOfCandidates from '@/page-components/pool-of-candidates-pages/PoolOfCandidates';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Pool of Candidates',
-  description: 'Access our curated pool of pre-vetted global talent. Find experienced professionals ready to join your team across various roles and industries.',
+  description:
+    'Access our curated pool of pre-vetted global talent. Find experienced professionals ready to join your team across various roles and industries.',
   alternates: {
     canonical: '/pool-of-candidates',
   },

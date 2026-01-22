@@ -10,8 +10,17 @@ function JobBoard({ initialJobs }: { initialJobs?: any[] }) {
 
   return (
     <main id="main-content">
-      <HeroSection {...jobBoardData.heroSection} imageSrc={heroImage} imageAlt="Job Board Hero Image" />
-      <FirestoreSection route="/jobs" Component={JobListingSection} additionalProps={{}} initialData={initialJobs} />
+      <HeroSection
+        {...jobBoardData.heroSection}
+        imageSrc={heroImage}
+        imageAlt="Job Board Hero Image"
+      />
+      <FirestoreSection
+        route="/jobs"
+        Component={JobListingSection}
+        additionalProps={{}}
+        initialData={initialJobs}
+      />
       <CTASection {...eorData.ctaSection} displayGlobe />
     </main>
   );
