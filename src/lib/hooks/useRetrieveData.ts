@@ -48,15 +48,17 @@ export const fetchApiData = async (endpoint: string) => {
 // };
 
 export function useApiQuery(endpoint: string, queryKey: string, initialData?: any) {
+  const hasInitialData =
+    initialData && (Array.isArray(initialData) ? initialData.length > 0 : true);
+
   return useQuery({
     queryKey: [queryKey],
     queryFn: () => fetchApiData(endpoint),
     initialData,
-    staleTime: Infinity,
+    staleTime: hasInitialData ? Infinity : 0, // staleTime: 0 triggers automatic refetch
     gcTime: 30 * 60 * 1000,
     retry: 2,
     retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 30000),
-    refetchOnMount: false,
     refetchOnWindowFocus: false,
   });
 }

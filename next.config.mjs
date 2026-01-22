@@ -4,6 +4,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  staticPageGenerationTimeout: 180, // 3 minutes for generating 32+ country pages
   images: {
     remotePatterns: [
       {

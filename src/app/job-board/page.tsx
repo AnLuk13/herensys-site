@@ -24,10 +24,18 @@ export const revalidate = 1800;
 
 async function getJobs() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  // During build time, skip API calls that don't exist yet
+  if (!apiUrl || process.env.NODE_ENV === 'production') {
+    return [];
+  }
+
   try {
     const res = await fetch(`${apiUrl}/jobs`, {
       next: { revalidate: 1800 },
     });
+
+    if (!res.ok) return [];
     return await res.json();
   } catch {
     return [];
