@@ -11,7 +11,12 @@ type FirestoreSectionProps = {
   initialData?: any;
 };
 
-function FirestoreSection({ route, Component, additionalProps = {}, initialData }: FirestoreSectionProps) {
+function FirestoreSection({
+  route,
+  Component,
+  additionalProps = {},
+  initialData,
+}: FirestoreSectionProps) {
   const { data, isLoading, error } = useApiQuery(route, `${route}`, initialData);
 
   if (isLoading) {
