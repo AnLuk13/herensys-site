@@ -11,7 +11,7 @@
     "generate-manifest": "node src/lib/hooks/generateImageManifest.ts",
     "generate-optimized-manifest": "node src/lib/hooks/generateOptimizedImagesManifest.ts",
     "update-section": "node src/app/lib/hooks/updateSection.ts",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
