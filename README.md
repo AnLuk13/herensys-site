@@ -86,6 +86,71 @@ pnpm build
 - Set environment variables in dashboard
 - Auto-deploy on push to main
 
+**Deploy to your own server:**
+
+1. **Build the application:**
+
+   ```bash
+   pnpm run generate-optimized-manifest
+   pnpm build
+   ```
+
+2. **Upload these files/folders to your server:**
+   - `.next/` - Build output (required)
+   - `node_modules/` - Dependencies (or run `pnpm install --prod` on server)
+   - `package.json` - Package configuration
+   - `next.config.mjs` - Next.js configuration
+   - `public/` - Static assets
+   - `.env.production` - Production environment variables
+
+3. **Set environment variables on server:**
+
+   ```bash
+   # Create .env.production with production values
+   NEXT_PUBLIC_BASE_URL=https://yourdomain.com
+   NEXT_PUBLIC_API_URL=https://api.yourdomain.com
+   # ... other Firebase config
+   ```
+
+4. **Start the production server:**
+
+   ```bash
+   # Using pnpm
+   NODE_ENV=production pnpm start
+
+   # Or using Node.js directly
+   NODE_ENV=production node node_modules/next/dist/bin/next start
+
+   # Run on specific port
+   NODE_ENV=production PORT=3000 pnpm start
+   ```
+
+5. **Use a process manager** (recommended for production):
+
+   ```bash
+   # Using PM2
+   pm2 start "pnpm start" --name herensys
+   pm2 save
+   pm2 startup
+   ```
+
+6. **Configure reverse proxy** (Nginx example):
+   ```nginx
+   server {
+       listen 80;
+       server_name yourdomain.com;
+
+       location / {
+           proxy_pass http://localhost:3000;
+           proxy_http_version 1.1;
+           proxy_set_header Upgrade $http_upgrade;
+           proxy_set_header Connection 'upgrade';
+           proxy_set_header Host $host;
+           proxy_cache_bypass $http_upgrade;
+       }
+   }
+   ```
+
 **Server requirements:**
 
 - Node.js 20.x+
