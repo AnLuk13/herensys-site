@@ -8,7 +8,7 @@ function HireQualityCandidatesSection() {
   return (
     <section
       className="sectionWrapper"
-      style={{ background: 'var(--gray-background)', position: 'relative' }}
+      style={{ background: 'var(--gray-background)', position: 'relative', overflow: 'hidden' }}
     >
       <div className="contentContainer">
         <h2 className="sectionTitle">Hire High Quality Candidates</h2>

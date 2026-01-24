@@ -9,8 +9,7 @@ import countriesData from '@/data/countries.json';
 
 function Countries({ params }: { params?: Promise<{ region: string }> }) {
   const heroImage = manifest.hero.find(image => image.alt === 'countries-banner')!;
-
-  const region = params ? use(params).region : undefined;
+  const region = params && use(params).region;
 
   return (
     <main id="main-content">

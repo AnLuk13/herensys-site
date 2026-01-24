@@ -63,7 +63,7 @@ export async function generateStaticParams() {
   return [{ region: 'balkans' }, { region: 'eastern-europe' }, { region: 'north-africa' }];
 }
 
-// export const revalidate = 3600;
+export const revalidate = 2592000; // Revalidate once a month (30 days)
 
 function CountriesRegionPage({ params }: { params: Promise<{ region: string }> }) {
   return <Countries params={params} />;

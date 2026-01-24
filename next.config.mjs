@@ -65,6 +65,7 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // Security headers for all routes
         source: '/(.*)',
         headers: [
           { key: 'X-Frame-Options', value: 'DENY' }, // ✅ Prevent Clickjacking
@@ -73,8 +74,44 @@ const nextConfig = {
           { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' }, // ✅ Improve security
           {
             key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()',
-          }, // ✅ Restrict sensitive APIs
+            value: 'camera=(), microphone=(), geolocation=(), local-network=()',
+          },
+        ],
+      },
+      {
+        // Aggressive caching for static assets only
+        source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Cache images for 1 year
+        source: '/assets/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Cache fonts for 1 year
+        source: '/:path*.@(woff|woff2|ttf|otf|eot)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        // Cache media files
+        source: '/:path*.@(mp4|webm|ogg|mp3|wav|flac|aac)',
+        headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
