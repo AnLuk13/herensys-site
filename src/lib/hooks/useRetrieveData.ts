@@ -23,7 +23,7 @@ import { useQuery } from '@tanstack/react-query';
 // export const db = firestoreDb;
 // export const storage = firebaseStorage;
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export const fetchApiData = async (endpoint: string) => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`);
