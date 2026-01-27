@@ -20,9 +20,9 @@
     "@tanstack/react-query": "^5.66.0",
     "firebase": "^11.2.0",
     "libphonenumber-js": "^1.11.18",
-    "next": "^15.5.5",
-    "next-intl": "^3.26.2",
-    "nodemailer": "^7.0.9",
+    "next": "^16.1.5",
+    "next-intl": "^4.7.0",
+    "nodemailer": "^7.0.12",
     "phone": "^3.1.57",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
@@ -47,7 +47,6 @@
     "@typescript-eslint/parser": "^8.18.1",
     "critters": "^0.0.23",
     "eslint": "9.39.1",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^15.1.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-css-modules": "^2.12.0",
@@ -55,7 +54,6 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unused-imports": "^4.1.4",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
@@ -69,5 +67,11 @@
       "prettier --write"
     ],
     "*.{css,scss,md,json}": "prettier --write"
+  },
+  "pnpm": {
+    "overrides": {
+      "js-yaml": ">=4.1.1",
+      "lodash": ">=4.17.23"
+    }
   }
 }

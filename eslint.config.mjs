@@ -5,7 +5,6 @@ import pluginPrettier from 'eslint-plugin-prettier';
 import pluginUnusedImports from 'eslint-plugin-unused-imports';
 import pluginCssModules from 'eslint-plugin-css-modules';
 import pluginReact from 'eslint-plugin-react';
-import pluginReactHooks from 'eslint-plugin-react-hooks';
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y';
 import pluginImport from 'eslint-plugin-import';
 import next from '@next/eslint-plugin-next';
@@ -60,7 +59,6 @@ export default [
       'unused-imports': pluginUnusedImports,
       'css-modules': pluginCssModules,
       react: pluginReact,
-      'react-hooks': pluginReactHooks,
       'jsx-a11y': pluginJsxA11y,
       import: pluginImport,
       '@next/next': next,
@@ -81,7 +79,6 @@ export default [
 
       // React recommended rules (with overrides)
       ...pluginReact.configs.recommended.rules,
-      ...pluginReactHooks.configs.recommended.rules,
 
       // Prettier configuration
       'prettier/prettier': [
@@ -104,7 +101,6 @@ export default [
       'react/jsx-no-bind': 'off',
       'react/style-prop-object': 'off',
       'react/require-default-props': 'off',
-      'react-hooks/exhaustive-deps': 'off',
 
       // Next.js Core Web Vitals rules
       '@next/next/no-html-link-for-pages': 'error',

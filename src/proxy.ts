@@ -1,10 +1,11 @@
 // import createMiddleware from 'next-intl/middleware';
 // import { routing } from '@/i18n/routing';
-import { NextRequest, NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
 // export default createMiddleware(routing);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   return NextResponse.next();
 }
 
