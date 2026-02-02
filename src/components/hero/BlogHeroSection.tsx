@@ -48,13 +48,15 @@ function BlogHeroSection({
                 </div>
               ))}
             </div>
-            {tags &&
-              tags.length > 0 &&
-              tags.map((tag, index) => (
-                <div key={index} className={styles.blogTag}>
-                  {tag}
-                </div>
-              ))}
+            {tags && tags.length > 0 && (
+              <div className={styles.blogTagsContainer}>
+                {tags.map((tag, index) => (
+                  <div key={index} className={styles.blogTag}>
+                    {tag}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className={styles.blogImageWrapper}>
