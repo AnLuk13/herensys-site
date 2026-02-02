@@ -26,7 +26,7 @@ async function getJobs() {
   const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   // During build time, skip API calls that don't exist yet
-  if (!apiUrl || process.env.NODE_ENV === 'production') {
+  if (!apiUrl) {
     return [];
   }
 
