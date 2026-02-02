@@ -14,7 +14,7 @@ import homeData from '@/data/home.json';
 import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function Home() {
-  const heroImage = manifest.home.find(image => image.alt === 'homepage-banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'homepage-banner');
 
   const buildDreamTeamSection = {
     ...homeData.buildDreamTeamSection,
