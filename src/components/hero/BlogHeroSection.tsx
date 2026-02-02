@@ -10,7 +10,7 @@ interface BlogHeroSection {
   descriptions: string[];
   imageSrc: string;
   imageAlt?: string;
-  tag?: string;
+  tags?: string[];
   author: string;
   date: string;
   showArrow?: boolean;
@@ -22,7 +22,7 @@ function BlogHeroSection({
   descriptions,
   imageSrc,
   imageAlt = 'Hero banner',
-  tag,
+  tags,
   author,
   date,
   showDecorations = true,
@@ -48,7 +48,13 @@ function BlogHeroSection({
                 </div>
               ))}
             </div>
-            <div className={styles.blogTag}>{tag}</div>
+            {tags &&
+              tags.length > 0 &&
+              tags.map((tag, index) => (
+                <div key={index} className={styles.blogTag}>
+                  {tag}
+                </div>
+              ))}
           </div>
         </div>
         <div className={styles.blogImageWrapper}>
