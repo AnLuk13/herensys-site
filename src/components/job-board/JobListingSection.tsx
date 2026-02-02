@@ -176,7 +176,7 @@ function JobListingSection({ data }: JobListingSectionProps) {
                         <div className={styles.jobMeta}>
                           <div className={styles.metaItem}>
                             <span className={styles.metaLabel}>Salary</span>
-                            <span className={styles.metaValue}>{job.salary}</span>
+                            <span className={styles.metaValue}>{job.salary || '-'}</span>
                           </div>
                           <div className={styles.metaItem}>
                             <span className={styles.metaLabel}>Job Type</span>
