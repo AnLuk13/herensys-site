@@ -9,9 +9,9 @@ import CTASection from '@/components/CTASection';
 import visasData from '@/data/visas-work-permits.json';
 
 function VisasWorkPermits() {
-  const heroImage = manifest.hero.find(image => image.alt === 'visas-work-permits-banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'visas-and-work-permits-banner');
   const keyFeaturesImage = manifest.keyFeatures.find(
-    image => image.alt === 'visas-work-permits-features',
+    image => image.alt === 'visas-and-work-permits-features',
   );
 
   return (
