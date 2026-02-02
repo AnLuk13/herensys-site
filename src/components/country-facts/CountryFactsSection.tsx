@@ -147,6 +147,13 @@ function CountryFactsSection({
     }
   };
 
+  // ------------- UPDATE YEAR IN TITLES ----------------
+  const getCurrentYear = () => new Date().getFullYear();
+
+  const updateYearInTitle = (title: string) => {
+    return title.replace(/\b(20\d{2})\b/, getCurrentYear().toString());
+  };
+
   return (
     <section className="sectionWrapper" style={{ background }}>
       <div className="contentContainer">
@@ -181,7 +188,7 @@ function CountryFactsSection({
                   onClick={e => handleTocClick(e, section.id)}
                   aria-current={activeSection === section.id ? 'location' : undefined}
                 >
-                  {section.title}
+                  {updateYearInTitle(section.title)}
                 </a>
               ))}
             </nav>
@@ -197,7 +204,7 @@ function CountryFactsSection({
                 }}
                 className={styles.contentSection}
               >
-                <h3 className={styles.sectionTitle}>{section.title}</h3>
+                <h3 className={styles.sectionTitle}>{updateYearInTitle(section.title)}</h3>
                 {section.content?.map((paragraph, index) => (
                   <p key={index} className={styles.sectionParagraph}>
                     {paragraph}
