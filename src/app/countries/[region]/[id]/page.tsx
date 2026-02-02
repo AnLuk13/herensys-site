@@ -1,6 +1,7 @@
 import CountryDetails from '@/page-components/countries-pages/CountryDetails';
 import type { Metadata } from 'next';
 import countriesData from '@/data/countries.json';
+import { capitalizeFirstLetter } from '@/lib/utils/capitalizeFirstLetter';
 
 type Props = {
   params: Promise<{ region: string; id: string }>;
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .join(' ');
 
   return {
-    title: id,
+    title: capitalizeFirstLetter(id),
     description: `Hire top talent in ${id} with Herensys employer of record services. Compliant, efficient, and hassle-free international employment solutions.`,
     alternates: {
       canonical: `/countries/${region}/${id}`,

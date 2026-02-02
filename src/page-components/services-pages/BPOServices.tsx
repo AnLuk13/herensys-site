@@ -9,19 +9,16 @@ import CTASection from '@/components/CTASection';
 import bpoData from '@/data/bpo-services.json';
 
 function BPOServices() {
-  const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'bpo-banner');
+  const keyFeaturesImage = manifest.keyFeatures.find(image => image.alt === 'bpo-features');
 
   return (
     <main id="main-content">
-      <HeroSection
-        {...bpoData.heroSection}
-        imageSrc={heroImage!.src}
-        imageAlt="Services hero banner"
-      />
+      <HeroSection {...bpoData.heroSection} imageSrc={heroImage!.src} imageAlt="BPO hero banner" />
       <HowItWorksSection {...bpoData.howItWorksSection} />
       <ImageContentSection
         {...bpoData.keyFeaturesSection}
-        imageSrc={heroImage!.src}
+        imageSrc={keyFeaturesImage!.src}
         imageAlt="BPO services"
         reverse={true}
         background="var(--gray-background)"

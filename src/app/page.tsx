@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/assets/optimized-images/home/banner.webp', //TODO
+        url: '/assets/optimized-images/hero/homepage-banner.webp',
         width: 1200,
         height: 630,
         alt: 'Herensys',

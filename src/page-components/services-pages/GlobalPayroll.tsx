@@ -9,20 +9,23 @@ import CTASection from '@/components/CTASection';
 import globalPayrollData from '@/data/global-payroll.json';
 
 function GlobalPayroll() {
-  const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'global-payroll-banner');
+  const keyFeaturesImage = manifest.keyFeatures.find(
+    image => image.alt === 'global-payroll-features',
+  );
 
   return (
     <main id="main-content">
       <HeroSection
         {...globalPayrollData.heroSection}
         imageSrc={heroImage!.src}
-        imageAlt="Services hero banner"
+        imageAlt="Global Payroll hero banner"
       />
       <HowItWorksSection {...globalPayrollData.howItWorksSection} />
       <ImageContentSection
         {...globalPayrollData.keyFeaturesSection}
-        imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
+        imageSrc={keyFeaturesImage!.src}
+        imageAlt="Global Payroll services"
         reverse={true}
         background="var(--gray-background)"
       />

@@ -11,7 +11,10 @@ import FirestoreSection from '@/components/wrapper/FireStoreSection';
 import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function EmployerOfRecord() {
-  const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'employer-of-record-banner');
+  const keyFeaturesImage = manifest.keyFeatures.find(
+    image => image.alt === 'employer-of-record-features',
+  );
 
   const valuePropsSection = {
     ...eorData.valuePropsSection,
@@ -23,13 +26,13 @@ function EmployerOfRecord() {
       <HeroSection
         {...eorData.heroSection}
         imageSrc={heroImage!.src}
-        imageAlt="Services hero banner"
+        imageAlt="Employer of Record hero banner"
       />
       <BuildDreamTeamSection {...valuePropsSection} />
       <ImageContentSection
         {...eorData.keyFeaturesSection}
-        imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
+        imageSrc={keyFeaturesImage!.src}
+        imageAlt="Employer of Record services"
         reverse={true}
         background="var(--gray-background)"
       />

@@ -3,6 +3,11 @@
     {
       "name": "Moldova",
       "imageSrc": "/assets/optimized-images/countries/moldova.webp",
+      "quickFacts": {
+        "currency": "Moldovan Leu (MDL)",
+        "capital": "Chișinău",
+        "timeZone": "GMT+2 (EET) / GMT+3 (EEST)"
+      },
       "facts": {
         "mainTitle": "Important Facts About the Country of Moldova",
         "sections": [
@@ -10,40 +15,50 @@
             "id": "moldova-introduction",
             "title": "Moldova Introduction",
             "content": [
-              "Moldova is a landlocked country in Eastern Europe, bordered by Romania and Ukraine. The service sector has grown to dominate Moldova's economy and accounts for over 60% of the nation's GDP. While the country is landlocked, it is close to the Black Sea, (separated from an estuary of the Black Sea by only 3 km of Ukrainian territory)."
+              "Moldova is a dynamic Eastern European nation that has rapidly transformed into a strategic tech and service hub. As an EU candidate country, it offers a unique bridge between Western and Eastern markets. With a heavy focus on digitalization and one of the most competitive tax regimes for the IT sector in the world, Moldova is a premier destination for high-efficiency global operations."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Moldova's Geography",
             "content": [
-              "Moldova is a landlocked nation in the northeastern part of the Balkan region in Europe. The capital, Chișinău, is located in the south-central region. The country shares borders with Ukraine to the north, east and south, while Romania lies to the west. The majority of Moldova is situated between the Prut and Dniester rivers, which wind through the region."
+              "Landlocked between Romania to the west and Ukraine to the north, east, and south, Moldova is located at a crossroads of European trade routes. The landscape is characterized by rolling hills, fertile plains, and vast vineyards. The capital, Chișinău, is the country's primary economic engine and home to a thriving international community."
             ]
           },
           {
             "id": "climate",
             "title": "Climate in Moldova",
             "content": [
-              "Moldova experiences a warm and moderately continental climate, characterized by a prolonged frost-free period, relatively mild winters, notable temperature fluctuations and extended droughts in the southern regions. The average annual temperature ranges from the mid-40s °F (about 8 °C) in the north to the low 50s °F (about 10 °C) in the south."
+              "Moldova enjoys a moderate continental climate with four distinct seasons. Winters are typically cold and occasionally snowy, while summers are warm and sunny—perfect for the country's world-renowned wine production. Average summer temperatures hover around 25–28°C (77–82°F)."
             ]
           },
           {
             "id": "culture",
             "title": "The Culture of Moldova",
             "content": [
-              "Moldova, predominantly an Eastern Orthodox country, observes Christian holidays. Different ethnic groups within Moldova adhere to their own customs and culinary traditions. Independence Day on August 27 commemorates Moldova's separation from the Soviet Union."
+              "Moldovan culture is deeply rooted in hospitality and a strong sense of community. Known for its rich folk traditions and world-class wine heritage, the society is open, resilient, and highly adaptable. In business, Moldovans value directness, professionalism, and personal connection, often blending formal Western standards with warm local hospitality."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Moldova",
             "content": [
-              "The constitution designates Romanian as the official language of the country. Around the mid-2000s, it became widely accepted that Moldovan and Romanian were essentially identical languages."
+              "Romanian is the official language. However, Moldova is exceptionally multilingual: Russian is widely used in daily life and business, and English is becoming the primary language for the tech and international service sectors. Gagauz and Ukrainian are also spoken in specific regions, reflecting the country's diverse cultural fabric."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Moldova",
+            "content": [
+              "Moldova applies a flat Personal Income Tax (PIT) rate of 12%, making it highly transparent for both residents and international employers."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Moldova",
+            "content": [
+              "The social security and health insurance system is structured to share the responsibility between the employer and the employee."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -51,8 +66,32 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "24%", "-"],
-                ["Health Insurance", "-", "9%"]
+                ["Social Security (CNAS)", "24%", "-"],
+                ["Health Insurance (CNAM)", "-", "9%"],
+                ["Total", "24%", "9%"]
+              ]
+            },
+            "additionalInfo": [
+              "The IT Park Advantage: Companies registered in the Moldova Innovation Technology Park (MITP) benefit from a single tax of 7% on turnover, which replaces CIT, PIT, and all mandatory social and health contributions for both employer and employee."
+            ]
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Moldova in 2026",
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day", "January 1"],
+                ["Orthodox Christmas", "January 7–8"],
+                ["International Women's Day", "March 8"],
+                ["Orthodox Easter", "April 12–13"],
+                ["Easter of Blajini (Day of Rejoicing)", "April 20"],
+                ["International Labor Day", "May 1"],
+                ["Victory Day and Europe Day", "May 9"],
+                ["International Children's Day", "June 1"],
+                ["Independence Day", "August 27"],
+                ["National Language Day", "August 31"],
+                ["Christmas Day (New Style)", "December 25"]
               ]
             }
           }
@@ -63,40 +102,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Moldova are typically paid in Moldovan Leu (MDL), the national currency. Payment is made through bank transfer to the employee's account, usually on a monthly basis. The employment contract may specify alternative payment arrangements if mutually agreed upon by employer and employee."
+            "answer": "Salaries are paid monthly in Moldovan Leu (MDL). As of January 1, 2026, the national minimum wage has been increased to 6,300 MDL, while the average monthly salary in the economy is forecasted at 17,400 MDL."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers must maintain accurate records of working hours, overtime, night work, and leave. Employees are required to submit timesheets according to company policy. All employment documentation must be kept for inspection by the State Labor Inspectorate for the period specified by law."
+            "answer": "The standard work week is 40 hours (typically 8 hours per day, 5 days a week). Employers must maintain accurate timesheets to manage overtime, which is compensated at a rate of 150% for the first two hours and 200% thereafter."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Moldova are entitled to a minimum of 28 calendar days of paid annual leave per year. Additional leave may be granted based on working conditions, collective agreements, or employment contracts. Annual leave must be coordinated with the employer and scheduled in advance."
+            "answer": "All employees are entitled to a minimum of 28 calendar days of paid annual leave per year, excluding public holidays."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 126 calendar days of maternity leave, with 70 days before and 56 days after birth. Extended parental leave is also available until the child reaches 3 years of age. Maternity and parental benefits are provided through the state social insurance system."
+            "answer": "Female employees are entitled to 126 calendar days of paid maternity leave (70 days prenatal and 56 days postnatal). Following this, partially paid parental leave is available until the child reaches the age of 3."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers are entitled to 14 calendar days of paid paternity leave following the birth of a child. This leave can be taken during the first 56 days after birth. Paternity leave supports fathers in participating actively in early childcare and family responsibilities."
+            "answer": "Fathers are entitled to 15 calendar days of paid paternity leave, which must be taken within the first 12 months of the child's birth. This is fully funded by the state social insurance."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave similar to biological parents to support the adoption process and child integration. The duration and benefits depend on the child's age and circumstances. Both adoptive mothers and fathers may be eligible for adoption leave under Moldovan labor legislation."
+            "answer": "Employees who legally adopt a child are entitled to special leave benefits to facilitate the integration of the new family member, aligning with the protections provided to biological parents."
           }
         ]
       },
       "ctaSection": {
         "title": "Ready For Business in Moldova? Start Here",
         "description": "Get started with human resources best practices and hiring in Moldova.",
-        "buttonText": "Schedule a Call",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Armenia",
       "imageSrc": "/assets/optimized-images/countries/armenia.webp",
+      "quickFacts": {
+        "currency": "Armenian Dram (AMD)",
+        "capital": "Yerevan",
+        "timeZone": "GMT+4 (GET)"
+      },
       "facts": {
         "mainTitle": "Important Facts About Armenia",
         "sections": [
@@ -104,35 +148,85 @@
             "id": "armenia-introduction",
             "title": "Armenia Introduction",
             "content": [
-              "Armenia is a landlocked country in the South Caucasus region of Eurasia, bordered by Turkey, Georgia, Azerbaijan, and Iran. Known for its ancient history, rich cultural heritage, and growing tech sector, Armenia has become an attractive destination for international business."
+              "Armenia is a landlocked country in the South Caucasus, known for its deep historical roots and a rapidly evolving digital economy. In recent years, it has become a hotspot for tech startups and international R&D centers. With a government that prioritizes the high-tech sector and offers significant tax incentives, Armenia is a strategic choice for businesses looking for technical excellence and a competitive cost structure."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Armenia's Geography",
             "content": [
-              "Armenia is located in the highlands surrounding Mount Ararat. The capital, Yerevan, is one of the world's oldest continuously inhabited cities. The country features mountainous terrain with the Lesser Caucasus mountain range covering much of the territory."
+              "Situated between the Black and Caspian Seas, Armenia is a mountainous country bordering Georgia, Turkey, Iran, and Azerbaijan. Its landscape is dominated by the Armenian Highlands, featuring rugged peaks, alpine lakes (including the magnificent Lake Sevan), and fertile valleys. The capital, Yerevan, is one of the world's oldest continuously inhabited cities and the primary hub for the country's tech industry."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Armenia",
+            "content": [
+              "Armenia has a highland continental climate with hot, sunny summers and cold, snowy winters. Because of the varying altitudes, the weather can change significantly from one region to another. In Yerevan, summer temperatures often exceed 30°C (86°F), while winter can bring crisp air and temperatures below freezing, perfect for the nearby ski resorts."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Armenia",
+            "content": [
+              "As the first nation to officially adopt Christianity (in 301 AD), Armenia has a rich cultural heritage reflected in its ancient monasteries and unique alphabet. It is a society that values education, music, and the arts. Armenians are known for their hospitality and a strong entrepreneurial spirit. The \"Silicon Mountains\" initiative reflects a culture that is moving fast towards a digital future while staying deeply connected to its ancient roots."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Armenia",
             "content": [
-              "Armenian is the official language. Russian is widely spoken, and English is increasingly common in business and among younger generations."
+              "Armenian is the official language, written in its own beautiful script. Russian is widely spoken and understood across all generations. However, English has become the dominant second language in the tech and business sectors, with the majority of professionals in these industries being fully fluent."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Armenia",
+            "content": [
+              "Armenia uses a simplified flat tax system. As of 2026, the Personal Income Tax (PIT) on employment income is a flat 20%."
             ]
           },
           {
             "id": "social-security",
-            "title": "Social Security in Armenia",
+            "title": "Social Security and Mandatory Payments",
+            "content": [
+              "Armenia's payroll system is unique in that most contributions are deducted from the employee's gross salary, with the employer responsible for withholding and remitting them. Starting in 2026, a new universal health insurance system has been introduced."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
-                "Contribution rate % (by employer)",
-                "Contribution rate % (by employee)"
+                "Rate / Amount (Employee Side)",
+                "Rate / Amount (Employer Side)"
               ],
               "rows": [
-                ["Social Security", "5%", "5%"],
-                ["Health Insurance", "2%", "-"]
+                ["Personal Income Tax", "20%", "-"],
+                ["Pension Contribution", "5% (up to 500k AMD salary)", "-"],
+                ["Military Stamp Duty", "Fixed (AMD 1,500 – 15,000)", "-"],
+                ["New! Mandatory Health Insurance (2026)", "AMD 10,800 / month", "-"],
+                ["Total Payroll Tax Burden", "~25% + fixed fees", "0% (Standard)"]
+              ]
+            },
+            "additionalInfo": [
+              "The IT Certificate Advantage: Tech companies that receive a government \"IT Tax Certificate\" benefit from a reduced 10% Personal Income Tax for their employees and a 0% Corporate Income Tax rate on their profits."
+            ]
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Armenia in 2026",
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day", "January 1–2"],
+                ["Armenian Christmas", "January 6"],
+                ["National Army Day", "January 28"],
+                ["International Women's Day", "March 8"],
+                ["Easter Monday", "April 13"],
+                ["Genocide Remembrance Day", "April 24"],
+                ["International Labor Day", "May 1"],
+                ["Victory and Peace Day", "May 9"],
+                ["First Republic Day", "May 28"],
+                ["Constitution Day", "July 5"],
+                ["Independence Day", "September 21"]
               ]
             }
           }
@@ -143,40 +237,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Armenia are paid in Armenian Dram (AMD), the national currency. Payment is typically made through bank transfer to the employee's designated account on a monthly basis. Employers and employees may agree on alternative payment arrangements as specified in the employment contract."
+            "answer": "Salaries are paid monthly in Armenian Dram (AMD). While international companies often benchmark salaries in USD to stay competitive in the tech market, all payments must be executed in the national currency through local bank transfers."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers are required to maintain accurate records of working hours, including overtime and leave. Employees must submit timesheets as required by company procedures and labor regulations. Employment records must be kept available for inspection by the State Labor Inspectorate."
+            "answer": "The standard work week is 40 hours (typically 5 days a week). Employers must maintain records of working time. Overtime is permitted but must be compensated at 1.5 times the hourly rate or with extra time off, as agreed with the employee."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Armenia are entitled to a minimum of 20 working days of paid annual leave per year. Additional leave days may be provided based on employment contracts, working conditions, or collective agreements. Leave scheduling must be coordinated between the employer and employee."
+            "answer": "Employees are entitled to a minimum of 20 working days of paid annual leave per year."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 140 calendar days of maternity leave, with 70 days before and 70 days after birth. In case of complicated birth or multiple children, extended leave is provided. Maternity benefits are covered through the social insurance system to support mothers during this period."
+            "answer": "Female employees receive 140 days of fully paid maternity leave (70 days before and 70 days after birth). This is increased to 155 days for complicated births and 180 days for multiple births."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Armenia are entitled to paternity leave following the birth of a child. The duration and terms are regulated by labor legislation. Paternity leave enables fathers to support their families and participate in early childcare responsibilities."
+            "answer": "Fathers are entitled to 5 days of paid leave at 100% of their salary, which must be taken within the first 30 days after the child's birth."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave provisions similar to biological parents to facilitate child integration into the family. The specific terms and duration are outlined in Armenian labor law. Both adoptive mothers and fathers may qualify for adoption leave benefits."
+            "answer": "Employees who legally adopt a newborn child are entitled to leave starting from the day of adoption until the child reaches 70 days of age, with full social protections."
           }
         ]
       },
       "ctaSection": {
         "title": "Ready For Business in Armenia? Start Here",
         "description": "Get started with human resources best practices and hiring in Armenia.",
-        "buttonText": "Schedule a Call",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Georgia",
       "imageSrc": "/assets/optimized-images/countries/georgia.webp",
+      "quickFacts": {
+        "currency": "Georgian Lari (GEL)",
+        "capital": "Tbilisi",
+        "timeZone": "GMT+4 (GET)"
+      },
       "facts": {
         "mainTitle": "Important Facts About Georgia",
         "sections": [
@@ -184,26 +283,50 @@
             "id": "georgia-introduction",
             "title": "Georgia Introduction",
             "content": [
-              "Georgia is a country at the intersection of Europe and Asia, bordered by Russia, Turkey, Armenia, and Azerbaijan. Known for its diverse landscapes, ancient winemaking traditions, and business-friendly environment, Georgia has become an emerging hub for startups and international companies."
+              "Georgia is a rising star in the global business arena, consistently ranking high for ease of doing business. Located at the crossroads of Western Asia and Eastern Europe, it has become a preferred hub for international companies looking for a flexible operational environment. With special tax statuses for IT and service-oriented businesses, Georgia offers an unparalleled mix of strategic positioning and cost-efficiency."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Georgia's Geography",
             "content": [
-              "Georgia is located in the Caucasus region, with the Black Sea to the west. The capital, Tbilisi, is situated in the eastern part of the country. Georgia features varied geography including the Greater Caucasus mountains in the north and the Lesser Caucasus in the south."
+              "Nestled between the Greater Caucasus Mountains to the north and the Black Sea to the west, Georgia boasts a stunningly diverse landscape. From the high-altitude peaks of Svaneti to the subtropical coast of Batumi, the country is as geographically varied as it is strategically located. Tbilisi, the capital, is a vibrant metropolis that serves as the administrative and economic heart of the country."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Georgia",
+            "content": [
+              "Georgia's climate is highly diverse. The west experiences a humid subtropical climate, while the east is more continental with hot summers and cold winters. The Black Sea coast remains mild year-round, while the mountains offer world-class skiing in winter and cool escapes in summer."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Georgia",
+            "content": [
+              "At the core of Georgian culture is the concept of the \"Guest as a Gift from God.\" Hospitality is not just a habit but a way of life. Known for its ancient polyphonic singing and 8,000-year-old winemaking tradition, Georgia is a society that deeply values heritage. In business, this translates into a culture of building strong personal rapport and mutual respect before diving into formal agreements."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Georgia",
             "content": [
-              "Georgian is the official language. Russian and English are commonly spoken, especially in business environments and tourism sectors."
+              "Georgian (Kartuli), with its own unique and ancient script, is the official language. Russian is widely understood, especially by the older generation. However, English is the primary language for the tech, business, and international sectors, with the younger workforce reaching high levels of proficiency."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Georgia",
+            "content": [
+              "Georgia features a simple and transparent flat tax system. As of 2026, the Personal Income Tax (PIT) remains a flat 20% for all employment income."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Georgia",
+            "content": [
+              "The social security system is primarily based on a mandatory pension contribution. There are no additional employer-paid taxes for health or unemployment insurance."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -211,8 +334,38 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "2%", "2%"],
-                ["Pension", "2%", "2%"]
+                ["Pension Contribution", "2%", "2%"],
+                ["State Social Contribution", "-", "2% (Government adds)"],
+                ["Health Insurance", "Funded via general budget", "Funded via general budget"],
+                ["Total", "2%", "2%"]
+              ]
+            },
+            "additionalInfo": [
+              "The IT Benefit: Companies with \"Virtual Zone Person\" or \"International Company\" status enjoy massive tax exemptions, including 0% Corporate Income Tax on exported IT services and reduced dividend taxes (as low as 0-5%)."
+            ]
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Georgia in 2026",
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day & New Year Holiday", "January 1–2"],
+                ["Orthodox Christmas", "January 7"],
+                ["Orthodox Epiphany", "January 19"],
+                ["Mother's Day", "March 3"],
+                ["International Women's Day", "March 8"],
+                ["National Unity Day", "April 9"],
+                ["Orthodox Good Friday", "April 17"],
+                ["Orthodox Holy Saturday", "April 18"],
+                ["Orthodox Easter Sunday", "April 19"],
+                ["Orthodox Easter Monday", "April 20"],
+                ["Victory Day Over Fascism", "May 9"],
+                ["St. Andrew the First-Called Day", "May 12"],
+                ["Independence Day", "May 26"],
+                ["Mariamoba (Assumption of Mary)", "August 28"],
+                ["Svetitskhovloba (Mtskhetoba)", "October 14"],
+                ["Giorgoba (St. George's Day)", "November 23"]
               ]
             }
           }
@@ -223,34 +376,34 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Georgia are paid in Georgian Lari (GEL), the national currency. Payment is typically made through bank transfer to the employee's account on a monthly basis. Employers may agree with employees on alternative payment arrangements or foreign currency payment if specified in the employment contract."
+            "answer": "Salaries are paid monthly in Georgian Lari (GEL). While it is common for international firms to benchmark salaries in USD or EUR to avoid currency fluctuation risks, the final payment is executed in local currency through Georgian bank transfers."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers must maintain records of working hours, overtime, and leave as required by Georgian labor law. Employees should submit accurate timesheets according to company policy. Proper record-keeping ensures compliance with labor regulations and protects both employer and employee rights."
+            "answer": "The standard work week is 40 hours. For specific sectors, up to 48 hours is allowed. Employers are required to maintain attendance records, and overtime must be compensated by either additional pay or extra time off, as per the Labor Code."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Georgia are entitled to a minimum of 24 working days of paid annual leave per year. Additional leave may be provided based on employment contracts or company policies. Annual leave must be scheduled in coordination with the employer to ensure operational continuity."
+            "answer": "Employees are entitled to a minimum of 24 working days of paid annual leave per year. Additionally, they can take up to 15 days of unpaid leave if needed."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 730 calendar days (approximately 2 years) of maternity and childcare leave, with 183 days before and after birth covered by state maternity benefits. The remaining period is unpaid but job-protected. This comprehensive leave policy supports mothers in balancing work and family responsibilities."
+            "answer": "Total leave is 730 days. Of this, 183 days are fully protected and partially paid by the state (currently capped at a one-time allowance of 1,000 GEL, though many international employers supplement this)."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Georgian labor law provides for paternity leave, though specific provisions may vary. Fathers are encouraged to take leave to support their families following the birth of a child. The terms and duration should be coordinated with the employer according to company policy and legal requirements."
+            "answer": "Fathers are entitled to take the remaining portion of the parental leave (after the initial maternity period) to care for the child, which can be shared between parents as they see fit."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave provisions to support the adoption process and facilitate child integration into the family. The specific terms are outlined in Georgian labor legislation. Both adoptive mothers and fathers may be eligible for adoption leave benefits similar to biological parents."
+            "answer": "Employees who adopt an infant under the age of 12 months are entitled to 550 days of leave from the day of birth, with 90 days being paid via a state allowance."
           }
         ]
       },
       "ctaSection": {
         "title": "Ready For Business in Georgia? Start Here",
         "description": "Get started with human resources best practices and hiring in Georgia.",
-        "buttonText": "Schedule a Call",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     }

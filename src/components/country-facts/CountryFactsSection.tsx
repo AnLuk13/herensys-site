@@ -15,13 +15,25 @@ interface ContentSection {
   table?: TableData;
 }
 
+interface QuickFacts {
+  currency: string;
+  capital: string;
+  timeZone: string;
+}
+
 interface CountryFactsSectionProps {
   mainTitle: string;
+  quickFacts?: QuickFacts;
   sections: ContentSection[];
   background?: string;
 }
 
-function CountryFactsSection({ mainTitle, sections, background }: CountryFactsSectionProps) {
+function CountryFactsSection({
+  mainTitle,
+  quickFacts,
+  sections,
+  background,
+}: CountryFactsSectionProps) {
   const [activeSection, setActiveSection] = useState<string>('');
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
   const isScrollingFromClick = useRef(false);
@@ -139,6 +151,23 @@ function CountryFactsSection({ mainTitle, sections, background }: CountryFactsSe
     <section className="sectionWrapper" style={{ background }}>
       <div className="contentContainer">
         <h2 className={styles.mainTitle}>{mainTitle}</h2>
+
+        {quickFacts && (
+          <ul className={styles.quickFactsList}>
+            <li>
+              <strong>Currency:</strong>
+              <div>{quickFacts.currency}</div>
+            </li>
+            <li>
+              <strong>Capital:</strong>
+              <div>{quickFacts.capital}</div>
+            </li>
+            <li>
+              <strong>Time Zone:</strong>
+              <div>{quickFacts.timeZone}</div>
+            </li>
+          </ul>
+        )}
 
         <div className={styles.contentLayout}>
           <aside className={styles.tableOfContents}>

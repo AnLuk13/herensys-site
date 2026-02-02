@@ -1,3 +1,4 @@
+import { capitalizeFirstLetter } from '@/lib/utils/capitalizeFirstLetter';
 import Countries from '@/page-components/countries-pages/Countries';
 import type { Metadata } from 'next';
 
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     .join(' ');
 
   return {
-    title: `${region} Countries`,
+    title: `${capitalizeFirstLetter(region)} Countries`,
     description: `Explore our presence in ${region}. Hire talent with Herensys employer of record services across multiple countries in the region.`,
     alternates: {
       canonical: `/countries/${region}`,

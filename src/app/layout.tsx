@@ -88,23 +88,18 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico', //TODO
-    apple: '/apple-touch-icon.png', //TODO
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
   other: { structuredData: JSON.stringify(structuredData) },
 };
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <MetaHead />
-      <body
-      >
+      <body>
         <QueryProvider>
           <HeadingWrapper />
           {children}

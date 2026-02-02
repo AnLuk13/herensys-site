@@ -13,6 +13,39 @@
   }
 }
 
+.quickFactsList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: 640px) {
+    gap: 8px;
+  }
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--black);
+    line-height: 1;
+
+    @media (max-width: 640px) {
+      font-size: 0.9375rem;
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--accent);
+    }
+  }
+}
+
 .contentLayout {
   display: flex;
   gap: 16px;

@@ -3,6 +3,11 @@
     {
       "name": "Algeria",
       "imageSrc": "/assets/optimized-images/countries/algeria.webp",
+      "quickFacts": {
+        "currency": "Algerian Dinar (DZD)",
+        "capital": "Algiers",
+        "timeZone": "GMT+1"
+      },
       "facts": {
         "mainTitle": "Important Facts About Algeria",
         "sections": [
@@ -10,26 +15,50 @@
             "id": "algeria-introduction",
             "title": "Algeria Introduction",
             "content": [
-              "Algeria is the largest country in Africa, located in North Africa along the Mediterranean coast. With a population of over 44 million and rich natural resources, Algeria offers opportunities for businesses in energy, technology, and emerging sectors."
+              "Algeria is the largest country in Africa and a strategic gateway between Europe, Africa, and the Middle East. Known for its vast energy resources, the country is currently diversifying its economy, with a growing emphasis on digital transformation and services. For international companies, Algeria offers a young, highly educated workforce and a competitive cost environment for back-office and IT operations."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Algeria's Geography",
             "content": [
-              "Algeria is located in North Africa, bordered by the Mediterranean Sea to the north. The capital, Algiers, is situated on the coast. The country features diverse geography from coastal plains to the Sahara Desert, which covers over 80% of its territory."
+              "Located in North Africa, Algeria has a long Mediterranean coastline to the north and is dominated by the Sahara Desert to the south. It shares borders with Tunisia, Libya, Niger, Mali, Mauritania, and Morocco. The majority of the population and economic activity are concentrated in the fertile coastal regions and the capital city, Algiers."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Algeria",
+            "content": [
+              "The northern coastal region enjoys a Mediterranean climate with mild, wet winters and hot, dry summers. As you move south toward the Saharan Atlas and the desert, the climate becomes arid, with extreme temperature fluctuations between day and night. Average summer temperatures in Algiers hover around 30°C (86°F), while winter averages stay near 15°C (59°F)."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Algeria",
+            "content": [
+              "Algerian culture is a rich tapestry woven from Arab, Berber (Amazigh), and Mediterranean influences. It is a society that deeply values hospitality, family honor, and respect for tradition. In a business context, personal relationships and trust are the foundation of any successful partnership. Professional etiquette often involves a blend of formal French-style administrative traditions and warm local hospitality."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Algeria",
             "content": [
-              "Arabic is the official language, with Berber also recognized as a national language. French is widely used in business, education, and government. English proficiency is growing, particularly in the technology sector."
+              "Modern Standard Arabic and Tamazight (Berber) are the official languages. However, Algerian Arabic (Darja) is the daily spoken language. French remains the dominant language of business, administration, and higher education. In the growing tech and global service sectors, English is rapidly gaining ground among the younger professional generation."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Algeria",
+            "content": [
+              "The Personal Income Tax (IRG) is a progressive tax withheld by the employer. Rates range from 0% to 35% depending on the salary bracket."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Algeria",
+            "content": [
+              "In Algeria, social security (CNAS) is a comprehensive system. Unlike some regions where health insurance is a separate line item, in Algeria, it is integrated into the primary social security contribution."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -37,8 +66,32 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "26%", "9%"],
-                ["Health Insurance", "12.5%", "1.5%"]
+                ["Social Security (CNAS)", "25%", "9%"],
+                ["Health Insurance", "Included in CNAS", "Included in CNAS"],
+                ["National Unemployment Fund (CNAC)", "1%", "-"],
+                ["Total", "26%", "9%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Algeria in 2026",
+            "content": [
+              "*Dates for religious holidays are subject to the lunar calendar and may vary by 1–2 days."
+            ],
+            "table": {
+              "headers": ["Occasion", "Date (Estimated for 2026)"],
+              "rows": [
+                ["New Year's Day", "January 1"],
+                ["Yennayer (Berber New Year)", "January 12"],
+                ["Eid al-Fitr (End of Ramadan)", "March 20–21*"],
+                ["Labor Day", "May 1"],
+                ["Eid al-Adha (Feast of Sacrifice)", "May 27–28*"],
+                ["Islamic New Year (Awal Muharram)", "June 16*"],
+                ["Ashura", "June 25*"],
+                ["Independence Day", "July 5"],
+                ["Mawlid (Prophet's Birthday)", "August 25*"],
+                ["Revolution Day", "November 1*"]
               ]
             }
           }
@@ -49,40 +102,49 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Algeria are paid in Algerian Dinar (DZD), the national currency. Payment is typically made through bank transfer to the employee's account on a monthly basis. Employers must ensure timely payment in accordance with the employment contract and labor regulations."
+            "answer": "Salaries are paid in Algerian Dinar (DZD) monthly. While contracts for global clients may reference a base in foreign currency, the actual payout must comply with local banking regulations and be executed in the national currency."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers are required to maintain accurate records of working hours, overtime, and leave as mandated by Algerian labor law. Employees must submit timesheets according to company procedures. All employment records must be kept available for inspection by the Labor Inspectorate."
+            "answer": "Employers are required to maintain accurate records of working hours, overtime, and leave. Timesheets should be updated weekly to ensure compliance with the 40-hour standard work week and to facilitate accurate monthly payroll processing."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Algeria are entitled to a minimum of 30 calendar days of paid annual leave per year. Additional leave may be provided based on years of service, working conditions, or collective agreements. Leave scheduling must be coordinated with the employer to ensure business operations."
+            "answer": "Employees are entitled to 30 calendar days of paid leave per year (2.5 days per month worked)."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 14 weeks of maternity leave, with the option to extend to 18 weeks in certain circumstances. Maternity benefits are provided through social security. Additional unpaid parental leave may be available to support childcare needs during the child's early years."
+            "answer": "Female employees are entitled to 14 weeks of maternity leave at 100% pay, fully covered by Social Security (CNAS), provided they have met the minimum working hours requirement."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Algeria are entitled to 3 days of paid paternity leave following the birth of a child. This leave allows fathers to support their families during the immediate postnatal period. The leave must be taken within the specified timeframe as outlined in labor regulations."
+            "answer": "Fathers are entitled to 3 days of paid leave for the birth of a child, which can be taken consecutively or separately within the first 15 days of the birth."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave provisions similar to biological parents to facilitate the adoption process and child integration. The specific terms and duration are outlined in Algerian labor legislation. Both adoptive mothers and fathers may qualify for adoption leave benefits."
+            "answer": "While not as extensively codified as maternity leave, employees who legally adopt a child (under the \"Kafala\" system) may be granted special leave periods based on the specific company policy or collective agreements, often mirroring the social protections of parental care."
+          },
+          {
+            "question": "Work Week and Weekend",
+            "answer": "A key difference for Algeria is the work week, which typically runs from Sunday to Thursday. Friday and Saturday are the official weekend days."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Algeria? Start Here",
-        "description": "Get started with human resources best practices and hiring in Algeria.",
-        "buttonText": "Schedule a Call",
+        "title": "Ready to scale your team in Algeria? Let's build your bridge to talent.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Morocco",
       "imageSrc": "/assets/optimized-images/countries/morocco.webp",
+      "quickFacts": {
+        "currency": "Moroccan Dirham (MAD)",
+        "capital": "Rabat",
+        "timeZone": "GMT+1"
+      },
       "facts": {
         "mainTitle": "Important Facts About Morocco",
         "sections": [
@@ -90,26 +152,51 @@
             "id": "morocco-introduction",
             "title": "Morocco Introduction",
             "content": [
-              "Morocco is a North African country with coastlines on both the Atlantic Ocean and Mediterranean Sea. Known for its stable economy, strategic location, and growing tech sector, Morocco is becoming an attractive destination for international businesses."
+              "Morocco is a stable and rapidly developing kingdom in North Africa, serving as a primary bridge between Africa and Europe. With its strategic \"Atlantic-Mediterranean\" position, the country has invested heavily in infrastructure and education, making it a top destination for global outsourcing (BPO) and manufacturing. For businesses, Morocco offers a sophisticated legal framework and a highly skilled, multilingual workforce."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Morocco's Geography",
             "content": [
-              "Morocco is located in Northwest Africa. The capital, Rabat, is situated on the Atlantic coast. The country features diverse geography including mountains (Atlas and Rif), coastal plains, and the Sahara Desert in the south."
+              "Situated at the northwestern tip of Africa, Morocco is characterized by its diverse terrain: from the rugged Atlas Mountains that run through its center to the vast Sahara Desert in the south. It is the only African country with extensive coastlines on both the Atlantic Ocean and the Mediterranean Sea. Major economic hubs include Casablanca (the financial heart), Rabat (the political capital), and Tangier."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Morocco",
+            "content": [
+              "The climate is predominantly Mediterranean in the north and along the coasts, with mild, wet winters and hot, dry summers. Inland and further south, the climate becomes more continental and arid. Casablanca and Rabat enjoy pleasant weather year-round, while the mountain regions can experience significant snowfall in the winter."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Morocco",
+            "content": [
+              "Moroccan culture is a fascinating blend of Arab, Berber, African, and European influences. It is a nation known for its profound hospitality, intricate craftsmanship, and culinary traditions. In professional life, Moroccans value hierarchy, formal etiquette, and interpersonal relationships. Business is often conducted with a degree of ceremony, where building mutual respect is just as important as the contract itself."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Morocco",
             "content": [
-              "Arabic and Berber are the official languages. French is widely used in business, education, and government. Spanish is common in northern regions, and English is increasingly important in the business sector."
+              "Modern Standard Arabic and Tamazight are the official languages, but Moroccan Arabic (Darija) is the most widely spoken. French is the lingua franca of business, government, and higher education. However, English is seeing a massive surge in popularity, especially within the tech, finance, and international service sectors."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Morocco",
+            "content": [
+              "Income tax (IR) in Morocco is progressive. The rates range from 0% (for lower income brackets) up to 38%. The employer is responsible for withholding this tax directly from the employee's monthly salary."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Morocco",
+            "content": [
+              "The Moroccan social security system (CNSS) is well-established. Mandatory health insurance (AMO) is integrated into the social security framework but is listed as a specific component of the total contribution.",
+              "Note: Some contributions within the CNSS have a monthly salary cap."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -117,8 +204,33 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "20.48%", "6.74%"],
-                ["Health Insurance", "4.11%", "2.26%"]
+                ["Social Security (CNSS)", "21.09%", "4.48%"],
+                ["Mandatory Health Insurance (AMO)", "4.11%", "2.26%"],
+                ["Total", "25.20%", "6.74%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Morocco in 2026",
+            "content": ["*Dates for religious holidays are subject to the lunar calendar."],
+            "table": {
+              "headers": ["Occasion", "Date (Estimated for 2026)"],
+              "rows": [
+                ["New Year's Day", "January 1"],
+                ["Proclamation of Independence", "January 11"],
+                ["Amazigh New Year", "January 14"],
+                ["Eid al-Fitr (End of Ramadan)", "March 20–21*"],
+                ["Labor Day", "May 1"],
+                ["Eid al-Adha (Feast of Sacrifice)", "May 27–28*"],
+                ["Islamic New Year (Fatih Muharram)", "June 16*"],
+                ["Throne Day", "July 30"],
+                ["Oued Ed-Dahab Recovery Day", "August 14"],
+                ["Revolution of the King and the People", "August 20"],
+                ["Youth Day", "August 21"],
+                ["Milad un-Nabi (Prophet's Birthday)", "August 25*"],
+                ["Green March Day", "November 6"],
+                ["Independence Day", "November 18*"]
               ]
             }
           }
@@ -129,40 +241,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Morocco are paid in Moroccan Dirham (MAD), the national currency. Payment is typically made through bank transfer to the employee's account on a monthly basis. The employment contract must clearly specify the salary amount, payment method, and payment schedule."
+            "answer": "Salaries are paid monthly in Moroccan Dirham (MAD). It is common practice in the Moroccan private sector to offer a 13th-month bonus, though this is usually a matter of contract rather than a strict legal requirement."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers must maintain detailed records of working hours, overtime, night work, and all types of leave. Employees are required to submit accurate timesheets according to company procedures. All employment documentation must be kept for at least 2 years and be available for inspection by labor authorities."
+            "answer": "The standard legal work week in Morocco is 44 hours. Employers must maintain clear, weekly records of hours worked to ensure compliance with overtime regulations and to provide accurate monthly payroll stubs (bulletin de paie)."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Morocco are entitled to a minimum of 1.5 days of paid leave per month of work, totaling approximately 18 working days per year. Additional leave may be granted based on years of service or collective agreements. Annual leave must be scheduled and approved by the employer in advance."
+            "answer": "Employees are entitled to a minimum of 18 working days of paid leave per year after completing six months of service. This entitlement typically increases with seniority."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 14 weeks of maternity leave, with the possibility to take up to 7 weeks before the expected birth date. Maternity benefits are provided through the National Social Security Fund (CNSS). Extended parental leave may be available under specific circumstances to support childcare."
+            "answer": "Female employees are entitled to 14 weeks of maternity leave at 100% pay, covered by the CNSS, which can be distributed before and after the birth."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Morocco are entitled to 3 days of paid paternity leave following the birth of a child. This leave enables fathers to support their families during the immediate postnatal period. Paternity leave must be taken within the timeframe specified by labor regulations."
+            "answer": "Fathers are entitled to 3 days of paid leave following the birth of a child. This is paid by the employer and is intended to support the family's integration."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave provisions to support the adoption process and facilitate child integration into the family. The specific terms are outlined in Moroccan labor law. Both adoptive mothers and fathers may be eligible for adoption leave benefits similar to biological parents."
+            "answer": "Moroccan law protects employees who legally adopt. Those who take a child into their care under the \"Kafala\" system are generally entitled to leave benefits that align with biological parental protections to ensure child welfare."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Morocco? Start Here",
-        "description": "Get started with human resources best practices and hiring in Morocco.",
-        "buttonText": "Schedule a Call",
+        "title": "Ready to unlock the potential of the Moroccan market? Let's start your expansion journey.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Tunisia",
       "imageSrc": "/assets/optimized-images/countries/tunisia.webp",
+      "quickFacts": {
+        "currency": "Tunisian Dinar (TND)",
+        "capital": "Tunis",
+        "timeZone": "GMT+1"
+      },
       "facts": {
         "mainTitle": "Important Facts About Tunisia",
         "sections": [
@@ -170,26 +287,50 @@
             "id": "tunisia-introduction",
             "title": "Tunisia Introduction",
             "content": [
-              "Tunisia is a North African country on the Mediterranean coast, known for its ancient ruins, diverse culture, and emerging tech industry. Tunisia has a well-educated workforce and is increasingly attractive for outsourcing and technology services."
+              "Tunisia is a vibrant North African nation that has positioned itself as a major tech and service hub for the European and MENA markets. With a highly educated population and a strong focus on engineering and digital services, Tunisia offers a perfect balance of cost-efficiency and high-quality output. It is particularly attractive for companies seeking multilingual support and software development expertise."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Tunisia's Geography",
             "content": [
-              "Tunisia is located on the Mediterranean coast of North Africa. The capital, Tunis, is in the northeast. The country features Mediterranean coastline in the north, mountains in the northwest, and the Sahara Desert in the south."
+              "Located at the northernmost point of Africa, Tunisia is bordered by the Mediterranean Sea to the north and east. Its proximity to Europe (just 140 km from Italy) makes it a strategic partner for nearshoring. The country is divided into the fertile northern regions, where the capital Tunis is located, and the arid south, which reaches into the Sahara Desert."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Tunisia",
+            "content": [
+              "Tunisia enjoys a Mediterranean climate in the north, with mild, rainy winters and hot, dry summers. The southern part of the country experiences a desert climate. Average summer temperatures in coastal cities like Tunis or Sousse stay around 32°C (90°F), while the sea breeze provides a pleasant environment for year-round business operations."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Tunisia",
+            "content": [
+              "Tunisian culture is a unique blend of Arab, Mediterranean, and French influences. It is one of the most progressive societies in the region, with a strong emphasis on education and gender equality. In business, Tunisians value politeness, personal trust, and a degree of formality. Meetings often begin with social conversation, as building a relationship is considered a prerequisite for any commercial agreement."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Tunisia",
             "content": [
-              "Arabic is the official language, with Tunisian Arabic being the common dialect. French is widely used in business and education. English proficiency is growing, especially among younger professionals."
+              "Arabic is the official language, and the local dialect, Darija, is spoken daily. French is the language of business, administration, and higher education, spoken by nearly 65% of the population. English is rapidly becoming the preferred third language, especially among IT professionals and the younger workforce, making Tunisia a truly multilingual talent hub."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Tunisia",
+            "content": [
+              "As of January 1, 2026, Tunisia follows a progressive tax scale ranging from 0% to 41%. The employer is responsible for withholding the tax (PIT) at source from the employee's monthly gross income."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Tunisia",
+            "content": [
+              "The social security system (CNSS) in Tunisia covers health insurance, retirement, and family allowances. Health insurance is managed by CNAM, which is integrated into the social security contributions."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -197,8 +338,32 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "16.57%", "9.18%"],
-                ["Health Insurance", "4%", "1%"]
+                ["Social Security (CNSS)", "16.57%", "9.18%"],
+                ["Unemployment Insurance Fund", "0.5%", "0.5%"],
+                ["Health Insurance (CNAM)", "Included in CNSS", "Included in CNSS"],
+                ["Total", "17.07%", "9.68%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Tunisia in 2026",
+            "content": ["*Dates for religious holidays are subject to the lunar calendar."],
+            "table": {
+              "headers": ["Occasion", "Date (Estimated for 2026)"],
+              "rows": [
+                ["New Year's Day", "January 1"],
+                ["Revolution and Youth Day", "January 14"],
+                ["Independence Day", "March 20"],
+                ["Eid al-Fitr (End of Ramadan)", "March 21–22*"],
+                ["Martyrs' Day", "April 9"],
+                ["Labor Day", "May 1"],
+                ["Eid al-Adha (Feast of Sacrifice)", "May 26–27*"],
+                ["Islamic New Year (Muharram)", "June 16*"],
+                ["Republic Day", "July 25"],
+                ["Women's Day", "August 13"],
+                ["The Prophet's Birthday (Mawlid)", "August 25*"],
+                ["Evacuation Day", "October 15*"]
               ]
             }
           }
@@ -209,34 +374,34 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Tunisia are paid in Tunisian Dinar (TND), the national currency. Payment is typically made through bank transfer to the employee's account on a monthly basis. The employment contract should clearly specify salary details, payment method, and any additional compensation elements."
+            "answer": "Salaries are paid monthly in Tunisian Dinars (TND). International companies often set salaries in EUR or USD to remain competitive, but the actual payment is converted and deposited in TND according to local central bank regulations."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers are required to maintain accurate records of working hours, including overtime and leave. Employees must submit timesheets according to company procedures and labor regulations. All employment records must be kept for inspection by the Labor Inspectorate for the period mandated by law."
+            "answer": "The standard work week is 40 to 48 hours, depending on the sector. In the office and IT sectors, 40 hours is the norm. Employers must maintain meticulous records of hours worked and overtime to comply with the Tunisian Labor Code."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Tunisia are entitled to a minimum of 12 working days of paid annual leave per year for the first year, increasing to 18 days after one year of service. Additional leave may be provided based on working conditions or collective agreements. Leave scheduling must be coordinated with the employer."
+            "answer": "Employees are typically entitled to 18 to 30 working days of paid leave per year, depending on their seniority and the specific collective agreement of their industry."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 30 days of maternity leave, with the option to extend with medical certification. The National Social Security Fund (CNSS) provides maternity benefits during this period. Additional unpaid parental leave may be negotiated to support extended childcare needs."
+            "answer": "Following recent reforms, maternity leave in the private sector has been extended to 3 months at 100% pay, ensuring better support for working mothers."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Tunisia are entitled to 1 day of paid paternity leave following the birth of a child. While shorter than in some countries, this leave acknowledges the importance of fathers' presence during the immediate postnatal period. Additional leave may be taken as annual leave if needed."
+            "answer": "Fathers are now entitled to 7 days of paid paternity leave (extended to 10 days in case of multiple births or disabilities), which must be taken within the first month of the child's birth."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave provisions to facilitate the adoption process and child integration into the family. The specific terms and conditions are outlined in Tunisian labor legislation. Both adoptive mothers and fathers may qualify for adoption leave benefits."
+            "answer": "Employees who legally adopt a child are entitled to leave periods that mirror parental leave, typically up to 3 months, to facilitate the integration of the child into the family."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Tunisia? Start Here",
-        "description": "Get started with human resources best practices and hiring in Tunisia.",
-        "buttonText": "Schedule a Call",
+        "title": "Looking to leverage Tunisia's tech and creative hub? Let's build your bridge to talent.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     }

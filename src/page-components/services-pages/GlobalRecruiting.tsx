@@ -10,19 +10,22 @@ import globalRecruitingData from '@/data/global-recruiting.json';
 
 function GlobalRecruiting() {
   const heroImage = manifest.hero.find(image => image.alt === 'global-recruiting-banner');
+  const keyFeaturesImage = manifest.keyFeatures.find(
+    image => image.alt === 'global-recruiting-features',
+  );
 
   return (
     <main id="main-content">
       <HeroSection
         {...globalRecruitingData.heroSection}
         imageSrc={heroImage!.src}
-        imageAlt="Services hero banner"
+        imageAlt="Global Recruiting hero banner"
       />
       <HowItWorksSection {...globalRecruitingData.howItWorksSection} />
       <ImageContentSection
         {...globalRecruitingData.globalHiringSection}
-        imageSrc={heroImage!.src}
-        imageAlt="Global hiring services"
+        imageSrc={keyFeaturesImage!.src}
+        imageAlt="Global Recruiting services"
         reverse={true}
         background="var(--gray-background)"
       />

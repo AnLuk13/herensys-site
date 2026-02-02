@@ -64,7 +64,7 @@ function CountryDetails({ params }: { params: Promise<{ region: string; id: stri
         imageAlt={`${countryData.name} flags`}
       />
       <BuildDreamTeamSection {...goGlobalSection} showTitleDescription={false} />
-      <CountryFactsSection {...countryData.facts} />
+      <CountryFactsSection {...countryData.facts} quickFacts={countryData.quickFacts} />
       {countryData.faqSection && (
         <FAQSection {...countryData.faqSection} faqQuestionStyle={{ color: 'var(--accent)' }} />
       )}

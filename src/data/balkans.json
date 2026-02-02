@@ -3,6 +3,11 @@
     {
       "name": "Albania",
       "imageSrc": "/assets/optimized-images/countries/albania.webp",
+      "quickFacts": {
+        "currency": "Albanian Lek (ALL)",
+        "capital": "Tirana",
+        "timeZone": "GMT+1 (CET)"
+      },
       "facts": {
         "mainTitle": "Important Facts About Albania",
         "sections": [
@@ -10,26 +15,50 @@
             "id": "albania-introduction",
             "title": "Albania Introduction",
             "content": [
-              "Albania is a country in Southeast Europe on the Adriatic and Ionian Seas, bordered by Montenegro, Kosovo, North Macedonia, and Greece. Known for its stunning coastline, rich history, and developing economy, Albania offers unique opportunities for businesses looking to expand in the Balkans region."
+              "Albania is rapidly transforming into a strategic gateway between the Mediterranean and the rest of Europe. With a focus on digital innovation and a business-friendly environment, it has become an attractive destination for companies seeking high-quality BPO, IT, and administrative support at a competitive cost."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Albania's Geography",
             "content": [
-              "Albania is located in the western part of the Balkan Peninsula. The capital, Tirana, is situated in the center of the country. Albania features diverse geography including coastal plains, mountains, and rivers, with the Albanian Alps in the north being particularly noteworthy."
+              "Located in Southern Europe on the Balkan Peninsula, Albania boasts extensive coastlines along the Adriatic and Ionian Seas. It shares borders with Montenegro, Kosovo, North Macedonia, and Greece. Tirana, the capital, is the country's beating cultural and industrial heart."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Albania",
+            "content": [
+              "The country enjoys a classic Mediterranean climate with mild, wet winters and hot, dry summers. Coastal regions stay pleasant year-round, while the Albanian Alps in the north offer a more rugged, mountainous environment."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Albania",
+            "content": [
+              "Albanian culture is centered around family, hospitality, and a direct communication style. It is a society that places a high value on building strong personal relationships, which often serves as a prerequisite for successful business partnerships."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Albania",
             "content": [
-              "Albanian is the official language of Albania. English and Italian are widely spoken, especially in business contexts and tourism sectors."
+              "Albanian is the official language. Due to its historical ties and young, educated population, English and Italian are exceptionally common in business and professional circles, making it a highly accessible market for international teams."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Albania",
+            "content": [
+              "Albania employs a progressive tax system. For 2026, personal income tax rates typically range from 13% to 23% depending on the salary level."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Albania",
+            "content": [
+              "The social security system in Albania covers both social and health insurance. For 2026, the minimum salary threshold for contributions is set at ALL 50,000, while the maximum is ALL 186,416."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -37,8 +66,35 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "15%", "9.5%"],
-                ["Health Insurance", "1.7%", "1.7%"]
+                ["Social Insurance", "15.0%", "9.5%"],
+                ["Health Insurance", "1.7%", "1.7%"],
+                ["Total", "16.7%", "11.2%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Albania in 2026",
+            "content": [
+              "The Monday Rule: If an official public holiday falls on a weekend (Saturday or Sunday), the day off is usually observed on the following Monday."
+            ],
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day", "January 1–2"],
+                ["Orthodox Christmas", "January 7"],
+                ["Summer Day", "March 14 (Observed March 16)"],
+                ["Eid al-Fitr (End of Ramadan)", "March 20"],
+                ["Nevruz Day", "March 22 (Observed March 23)"],
+                ["Catholic Easter Monday", "April 6"],
+                ["Orthodox Easter Monday", "April 13"],
+                ["International Labor Day", "May 1"],
+                ["Eid al-Adha (Feast of Sacrifice)", "May 27"],
+                ["Mother Teresa Beatification Day", "September 5 (Observed September 7)"],
+                ["Independence Day", "November 28 (Observed November 30)"],
+                ["Liberation Day", "November 29 (Observed December 1)"],
+                ["National Youth Day", "December 8"],
+                ["Christmas Day", "December 25"]
               ]
             }
           }
@@ -49,40 +105,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "An employee's salary is paid in Albanian Lek (ALL), the national currency, by default. If the employee works abroad, the salary can be paid in the currency specified in the individual employment contract. The parties can agree on the salary payment in foreign currency at an exchange rate agreed upon by both parties. Salary payment can be transferred to the employee's account at a payment service provider, with the respective services paid from the employer's account."
+            "answer": "Salaries are typically paid monthly in Albanian Lek (ALL). While international contracts often benchmark salaries in EUR or USD, final payments must be executed in the national currency."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers in Albania are required to maintain accurate records of working hours, overtime, and leave. Employees must submit timesheets as per company policy, and records must be kept for at least 5 years for labor inspection purposes."
+            "answer": "The standard legal work week is 40 hours, usually structured as 8 hours per day over 5 days. Employers must maintain accurate records, as any work beyond these limits is treated as overtime, capped at an average of 48 hours per week."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Albania are entitled to a minimum of 4 weeks (20 working days) of paid annual leave per year. Additional days may be granted based on years of service, specific job conditions, or collective agreements."
+            "answer": "Employees are entitled to a minimum of 4 calendar weeks (typically 20-22 working days) of paid annual leave per year. Some sectors provide up to 30 days depending on the contract."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 365 days of maternity leave, with at least 35 days taken before the expected birth date. Maternity benefits are paid through social insurance. Parental leave provisions are also available for adoptive parents."
+            "answer": "Female employees are entitled to 365 days of maternity leave. The first 6 months are compensated at 80% of the average net salary, while the remaining period is covered at 50%."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers are entitled to paternity leave in Albania. The duration and payment conditions are regulated by labor law and may vary based on specific circumstances and employment agreements."
+            "answer": "Fathers are entitled to 3 days of paid paternity leave at the time of birth, covered by the employer."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents in Albania are entitled to leave similar to biological parents, with specific provisions outlined in the Labor Code to support the integration of adopted children into families."
+            "answer": "For an adopted child up to one year old, employees are entitled to 330 days of leave from the day of adoption."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Albania? Start Here",
-        "description": "Get started with human resources best practices and hiring in Albania.",
-        "buttonText": "Schedule a Call",
+        "title": "Ready to discover the hidden potential of Albania? Let's find your next team.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Kosovo",
       "imageSrc": "/assets/optimized-images/countries/kosovo.webp",
+      "quickFacts": {
+        "currency": "Euro (EUR)",
+        "capital": "Pristina",
+        "timeZone": "GMT+1 (CET)"
+      },
       "facts": {
         "mainTitle": "Important Facts About Kosovo",
         "sections": [
@@ -90,26 +151,53 @@
             "id": "kosovo-introduction",
             "title": "Kosovo Introduction",
             "content": [
-              "Kosovo is a partially recognized state in Southeast Europe, bordered by Serbia, North Macedonia, Albania, and Montenegro. It declared independence in 2008 and has been developing its economy with a focus on services, trade, and increasingly, technology sectors."
+              "Kosovo is one of Europe's newest and most dynamic nations. With a median age of around 30, it boasts the youngest population on the continent, characterized by high digital literacy and strong multilingual skills (English and German are widely spoken). Its strategic location and Euro-indexed economy make it an increasingly popular hub for IT outsourcing, customer support, and business services."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Kosovo's Geography",
             "content": [
-              "Kosovo is landlocked in the central Balkan Peninsula. The capital, Pristina, is located in the northeastern part of the country. Kosovo's terrain is predominantly mountainous with the Sharr Mountains in the south and the Kosovo Plain in the east."
+              "Landlocked in the center of the Balkans, Kosovo is surrounded by mountains and fertile plains. It shares borders with Albania, North Macedonia, Montenegro, and Serbia. The capital, Pristina, serves as the primary economic and cultural engine, while cities like Prizren and Peja are key secondary hubs for regional trade and services."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Kosovo",
+            "content": [
+              "Kosovo has a continental climate with four distinct seasons. Winters are cold and snowy, with temperatures often dropping below 0°C (32°F), while summers are warm and sunny, with averages around 26°C (79°F). The spring and autumn seasons are mild and ideal for travel and outdoor business activities."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Kosovo",
+            "content": [
+              "Kosovan culture is known for its legendary hospitality and strong sense of community. It is a society that values entrepreneurship and is rapidly modernizing. In a business context, punctuality and direct communication are appreciated. Building a personal rapport is often a precursor to long-term professional partnerships."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Kosovo",
             "content": [
-              "Albanian and Serbian are the official languages of Kosovo. English is increasingly common, especially among younger generations and in business settings."
+              "Albanian and Serbian are the official languages. However, due to a large diaspora and a young, tech-savvy population, English is exceptionally common in professional settings. German is also frequently spoken, particularly in technical and engineering sectors, making Kosovo a highly versatile talent market."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Kosovo",
+            "content": [
+              "Kosovo uses a progressive tax system that is very competitive compared to Western Europe. As of 2026, the rates are:",
+              "• 0% for income up to €3,000 annually.",
+              "• 8% for income between €3,001 and €5,400.",
+              "• 10% for income above €5,401."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Kosovo",
+            "content": [
+              "The social security system is straightforward, focusing primarily on pension contributions. Unlike other regions, there is no separate mandated health insurance tax rate; social services are funded through the general budget and the pension system."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -117,8 +205,30 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "5%", "5%"],
-                ["Health Insurance", "3.5%", "3.5%"]
+                ["Pension Contribution", "5%", "5%"],
+                ["Health Insurance", "Not a separate tax", "Not a separate tax"],
+                ["Total", "5%", "5%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Kosovo in 2026",
+            "content": ["*Dates for religious holidays are subject to the lunar calendar."],
+            "table": {
+              "headers": ["Occasion", "Date (Estimated for 2026)"],
+              "rows": [
+                ["New Year's Day", "January 1–2"],
+                ["Orthodox Christmas", "January 7"],
+                ["Independence Day", "February 17"],
+                ["Eid al-Fitr (End of Ramadan)", "March 20"],
+                ["Catholic Easter Monday", "April 6"],
+                ["Constitution Day", "April 9"],
+                ["Orthodox Easter Monday", "April 13"],
+                ["International Labor Day", "May 1"],
+                ["Europe Day", "May 9"],
+                ["Eid al-Adha (Feast of Sacrifice)", "May 26–27*"],
+                ["Catholic Christmas Day", "December 25"]
               ]
             }
           }
@@ -129,40 +239,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Employee salaries in Kosovo are typically paid in Euros (EUR), the official currency used in the country. Payment is usually made through bank transfer to the employee's designated account. Employers must ensure timely payment according to the employment contract terms, typically on a monthly basis."
+            "answer": "Salaries are paid monthly in Euro (EUR). Since the local economy is fully Euroized, there are no currency conversion risks for European clients paying into Kosovan bank accounts."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers are required to maintain accurate records of working hours, including overtime and leave. Employees must submit timesheets according to company policy to ensure proper compensation. All employment records must be kept for inspection by the Labor Inspectorate."
+            "answer": "The standard work week is 40 hours. Employers must maintain accurate records of daily hours, as any work beyond the 40-hour limit is classified as overtime and must be compensated accordingly."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Kosovo are entitled to a minimum of 20 working days of paid annual leave per year. Additional leave days may be provided based on the employment contract, collective agreements, or company policy. Leave must be scheduled in coordination with the employer."
+            "answer": "Employees are entitled to a minimum of 4 weeks (20 working days) of paid leave per year. An additional day of leave is added for every five years of service with the same employer."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 12 months of maternity leave, with 6 weeks mandatory before the expected birth date. Maternity benefits are provided through the social insurance system. Parental leave provisions are also available for adoptive parents under specific conditions."
+            "answer": "Total leave is 12 months. The first 6 months are paid by the employer at 70% of the salary. The following 3 months are covered by the government at 50% of the average national salary, and the final 3 months are unpaid."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Kosovo are entitled to paternity leave following the birth of a child. The duration and compensation are regulated by labor law. Paternity leave helps support family bonding and shared parental responsibilities."
+            "answer": "Fathers are entitled to 3 days of paid leave upon birth or adoption. They may also take an additional 2 weeks of unpaid leave at any time until the child turns three."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave similar to biological parents to facilitate the integration of the adopted child. The specific provisions are outlined in Kosovo's labor legislation. Both adoptive mothers and fathers may be eligible for adoption leave benefits."
+            "answer": "Employees who legally adopt a child under 1 year of age are entitled to the same leave benefits as biological parents, starting with 2 days paid and followed by the applicable parental leave periods to support family integration."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Kosovo? Start Here",
-        "description": "Get started with human resources best practices and hiring in Kosovo.",
-        "buttonText": "Schedule a Call",
+        "title": "Ready to tap into Europe's most energetic talent market? Let's bridge the gap to Kosovo.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "North Macedonia",
       "imageSrc": "/assets/optimized-images/countries/north-macedonia.webp",
+      "quickFacts": {
+        "currency": "Macedonian Denar (MKD)",
+        "capital": "Skopje",
+        "timeZone": "GMT+1 (CET)"
+      },
       "facts": {
         "mainTitle": "Important Facts About North Macedonia",
         "sections": [
@@ -170,35 +285,80 @@
             "id": "north-macedonia-introduction",
             "title": "North Macedonia Introduction",
             "content": [
-              "North Macedonia is a landlocked country in Southeast Europe, bordered by Serbia, Kosovo, Bulgaria, Greece, and Albania. The country has a developing market economy with growing sectors in technology, manufacturing, and services."
+              "North Macedonia is a landlocked nation that has transformed into a strategic business hub. It offers one of the most attractive tax packages in Europe, specifically designed to stimulate international investment and simplify operations for successful global companies."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about North Macedonia's Geography",
             "content": [
-              "North Macedonia is located in the central Balkan Peninsula. The capital, Skopje, is situated in the northern part of the country. The terrain is predominantly mountainous, with fertile valleys and basins."
+              "Located in the northeastern part of the Balkan region, North Macedonia is characterized by its mountainous terrain and fertile valleys. It shares borders with Greece, Bulgaria, Serbia, Albania, and Kosovo, making it a central crossroads for trade in Southeastern Europe."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in North Macedonia",
+            "content": [
+              "The country experiences a warm and moderately continental climate. It is characterized by a prolonged frost-free period and relatively mild winters, although snow cover is common in the mountainous regions during the winter months."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of North Macedonia",
+            "content": [
+              "Macedonian culture is a rich tapestry of Orthodox Christian and Muslim traditions, reflected in its architecture, festivals, and daily life. It is a society that deeply values family ties and hospitality. In business, building a foundation of mutual trust and maintaining professional etiquette are key to long-term success."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in North Macedonia",
             "content": [
-              "Macedonian is the official language. Albanian is also widely spoken, particularly in western regions. English is increasingly common in business contexts."
+              "Macedonian is the primary official language, with Albanian also holding official status at the state level. English is widely spoken and understood, particularly within the professional, tech, and younger generations, facilitating smooth communication for international partners."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in North Macedonia",
+            "content": [
+              "North Macedonia utilizes a flat tax system for most types of income, making it highly transparent for employers.",
+              "• Flat Rate: 10% on almost all types of personal income.",
+              "• Exception: A 15% rate applies specifically to winnings from games of chance."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in North Macedonia",
+            "content": [
+              "The social security system covers pension, health, and unemployment insurance. Contributions are calculated based on the employee's gross wage."
+            ],
             "table": {
-              "headers": [
-                "Types of Contribution",
-                "Contribution rate % (by employer)",
-                "Contribution rate % (by employee)"
-              ],
+              "headers": ["Types of Contribution", "Total Rate %"],
               "rows": [
-                ["Social Security", "18.8%", "18.8%"],
-                ["Health Insurance", "4.3%", "4.3%"]
+                ["Pension and Disability Insurance", "18.8%"],
+                ["Health Insurance", "7.5%"],
+                ["Unemployment Insurance", "1.2%"],
+                ["Work Injury and Occupational Disease", "0.5%"],
+                ["Total Mandatory Contributions", "~28%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by North Macedonia in 2026",
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day", "January 1"],
+                ["Orthodox Christmas", "January 7"],
+                ["Eid al-Fitr (Ramazan Bajram)", "March 20"],
+                ["Orthodox Easter Monday", "April 13"],
+                ["International Labor Day", "May 1"],
+                ["St. Cyril and Methodius Day", "May 24 (Observed May 25)"],
+                ["Republic Day (Ilinden)", "August 2 (Observed August 3)"],
+                ["Independence Day", "September 8"],
+                ["Revolution Day (People's Uprising)", "October 11 (Observed October 12)"],
+                ["Day of Macedonian Revolutionary Struggle", "October 23"],
+                ["St. Clement of Ohrid Day", "December 8"]
               ]
             }
           }
@@ -209,40 +369,45 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in North Macedonia are paid in Macedonian Denar (MKD), the national currency. Payment is typically made through bank transfer to the employee's account on a monthly basis. Employers may agree with employees to pay salaries in foreign currency if specified in the employment contract."
+            "answer": "Salaries are typically paid monthly in Macedonian Denar (MKD). Many international companies benchmark salaries in EUR or USD to attract top-tier talent, though final payment is executed in the local currency."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers must maintain detailed records of working hours, overtime, and all types of leave. Employees are required to submit accurate timesheets in accordance with company procedures. Records must be kept for at least 5 years for inspection by the State Labor Inspectorate."
+            "answer": "The standard legal work week is 40 hours. Employers must maintain accurate records of daily working hours, as overtime is strictly regulated and requires additional compensation."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees are entitled to a minimum of 20 working days of paid annual leave per year. Additional days may be granted based on employment contract terms, years of service, or collective agreements. Leave scheduling should be coordinated with the employer to ensure business continuity."
+            "answer": "Employees are entitled to a minimum of 20 working days of paid annual leave, which can increase up to 26 days based on years of service with the same employer. Eligibility begins after 6 months of uninterrupted service."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 9 months of maternity leave, with at least 28 days taken before the expected birth date. Maternity benefits are provided through social security. Parental leave is also available to support childcare and can be shared between parents in certain circumstances."
+            "answer": "Female employees are entitled to 9 months of paid maternity leave (extended to 12 months for multiple births). This leave is typically funded by the State Fund for Health and Insurance."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers are entitled to 7 days of paid paternity leave following the birth of a child. This leave can be taken continuously or divided within the first 3 months after birth. Paternity leave is designed to support fathers in actively participating in early childcare."
+            "answer": "Fathers are entitled to 7 days of paid paternity leave following the birth of a child."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave similar to maternity and paternity leave to support the adoption process and child integration. The specific duration and conditions are outlined in labor legislation. Both adoptive mothers and fathers may qualify for adoption leave benefits."
+            "answer": "Employees who adopt a child are entitled to leave that can last up to 330 days after the child is born, ensuring support for family integration."
           }
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in North Macedonia? Start Here",
-        "description": "Get started with human resources best practices and hiring in North Macedonia.",
-        "buttonText": "Schedule a Call",
+        "title": "Ready for business in North Macedonia? Let's connect you with the region's top professionals.",
+        "description": "",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Romania",
       "imageSrc": "/assets/optimized-images/countries/romania.webp",
+      "quickFacts": {
+        "currency": "Romanian Leu (RON)",
+        "capital": "Bucharest",
+        "timeZone": "GMT+2 (EET) / GMT+3 (EEST)"
+      },
       "facts": {
         "mainTitle": "Important Facts About Romania",
         "sections": [
@@ -250,26 +415,51 @@
             "id": "romania-introduction",
             "title": "Romania Introduction",
             "content": [
-              "Romania is a country in Southeast Europe, bordered by Bulgaria, Serbia, Hungary, Ukraine, and Moldova, with access to the Black Sea. As an EU member since 2007, Romania has a fast-growing economy with strong IT and manufacturing sectors."
+              "Romania is a prominent member of the European Union and one of the fastest-growing economies in the region. It has established itself as a global leader in IT outsourcing and business process services, offering a sophisticated workforce that combines technical excellence with deep cultural alignment with Western markets."
             ]
           },
           {
             "id": "geography",
             "title": "What to Know about Romania's Geography",
             "content": [
-              "Romania is located in the northern part of the Balkan Peninsula. The capital, Bucharest, is in the southern part of the country. Romania features diverse geography including the Carpathian Mountains, the Danube River, and the Black Sea coast."
+              "Located at the intersection of Central, Eastern, and Southeastern Europe, Romania features a diverse landscape dominated by the Carpathian Mountains and the Danube River. Its strategic position on the Black Sea provides essential maritime access and trade links to both Europe and Asia."
+            ]
+          },
+          {
+            "id": "climate",
+            "title": "Climate in Romania",
+            "content": [
+              "The country experiences a temperate-continental climate with four distinct seasons. Winters can be cold and snowy, while summers are typically warm to hot, with coastal areas enjoying a pleasant sea breeze."
+            ]
+          },
+          {
+            "id": "culture",
+            "title": "The Culture of Romania",
+            "content": [
+              "Romanian culture is a unique \"Latin island\" in a Slavic sea, blending Roman roots with Balkan and Central European influences. It is a society known for its resilience, creativity, and warm hospitality. In business, Romanians are professional and value clear structures, though they also place significant importance on building long-term, trust-based relationships."
             ]
           },
           {
             "id": "languages",
             "title": "Languages Spoken in Romania",
             "content": [
-              "Romanian is the official language. English is widely spoken, especially in business and urban areas, making Romania an attractive destination for international companies."
+              "Romanian is the official language. Due to high education standards and a history of foreign investment, English proficiency is exceptionally high among the workforce. French, German, and Italian are also widely spoken, making Romania one of the most linguistically versatile talent markets in Europe."
+            ]
+          },
+          {
+            "id": "personal-income-tax",
+            "title": "Personal Income Tax in Romania",
+            "content": [
+              "Romania applies a flat income tax rate of 10% on employment income. However, specific fiscal changes for 2026 have increased tax obligations for investment income and certain property-related taxes."
             ]
           },
           {
             "id": "social-security",
             "title": "Social Security in Romania",
+            "content": [
+              "The social security system is largely funded by the employee, with a smaller contribution required from the employer.",
+              "Note: Employer pension contributions of 4% or 8% may apply for arduous or special working conditions."
+            ],
             "table": {
               "headers": [
                 "Types of Contribution",
@@ -277,8 +467,32 @@
                 "Contribution rate % (by employee)"
               ],
               "rows": [
-                ["Social Security", "20.8%", "25%"],
-                ["Health Insurance", "10%", "10%"]
+                ["Social Insurance (Pension)", "0% (Standard office)", "25%"],
+                ["Health Insurance", "0%", "10%"],
+                ["Labor Insurance Contribution", "2.25%", "-"],
+                ["Total", "2.25%", "35%"]
+              ]
+            }
+          },
+          {
+            "id": "public-holidays",
+            "title": "Public Holidays Recognized by Romania in 2026",
+            "table": {
+              "headers": ["Occasion", "Date in 2026"],
+              "rows": [
+                ["New Year's Day", "January 1\u20132"],
+                ["Epiphany", "January 6"],
+                ["St. John the Baptist", "January 7"],
+                ["Unification Day", "January 24"],
+                ["Orthodox Good Friday", "April 10"],
+                ["Orthodox Easter Monday", "April 13"],
+                ["International Labor Day", "May 1"],
+                ["Orthodox Pentecost / Whit Monday", "June 1"],
+                ["Children's Day", "June 1"],
+                ["Assumption of Mary", "August 15"],
+                ["St. Andrew's Day", "November 30"],
+                ["National Day (Great Union Day)", "December 1"],
+                ["Christmas Day", "December 25\u201326"]
               ]
             }
           }
@@ -289,34 +503,34 @@
         "faqs": [
           {
             "question": "Salary Payment",
-            "answer": "Salaries in Romania are paid in Romanian Leu (RON), the national currency. Payment is typically made through bank transfer on a monthly basis, with net salary transferred to the employee's account. The employment contract may specify different payment arrangements if agreed upon by both parties."
+            "answer": "Salaries are paid monthly in Romanian Leu (RON). While international firms often define salary packages in EUR, the actual payroll execution must occur in the local currency."
           },
           {
             "question": "Timesheets & Record Keeping",
-            "answer": "Employers are required to maintain accurate records of working time, including overtime, night work, and leave. Employees must submit timesheets as required by company policy and labor regulations. All employment records must be available for inspection by the Labor Inspectorate and kept for at least 5 years."
+            "answer": "The standard work week is 40 hours. Employers are legally required to keep accurate records of attendance and overtime, as Romanian Labor Law provides high levels of protection for workers regarding working time."
           },
           {
             "question": "Annual Leave",
-            "answer": "Employees in Romania are entitled to a minimum of 20 working days of paid annual leave per year. Additional leave days may be provided based on working conditions, years of service, or collective labor agreements. Leave must be scheduled and approved by the employer in advance."
+            "answer": "Employees are entitled to a minimum of 20 working days of paid annual leave. Those working in difficult or dangerous conditions are entitled to an additional 3 days of leave."
           },
           {
             "question": "Maternity & Parental Leave",
-            "answer": "Female employees are entitled to 126 days of maternity leave, with 63 days taken before and 63 days after birth. Additionally, either parent can take parental leave until the child reaches 2 years old (or 3 years for children with disabilities). Maternity and parental benefits are provided through the social insurance system."
+            "answer": "Female employees are entitled to 126 calendar days (18 weeks) of maternity leave paid at 85% of their average monthly income. This is typically followed by a parental leave option of up to 2 years (or 3 years for children with disabilities)."
           },
           {
             "question": "Paternity Leave",
-            "answer": "Fathers in Romania are entitled to 15 working days of paid paternity leave following the birth of a child. This leave can be taken within 8 weeks from the child's birth. Paternity leave benefits are provided through social security to support fathers' involvement in early childcare."
+            "answer": "Fathers are entitled to 5 to 10 working days of paid paternity leave, which can be extended to 15 days if the father attends a certified childcare training course."
           },
           {
             "question": "Adoption Leave",
-            "answer": "Adoptive parents are entitled to leave similar to biological parents, with provisions for both maternity-equivalent and parental leave. The leave duration depends on the age of the adopted child and specific circumstances. Both adoptive mothers and fathers may qualify for adoption leave benefits under Romanian labor law."
+            "answer": "For legal adoptions, employees are entitled to leave that can last up to 330 days after the child is born to ensure proper family bonding and integration."
           }
         ]
       },
       "ctaSection": {
         "title": "Ready For Business in Romania? Start Here",
         "description": "Get started with human resources best practices and hiring in Romania.",
-        "buttonText": "Schedule a Call",
+        "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     }
