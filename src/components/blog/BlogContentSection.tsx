@@ -7,14 +7,31 @@ import type { BlogContentSectionProps } from '@/types/sections';
 
 function BlogContentSection({ data }: BlogContentSectionProps) {
   const [isLoading, setIsLoading] = useState(true);
+  const [styleLoaded, setStyleLoaded] = useState(false);
+
+  useEffect(() => {
+    // Load Tailwind CSS for Plate.js content
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://platejs.org/tailwind.css';
+    link.onload = () => setStyleLoaded(true);
+    link.onerror = () => setStyleLoaded(true); // Continue even if load fails
+    document.head.appendChild(link);
+
+    return () => {
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     // Ensure styles and images are loaded
-    if (data?.htmlContent) {
+    if (data?.htmlContent && styleLoaded) {
       const timer = setTimeout(() => setIsLoading(false), 100);
       return () => clearTimeout(timer);
     }
-  }, [data]);
+  }, [data, styleLoaded]);
 
   return (
     <section className="sectionWrapper">

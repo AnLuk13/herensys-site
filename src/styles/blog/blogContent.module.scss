@@ -1,23 +1,56 @@
-.blogContent {
-  width: 100%;
-  
-  // Import Tailwind for Plate.js content
-  @import url('https://platejs.org/tailwind.css');
-  
-  // Ensure proper box-sizing
-  * {
-    box-sizing: border-box;
-  }
-  
-  // Reset any unwanted margins
-  > *:first-child {
-    margin-top: 0;
-  }
-  
-  > *:last-child {
-    margin-bottom: 0;
-  }
-}
+// .plateIframe {
+//   height: auto;
+//   width: 100%;
+//   border: none;
+//   overflow: hidden;
+//   display: block;
+// }
+
+// Ensure blog content styles are applied consistently
+// .blogContent {
+//   width: 100%;
+//   overflow-wrap: break-word;
+//   word-wrap: break-word;
+
+//   // Ensure proper box-sizing for all elements
+//   *,
+//   *::before,
+//   *::after {
+//     box-sizing: border-box;
+//   }
+
+//   // Reset margins
+//   > *:first-child {
+//     margin-top: 0;
+//   }
+
+//   > *:last-child {
+//     margin-bottom: 0;
+//   }
+
+//   // Ensure images and media respect container width
+//   img,
+//   video,
+//   iframe {
+//     max-width: 100%;
+//     height: auto;
+//   }
+
+//   // Ensure tables are responsive
+//   table {
+//     max-width: 100%;
+//     overflow-x: auto;
+//     display: block;
+//   }
+
+//   // Prevent code blocks from overflowing
+//   pre,
+//   code {
+//     max-width: 100%;
+//     overflow-x: auto;
+//     word-break: break-word;
+//   }
+// }
 
 .skeletonWrapper {
   width: 100%;
