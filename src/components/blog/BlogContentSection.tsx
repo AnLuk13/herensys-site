@@ -41,6 +41,7 @@ function BlogContentSection({ data }: BlogContentSectionProps) {
 
         let resizeObserver: ResizeObserver | null = null;
         let mutationObserver: MutationObserver | null = null;
+        let heightCheckInterval: NodeJS.Timeout | null = null;
 
         // Calculate and set iframe height
         const updateIframeHeight = () => {
@@ -57,12 +58,27 @@ function BlogContentSection({ data }: BlogContentSectionProps) {
             );
 
             const finalHeight = Math.max(contentHeight, 100);
-            iframeRef.current.style.height = `${finalHeight}px`;
-            setIsLoading(false);
+
+            // Only update if height changed significantly (more than 5px difference)
+            const currentHeight = parseInt(iframeRef.current.style.height || '0', 10);
+            if (Math.abs(finalHeight - currentHeight) > 5) {
+              iframeRef.current.style.height = `${finalHeight}px`;
+            }
           });
         };
 
-        // Wait for all resources (images, styles) to load
+        // Delayed height check for mobile browsers
+        const delayedHeightCheck = () => {
+          setTimeout(() => {
+            updateIframeHeight();
+            // Check again after a short delay to catch late reflows
+            setTimeout(updateIframeHeight, 100);
+            setTimeout(updateIframeHeight, 300);
+            setTimeout(updateIframeHeight, 500);
+          }, 50);
+        };
+
+        // Wait for all resources (images, styles, fonts) to load
         const waitForResources = () => {
           const images = Array.from(iframeDoc.images);
           const promises: Promise<void>[] = [];
@@ -92,13 +108,28 @@ function BlogContentSection({ data }: BlogContentSectionProps) {
             }
           });
 
+          // Wait for fonts
+          if (iframeDoc.defaultView && 'fonts' in iframeDoc.defaultView.document) {
+            promises.push(
+              iframeDoc.defaultView.document.fonts.ready
+                .then(() => {
+                  // Fonts loaded
+                })
+                .catch(() => {
+                  // Ignore font loading errors
+                }),
+            );
+          }
+
           Promise.all(promises).then(() => {
-            updateIframeHeight();
+            delayedHeightCheck();
+            setIsLoading(false);
           });
 
           // Also update immediately in case everything is already loaded
           if (promises.length === 0) {
-            updateIframeHeight();
+            delayedHeightCheck();
+            setIsLoading(false);
           }
         };
 
@@ -112,12 +143,25 @@ function BlogContentSection({ data }: BlogContentSectionProps) {
 
         // Observe DOM mutations
         mutationObserver = new MutationObserver(() => {
-          waitForResources();
+          delayedHeightCheck();
         });
         mutationObserver.observe(iframeDoc.body, {
           childList: true,
           subtree: true,
+          attributes: true,
+          characterData: true,
         });
+
+        // Periodic height check for mobile browsers (first 3 seconds)
+        let checkCount = 0;
+        heightCheckInterval = setInterval(() => {
+          updateIframeHeight();
+          checkCount++;
+          if (checkCount >= 6) {
+            // Check 6 times over 3 seconds
+            if (heightCheckInterval) clearInterval(heightCheckInterval);
+          }
+        }, 500);
 
         // Initial load
         if (iframeDoc.readyState === 'complete') {
@@ -126,13 +170,16 @@ function BlogContentSection({ data }: BlogContentSectionProps) {
           iframeDoc.defaultView.addEventListener('load', waitForResources);
         }
 
-        // Window resize
-        window.addEventListener('resize', updateIframeHeight);
+        // Window resize and orientation change
+        window.addEventListener('resize', delayedHeightCheck);
+        window.addEventListener('orientationchange', delayedHeightCheck);
 
         return () => {
           resizeObserver?.disconnect();
           mutationObserver?.disconnect();
-          window.removeEventListener('resize', updateIframeHeight);
+          if (heightCheckInterval) clearInterval(heightCheckInterval);
+          window.removeEventListener('resize', delayedHeightCheck);
+          window.removeEventListener('orientationchange', delayedHeightCheck);
           if (iframeDoc.defaultView) {
             iframeDoc.defaultView.removeEventListener('load', waitForResources);
           }
