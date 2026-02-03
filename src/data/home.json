@@ -2,7 +2,7 @@
   "heroSection": {
     "titleLines": [
       { "text": "Hire Smarter —" },
-      { "text": "Fast, Compliant Access", "CSSProperties": { "color": "var(--accent)" } },
+      { "text": "Fast, Compliant Access", "CSSProperties": { "color": "var(--accent-primary)" } },
       { "text": "to Emerging‑Market Talent" }
     ],
     "descriptions": [

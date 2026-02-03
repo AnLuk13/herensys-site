@@ -90,7 +90,7 @@
   transition: border-color 0.2s;
 
   &:focus {
-    border-color: var(--accent);
+    border-color: var(--accent-primary);
   }
 
   &::placeholder {
@@ -114,11 +114,11 @@
 }
 
 .privacyLink {
-  color: var(--accent);
+  color: var(--accent-primary);
   text-decoration: underline;
 
   &:hover {
-    color: var(--accent);
+    color: var(--accent-primary);
   }
 }
 

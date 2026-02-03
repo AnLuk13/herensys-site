@@ -42,7 +42,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--accent);
+  background: var(--accent-primary);
   z-index: 0;
   width: 100%;
 
@@ -67,7 +67,7 @@
   @media (max-width: 640px) {
     text-align: left;
     padding-left: 20px;
-    border-left: 2px solid var(--accent);
+    border-left: 2px solid var(--accent-primary);
   }
 }
 
@@ -97,7 +97,7 @@
     height: 15px;
     width: 15px;
     border-radius: 100%;
-    background: #ff9d7a;
+    background: var(--accent-primary);
 
     @media (max-width: 860px) {
       display: none;
@@ -131,7 +131,7 @@
   white-space: pre-line;
 
   @media (max-width: 860px) {
-    border-top: 2px solid var(--accent);
+    border-top: 2px solid var(--accent-primary);
     padding-top: 8px;
   }
 

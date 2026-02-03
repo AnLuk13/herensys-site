@@ -124,7 +124,7 @@
   padding: 0.875rem 2rem;
   border: none;
   border-radius: 6px;
-  background: var(--accent);
+  background: var(--accent-primary);
   color: var(--white);
   cursor: pointer;
   transition: background 0.3s ease;
@@ -253,7 +253,7 @@
   padding: 10px 20px;
   width: 81px;
   height: 37px;
-  background: var(--accent);
+  background: var(--accent-primary);
   color: var(--white);
   cursor: pointer;
   transition: background 0.3s ease;
@@ -273,7 +273,7 @@
   font-weight: 700;
   font-size: 14px;
   text-align: center;
-  color: var(--accent);
+  color: var(--accent-primary);
   background: var(--white);
   color: var(--accent, #e17f5c);
   cursor: pointer;

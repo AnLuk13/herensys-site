@@ -44,7 +44,7 @@ function BlogPost({ params, initialBlog, initialLatestPosts }: BlogPostProps) {
           width: '100%',
         }}
       >
-        <MoonLoader color="var(--accent)" size={60} />
+        <MoonLoader color="var(--accent-primary)" size={60} />
       </div>
     );
   }
@@ -69,7 +69,7 @@ function BlogPost({ params, initialBlog, initialLatestPosts }: BlogPostProps) {
               fontWeight: 'bold',
               fontSize: '4rem',
               marginBottom: '0.5rem',
-              color: 'var(--accent)',
+              color: 'var(--accent-primary)',
             }}
           >
             Failed to load content

@@ -21,7 +21,7 @@
 }
 
 .filterButton {
-  border-bottom: 3px solid #ff9d7a;
+  border-bottom: 3px solid var(--accent-primary);
   padding: 8px 15px;
   height: 40px;
   min-height: 40px;
@@ -44,7 +44,7 @@
 
   &.active {
     color: var(--black);
-    border-color: var(--accent);
+    border-color: var(--accent-primary);
   }
 
   @media (max-width: 640px) {

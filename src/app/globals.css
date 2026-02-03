@@ -8,7 +8,7 @@
 :root {
   --primary: #f3f8ff;
   --secondary: #18437e;
-  --accent: #ff9d7a;
+  --accent-primary: #ff9d7a;
   --accent-secondary: #fc8f67;
   --rating: #ffbd53;
   --background: #e3efff;
@@ -68,7 +68,7 @@
   font-size: 20px;
   line-height: 120%;
   letter-spacing: -0.02em;
-  color: var(--accent);
+  color: var(--accent-primary);
   background: var(--white);
   width: 100%;
   /* padding: 152px 0; */
@@ -90,7 +90,7 @@
   }
 }
 
-.sectionContainer {
+/* .sectionContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,7 +103,7 @@
   @media (max-width: 860px) {
     padding: 24px 16px !important;
   }
-}
+} */
 
 .sectionWrapper {
   width: 100%;

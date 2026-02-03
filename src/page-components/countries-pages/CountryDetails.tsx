@@ -71,7 +71,7 @@ function CountryDetails({ params }: { params: Promise<{ region: string; id: stri
       <BuildDreamTeamSection {...quickFactsSection} showTitleDescription={false} />
       <CountryFactsSection {...countryData.facts} />
       {countryData.faqSection && (
-        <FAQSection {...countryData.faqSection} faqQuestionStyle={{ color: 'var(--accent)' }} />
+        <FAQSection {...countryData.faqSection} faqQuestionStyle={{ color: 'var(--accent-primary)' }} />
       )}
       {countryData.ctaSection && <CTASection {...countryData.ctaSection} displayGlobe={true} />}
       <FirestoreSection route="/blogs/latest" Component={RecentBlogPostsSection} />

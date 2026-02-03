@@ -90,9 +90,9 @@ function CandidateHeroSection({
                 value="eur"
                 name="currency-radio"
                 sx={{
-                  color: 'var(--accent)',
+                  color: 'var(--accent-primary)',
                   '&.Mui-checked': {
-                    color: 'var(--accent)',
+                    color: 'var(--accent-primary)',
                   },
                 }}
               />
@@ -105,9 +105,9 @@ function CandidateHeroSection({
                 value="usd"
                 name="currency-radio"
                 sx={{
-                  color: 'var(--accent)',
+                  color: 'var(--accent-primary)',
                   '&.Mui-checked': {
-                    color: 'var(--accent)',
+                    color: 'var(--accent-primary)',
                   },
                 }}
               />
@@ -120,9 +120,9 @@ function CandidateHeroSection({
                 value="gbp"
                 name="currency-radio"
                 sx={{
-                  color: 'var(--accent)',
+                  color: 'var(--accent-primary)',
                   '&.Mui-checked': {
-                    color: 'var(--accent)',
+                    color: 'var(--accent-primary)',
                   },
                 }}
               />

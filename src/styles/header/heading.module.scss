@@ -3,7 +3,7 @@
   left: -9999px;
   z-index: 999;
   padding: 1rem;
-  background-color: var(--accent);
+  background-color: var(--accent-primary);
   color: var(--white);
   text-decoration: none;
   font-weight: bold;
@@ -174,7 +174,7 @@
       font-size: 16px;
       line-height: 150%;
       letter-spacing: -0.02em;
-      color: var(--accent);
+      color: var(--accent-primary);
     }
   }
 }

@@ -63,7 +63,7 @@
   font-family: var(--font-family);
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-primary);
   margin: 0;
   line-height: 1.2;
 
@@ -80,7 +80,7 @@
   font-family: var(--font-family);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-primary);
   margin: 0;
   line-height: 1.3;
 
@@ -97,7 +97,7 @@
   font-family: var(--font-family);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--accent-primary);
   margin: 0;
   line-height: 1.4;
 
@@ -133,7 +133,7 @@
   color: var(--text-primary);
   margin: 0;
   padding: 1.5rem;
-  border-right: 4px solid var(--accent);
+  border-right: 4px solid var(--accent-primary);
   background: var(--gray-background);
   border-radius: 4px;
 
@@ -168,7 +168,7 @@
 
 .link {
   font-family: var(--font-family);
-  color: var(--accent);
+  color: var(--accent-primary);
   text-decoration: underline;
   transition: opacity 0.3s ease;
 
@@ -324,16 +324,16 @@
   gap: 0.5rem;
   font-family: var(--font-family);
   font-size: 0.9375rem;
-  color: var(--accent);
+  color: var(--accent-primary);
   text-decoration: none;
   padding: 0.75rem 1rem;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-primary);
   border-radius: 6px;
   transition: all 0.3s ease;
   margin: 1rem 0;
 
   &:hover {
-    background: var(--accent);
+    background: var(--accent-primary);
     color: var(--white);
   }
 
@@ -367,7 +367,7 @@
   font-size: 0.9375rem;
   font-weight: 500;
   background: var(--gray-background);
-  color: var(--accent);
+  color: var(--accent-primary);
   padding: 0.2em 0.6em;
   border-radius: 4px;
 }

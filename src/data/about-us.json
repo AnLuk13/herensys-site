@@ -2,7 +2,7 @@
   "heroSection": {
     "titleLines": [
       { "text": "Breaking boundaries " },
-      { "text": "in work and opportunity", "CSSProperties": { "color": "var(--accent)" } }
+      { "text": "in work and opportunity", "CSSProperties": { "color": "var(--accent-primary)" } }
     ],
     "descriptions": [
       "Your potential shouldn't be defined by geography. We're shaping a future where opportunity travels farther than ever before"

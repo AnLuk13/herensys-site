@@ -10,7 +10,7 @@
   text-align: center;
   color: var(--white);
   font-family: var(--font-family);
-  background: var(--accent);
+  background: var(--accent-primary);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -20,7 +20,7 @@
   justify-content: center;
 
   &:hover {
-    background: #fc8f67;
+    background: var(--accent-secondary);
   }
 }
 

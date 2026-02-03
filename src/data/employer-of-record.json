@@ -2,7 +2,7 @@
   "heroSection": {
     "titleLines": [
       { "text": "Employer" },
-      { "text": "of Record", "CSSProperties": { "color": "var(--accent)" } },
+      { "text": "of Record", "CSSProperties": { "color": "var(--accent-primary)" } },
       { "text": "(EOR)" }
     ],
     "descriptions": [

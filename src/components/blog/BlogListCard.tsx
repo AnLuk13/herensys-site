@@ -2,6 +2,7 @@ import BlurImage from '@/components/helper/BlurImage';
 import Link from 'next/link';
 import styles from '@/styles/blog/blogListCard.module.scss';
 import { formatDate } from '@/lib/utils/dateMethods';
+import useIsLargeScreen from '@/lib/hooks/useIsLargeScreen';
 
 interface BlogListCardProps {
   id: string;
@@ -31,11 +32,14 @@ function BlogListCard({
   const truncateWords = (text: string, textLimit: number) => {
     const textLength = text.length;
     if (textLength <= textLimit) return text;
-    return text.slice(0, textLimit) + '...';
+    return text.slice(0, textLimit).trim() + '...';
   };
 
-  const truncatedTitle = truncateWords(title, 20);
-  const truncatedDescription = truncateWords(description, 40);
+  const { isLargeScreen } = useIsLargeScreen();
+
+  const truncatedTitle = truncateWords(title, isLargeScreen ? 28 : 20);
+  const truncatedDescription = truncateWords(description, isLargeScreen ? 80 : 40);
+  const truncatedAuthor = truncateWords(author, isLargeScreen ? 24 : 14);
 
   return (
     <Link
@@ -61,14 +65,18 @@ function BlogListCard({
       {!featured && (
         <div className={styles.blogContent}>
           <div className={styles.blogMeta}>
-            <span className={styles.author}>{author}</span>
+            <span className={styles.author} title={`Author: ${author}`}>
+              {truncatedAuthor}
+            </span>
             <span className={styles.date}> • {formatDate(date)}</span>
           </div>
-          <h3 className={styles.blogTitle}>
+          <h3 className={styles.blogTitle} title={`Title: ${title}`}>
             {truncatedTitle}
             <span className={styles.arrow}>↗</span>
           </h3>
-          <p className={styles.blogDescription}>{truncatedDescription}</p>
+          <p className={styles.blogDescription} title={`Description: ${description}`}>
+            {truncatedDescription}
+          </p>
           <div className={styles.tagsContainer}>
             {tags.map((tag, index) => (
               <span key={index} className={styles.tag}>
@@ -81,14 +89,18 @@ function BlogListCard({
       {featured && (
         <div className={styles.featuredContent}>
           <div className={styles.blogMeta}>
-            <span className={styles.author}>{author}</span>
+            <span className={styles.author} title={`Author: ${author}`}>
+              {truncatedAuthor}
+            </span>
             <span className={styles.date}> • {formatDate(date)}</span>
           </div>
-          <h2 className={styles.featuredTitle}>
+          <h2 className={styles.featuredTitle} title={`Title: ${title}`}>
             {truncatedTitle}
             <span className={styles.arrow}>↗</span>
           </h2>
-          <p className={styles.featuredDescription}>{truncatedDescription}</p>
+          <p className={styles.featuredDescription} title={`Description: ${description}`}>
+            {truncatedDescription}
+          </p>
           <div className={styles.tagsContainer}>
             {tags.map((tag, index) => (
               <span key={index} className={styles.tag}>

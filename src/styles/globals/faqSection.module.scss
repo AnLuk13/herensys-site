@@ -47,7 +47,7 @@
     transition: color 0.3s ease;
 
     &:hover {
-      color: var(--accent);
+      color: var(--accent-primary);
     }
 
     @media (max-width: 860px) {

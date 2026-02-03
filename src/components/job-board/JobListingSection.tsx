@@ -98,7 +98,7 @@ function JobListingSection({ data }: JobListingSectionProps) {
                       ...base,
                       fontFamily: 'var(--font-family)',
                       fontSize: '0.9375rem',
-                      backgroundColor: state.isSelected ? 'var(--accent)' : 'transparent',
+                      backgroundColor: state.isSelected ? 'var(--accent-primary)' : 'transparent',
                       cursor: 'pointer',
                       '&:hover': {
                         // color: 'var(--black)',
