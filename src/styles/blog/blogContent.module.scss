@@ -1,9 +1,22 @@
-.plateIframe {
-  height: auto;
+.blogContent {
   width: 100%;
-  border: none;
-  overflow: hidden;
-  display: block;
+  
+  // Import Tailwind for Plate.js content
+  @import url('https://platejs.org/tailwind.css');
+  
+  // Ensure proper box-sizing
+  * {
+    box-sizing: border-box;
+  }
+  
+  // Reset any unwanted margins
+  > *:first-child {
+    margin-top: 0;
+  }
+  
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .skeletonWrapper {
