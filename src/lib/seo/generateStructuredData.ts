@@ -14,7 +14,7 @@ export function generateStructuredData(baseUrl: string) {
         sameAs: [
           'https://www.facebook.com/herensys',
           'https://www.instagram.com/herensys',
-          'https://www.linkedin.com/company/herensypro', //replace
+          'https://www.linkedin.com/company/herensypro', //replace //TODO
         ],
         contactPoint: {
           '@type': 'ContactPoint',

@@ -2,11 +2,36 @@
   "countries": [
     {
       "name": "Moldova",
+      "title": "Moldova Country Guide",
+      "description": "Tapping into Europe's most innovative IT ecosystem and high-growth talent market.",
       "imageSrc": "/assets/optimized-images/countries/moldova.webp",
       "quickFacts": {
-        "currency": "Moldovan Leu (MDL)",
-        "capital": "Chișinău",
-        "timeZone": "GMT+2 (EET) / GMT+3 (EEST)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Moldovan Leu (MDL)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Chișinău"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+2 (EET) / GMT+3 (EEST)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About the Country of Moldova",
@@ -127,19 +152,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Moldova? Start Here",
-        "description": "Get started with human resources best practices and hiring in Moldova.",
+        "title": "Ready to leverage Moldova’s strategic position and IT expertise?",
+        "description": "Let’s build your team today.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Armenia",
+      "title": "Armenia Country Guide",
+      "description": "Unlocking high-tech potential in the South Caucasus through a legacy of engineering and digital growth.",
       "imageSrc": "/assets/optimized-images/countries/armenia.webp",
       "quickFacts": {
-        "currency": "Armenian Dram (AMD)",
-        "capital": "Yerevan",
-        "timeZone": "GMT+4 (GET)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Armenian Dram (AMD)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Yerevan"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+4 (GET)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Armenia",
@@ -262,19 +312,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Armenia? Start Here",
-        "description": "Get started with human resources best practices and hiring in Armenia.",
+        "title": "Ready to connect with the \"Silicon Mountains\"?",
+        "description": "Let’s build your high-tech team in Armenia.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Georgia",
+      "title": "Georgia Country Guide",
+      "description": "Harnessing the strategic potential of the Caucasus with Georgia's pro-business tax regimes and emerging digital talent.",
       "imageSrc": "/assets/optimized-images/countries/georgia.webp",
       "quickFacts": {
-        "currency": "Georgian Lari (GEL)",
-        "capital": "Tbilisi",
-        "timeZone": "GMT+4 (GET)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Georgian Lari (GEL)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Tbilisi"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+4 (GET)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Georgia",
@@ -401,8 +476,8 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Georgia? Start Here",
-        "description": "Get started with human resources best practices and hiring in Georgia.",
+        "title": "Ready to explore the opportunities in Georgia’s vibrant tech hub?",
+        "description": "Let’s connect you with the talent you need.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }

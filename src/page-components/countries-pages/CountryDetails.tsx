@@ -54,17 +54,22 @@ function CountryDetails({ params }: { params: Promise<{ region: string; id: stri
     cards: mapCardsWithIcons(globalRecruitingData.goGlobalSection.cards),
   };
 
+  const quickFactsSection = {
+    ...countryData.quickFacts,
+    cards: mapCardsWithIcons(countryData.quickFacts.cards),
+  };
+
   return (
     <main id="main-content">
       <CountryHeroSection
-        title={`${countryData.name} at a Glance`}
-        description={`Here's where you get started with human resources best practices and hiring in ${countryData.name}.`}
+        title={countryData.title}
+        description={countryData.description}
         buttonText="Book a call"
         imageSrc={countryData.imageSrc}
         imageAlt={`${countryData.name} flags`}
       />
-      <BuildDreamTeamSection {...goGlobalSection} showTitleDescription={false} />
-      <CountryFactsSection {...countryData.facts} quickFacts={countryData.quickFacts} />
+      <BuildDreamTeamSection {...quickFactsSection} showTitleDescription={false} />
+      <CountryFactsSection {...countryData.facts} />
       {countryData.faqSection && (
         <FAQSection {...countryData.faqSection} faqQuestionStyle={{ color: 'var(--accent)' }} />
       )}

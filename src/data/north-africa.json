@@ -2,11 +2,36 @@
   "countries": [
     {
       "name": "Algeria",
+      "title": "Algeria Country Guide",
+      "description": "Essential HR, compliance, and hiring insights for expanding your team in Algeria.",
       "imageSrc": "/assets/optimized-images/countries/algeria.webp",
       "quickFacts": {
-        "currency": "Algerian Dinar (DZD)",
-        "capital": "Algiers",
-        "timeZone": "GMT+1"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Algerian Dinar (DZD)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Algiers"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Algeria",
@@ -131,19 +156,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready to scale your team in Algeria? Let's build your bridge to talent.",
-        "description": "",
+        "title": "Ready to scale your team in Algeria?",
+        "description": "Let’s build your bridge to talent.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Morocco",
+      "title": "Morocco Country Guide",
+      "description": "Navigating the gateway to African and European markets with Morocco's top-tier multilingual workforce.",
       "imageSrc": "/assets/optimized-images/countries/morocco.webp",
       "quickFacts": {
-        "currency": "Moroccan Dirham (MAD)",
-        "capital": "Rabat",
-        "timeZone": "GMT+1"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Moroccan Dirham (MAD)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Rabat"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Morocco",
@@ -266,19 +316,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready to unlock the potential of the Moroccan market? Let's start your expansion journey.",
-        "description": "",
+        "title": "Ready to unlock the potential of the Moroccan market?",
+        "description": "Let's start your expansion journey.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Tunisia",
+      "title": "Tunisia Country Guide",
+      "description": "Scaling your business with Tunisia's multilingual talent and strategic Mediterranean location.",
       "imageSrc": "/assets/optimized-images/countries/tunisia.webp",
       "quickFacts": {
-        "currency": "Tunisian Dinar (TND)",
-        "capital": "Tunis",
-        "timeZone": "GMT+1"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Tunisian Dinar (TND)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Tunis"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Tunisia",
@@ -399,8 +474,8 @@
         ]
       },
       "ctaSection": {
-        "title": "Looking to leverage Tunisia's tech and creative hub? Let's build your bridge to talent.",
-        "description": "",
+        "title": "Looking to leverage Tunisia's tech and creative hub?",
+        "description": "Let's build your bridge to talent.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }

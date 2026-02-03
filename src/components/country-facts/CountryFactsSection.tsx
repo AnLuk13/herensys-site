@@ -159,23 +159,6 @@ function CountryFactsSection({
       <div className="contentContainer">
         <h2 className={styles.mainTitle}>{mainTitle}</h2>
 
-        {quickFacts && (
-          <ul className={styles.quickFactsList}>
-            <li>
-              <strong>Currency:</strong>
-              <div>{quickFacts.currency}</div>
-            </li>
-            <li>
-              <strong>Capital:</strong>
-              <div>{quickFacts.capital}</div>
-            </li>
-            <li>
-              <strong>Time Zone:</strong>
-              <div>{quickFacts.timeZone}</div>
-            </li>
-          </ul>
-        )}
-
         <div className={styles.contentLayout}>
           <aside className={styles.tableOfContents}>
             <h3 className={styles.tocTitle}>{mainTitle}</h3>

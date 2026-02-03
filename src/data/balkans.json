@@ -2,11 +2,36 @@
   "countries": [
     {
       "name": "Albania",
+      "title": "Albania Country Guide",
+      "description": "Leveraging the Adriatic's emerging tech hub and highly competitive operational landscape.",
       "imageSrc": "/assets/optimized-images/countries/albania.webp",
       "quickFacts": {
-        "currency": "Albanian Lek (ALL)",
-        "capital": "Tirana",
-        "timeZone": "GMT+1 (CET)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Albanian Lek (ALL)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Tirana"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1 (CET)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Albania",
@@ -130,19 +155,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready to discover the hidden potential of Albania? Let's find your next team.",
-        "description": "",
+        "title": "Ready to discover the hidden potential of Albania?",
+        "description": "Let's find your next team.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Kosovo",
+      "title": "Kosovo Country Guide",
+      "description": "Tapping into Europe's youngest workforce and a thriving digital ecosystem in the heart of the Balkans.",
       "imageSrc": "/assets/optimized-images/countries/kosovo.webp",
       "quickFacts": {
-        "currency": "Euro (EUR)",
-        "capital": "Pristina",
-        "timeZone": "GMT+1 (CET)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Euro (EUR)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Pristina"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1 (CET)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Kosovo",
@@ -264,19 +314,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready to tap into Europe's most energetic talent market? Let's bridge the gap to Kosovo.",
-        "description": "",
+        "title": "Ready to tap into Europe's most energetic talent market?",
+        "description": "Let's bridge the gap to Kosovo.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "North Macedonia",
+      "title": "North Macedonia Country Guide",
+      "description": "Unlocking growth in the heart of the Balkans with one of Europe's most competitive tax systems.",
       "imageSrc": "/assets/optimized-images/countries/north-macedonia.webp",
       "quickFacts": {
-        "currency": "Macedonian Denar (MKD)",
-        "capital": "Skopje",
-        "timeZone": "GMT+1 (CET)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Macedonian Denar (MKD)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Skopje"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+1 (CET)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About North Macedonia",
@@ -394,19 +469,44 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready for business in North Macedonia? Let's connect you with the region's top professionals.",
-        "description": "",
+        "title": "Ready for business in North Macedonia?",
+        "description": "Let’s connect you with the region’s top professionals",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
     },
     {
       "name": "Romania",
+      "title": "Romania Country Guide",
+      "description": "Accessing a premier EU tech hub with high-level linguistic diversity and a stable business framework.",
       "imageSrc": "/assets/optimized-images/countries/romania.webp",
       "quickFacts": {
-        "currency": "Romanian Leu (RON)",
-        "capital": "Bucharest",
-        "timeZone": "GMT+2 (EET) / GMT+3 (EEST)"
+        "sectionTitle": "Quick Facts",
+        "sectionSubtitle": "",
+        "cards": [
+          {
+            "title": "Currency",
+            "subtitle": "",
+            "roles": ["Romanian Leu (RON)"],
+            "icon": "circle",
+            "isList": false
+          },
+          {
+            "title": "Capital",
+            "subtitle": "",
+            "roles": ["Bucharest"],
+            "icon": "triangle",
+            "isList": false
+          },
+          {
+            "title": "Time Zone",
+            "subtitle": "",
+            "roles": ["GMT+2 (EET) / GMT+3 (EEST)"],
+            "icon": "rectangular",
+            "isList": false
+          }
+        ],
+        "background": "var(--white)"
       },
       "facts": {
         "mainTitle": "Important Facts About Romania",
@@ -528,8 +628,8 @@
         ]
       },
       "ctaSection": {
-        "title": "Ready For Business in Romania? Start Here",
-        "description": "Get started with human resources best practices and hiring in Romania.",
+        "title": "Ready For Business in Romania?",
+        "description": "Let’s connect you with the region’s topprofessionals.",
         "buttonText": "Book a Call",
         "background": "var(--gray-background)"
       }
