@@ -1,185 +1,185 @@
 {
   "brands": [
     {
-      "id": "290bc863-8954-4006-971e-2d6974e378b1",
+      "id": "3bad6b53-2057-4379-90b1-7b33e23fece1",
       "src": "/assets/optimized-images/brands/ACUMEN_logo.webp",
       "alt": "ACUMEN_logo"
     },
     {
-      "id": "3ba9ee45-a9d9-4e4b-969c-288c3eff2076",
+      "id": "73591d2d-57b5-421f-b202-843b78f7511c",
       "src": "/assets/optimized-images/brands/ACVIAN_logo.webp",
       "alt": "ACVIAN_logo"
     },
     {
-      "id": "c1d1100e-199e-4e36-9e05-88fd52549c63",
+      "id": "3721cdd1-a667-43cb-8031-40830c9bd519",
       "src": "/assets/optimized-images/brands/ADS_logo.webp",
       "alt": "ADS_logo"
     },
     {
-      "id": "6886f526-fb20-442b-8d73-43e6753da9b2",
+      "id": "8bf2be50-8768-460e-ba0b-923aeaee8bc1",
       "src": "/assets/optimized-images/brands/QUANT_logo.webp",
       "alt": "QUANT_logo"
     }
   ],
   "countries": [
     {
-      "id": "89779570-143b-4164-9744-794f099d10b4",
+      "id": "fb1c2d16-8506-4217-b6c6-b6d6eabc137e",
       "src": "/assets/optimized-images/countries/albania.webp",
       "alt": "albania"
     },
     {
-      "id": "78385f42-55f9-4534-9ec0-e95f64acb1a2",
+      "id": "c292d044-5893-4871-9609-243b0d0706b4",
       "src": "/assets/optimized-images/countries/algeria.webp",
       "alt": "algeria"
     },
     {
-      "id": "b3241732-316c-4bc7-af01-64e5b94ff629",
+      "id": "2175d463-932a-45b1-8bb9-190a1cf9a75d",
       "src": "/assets/optimized-images/countries/armenia.webp",
       "alt": "armenia"
     },
     {
-      "id": "20196a2e-ff24-464b-93fc-b1d76cc5a98b",
+      "id": "3b5a56aa-3244-4c0b-9aa8-6cabd2204fa1",
       "src": "/assets/optimized-images/countries/balkans.webp",
       "alt": "balkans"
     },
     {
-      "id": "d1a305ea-bfa5-4cc8-9ab0-78621bfc69e7",
+      "id": "79ef6500-df0e-45a4-9373-270b393d8ba6",
       "src": "/assets/optimized-images/countries/eastern-europe.webp",
       "alt": "eastern-europe"
     },
     {
-      "id": "6004a136-9a78-46a4-b08b-7dc0d9e8e7fc",
+      "id": "de6e2317-b2fd-4052-8c8f-fd71658b20db",
       "src": "/assets/optimized-images/countries/georgia.webp",
       "alt": "georgia"
     },
     {
-      "id": "08bbad47-59ff-4b8a-a6cf-bafb40f7c8fb",
+      "id": "64e23f90-aaf8-49d2-9949-1513675723af",
       "src": "/assets/optimized-images/countries/kosovo.webp",
       "alt": "kosovo"
     },
     {
-      "id": "dd3c5c46-ecb4-4cae-b285-703b038916a0",
+      "id": "2cc58f2a-8e0a-48a8-844d-c98d8826b5fc",
       "src": "/assets/optimized-images/countries/moldova.webp",
       "alt": "moldova"
     },
     {
-      "id": "aef94215-8d5d-401c-824a-4875faf7d56a",
+      "id": "d2793f5a-eeb1-4906-9e00-2e41b2cfa5f3",
       "src": "/assets/optimized-images/countries/morocco.webp",
       "alt": "morocco"
     },
     {
-      "id": "093d2100-af8f-4804-91b1-d9e1a2c4f248",
+      "id": "c7f7879e-a33a-401f-9d06-9a86e46b6c7d",
       "src": "/assets/optimized-images/countries/north-africa.webp",
       "alt": "north-africa"
     },
     {
-      "id": "5ee19da2-26a8-44f9-b35a-2cb44bf60045",
+      "id": "1e5f7d59-e12f-45e4-95af-40a998207c39",
       "src": "/assets/optimized-images/countries/north-macedonia.webp",
       "alt": "north-macedonia"
     },
     {
-      "id": "0660bf6a-1040-44dd-989c-a79dd39ccdb6",
+      "id": "3bdc4247-29a9-42b2-9d7b-6b44bb33f10b",
       "src": "/assets/optimized-images/countries/romania.webp",
       "alt": "romania"
     },
     {
-      "id": "19045e5d-cb88-4652-a62d-b8d33a3a0f57",
+      "id": "3bae8f8a-6201-4c1f-83ea-4a6971bd50d0",
       "src": "/assets/optimized-images/countries/tunisia.webp",
       "alt": "tunisia"
     }
   ],
   "hero": [
     {
-      "id": "32eacdbe-1861-40cf-809f-b863148ffb3a",
+      "id": "cbc29748-32c2-4235-886c-fc556436a1c2",
       "src": "/assets/optimized-images/hero/about-us-banner.webp",
       "alt": "about-us-banner"
     },
     {
-      "id": "9e776723-469c-4cd7-af4b-4d81931ac37a",
+      "id": "a73f1fa4-855c-4c5c-9b7f-c9b524a59d75",
       "src": "/assets/optimized-images/hero/about-us2.webp",
       "alt": "about-us2"
     },
     {
-      "id": "70297d10-19fd-4ec1-b4cd-5452e6cd6cea",
+      "id": "c4abd3a2-22b4-4be4-8ae8-741b61f2efc8",
       "src": "/assets/optimized-images/hero/about-us3.webp",
       "alt": "about-us3"
     },
     {
-      "id": "b4ac9d31-b5cf-4c28-af4d-dcbbdd113bce",
+      "id": "48bb1338-1c82-4d91-8f4b-39f6926881a7",
       "src": "/assets/optimized-images/hero/blog-banner.webp",
       "alt": "blog-banner"
     },
     {
-      "id": "bec358eb-cbbc-4461-8652-26ad102b8189",
+      "id": "a662f360-bff0-4af2-8f01-12c51ad0e4a8",
       "src": "/assets/optimized-images/hero/bpo-banner.webp",
       "alt": "bpo-banner"
     },
     {
-      "id": "a25058fd-6c24-4af9-af7c-dc04ef6bd534",
+      "id": "a0c0a582-2833-478e-a7a6-8e1b6e06a816",
       "src": "/assets/optimized-images/hero/countries-banner.webp",
       "alt": "countries-banner"
     },
     {
-      "id": "7d557258-212e-4470-80fe-e42b20965bf5",
+      "id": "41671793-5e0b-4e0d-a6f6-b5f56f9a1123",
       "src": "/assets/optimized-images/hero/employer-of-record-banner.webp",
       "alt": "employer-of-record-banner"
     },
     {
-      "id": "dbf512b1-42bb-4912-aab6-064a0a2e55fd",
+      "id": "49eefaed-7982-4036-8948-6fc1cdb227dd",
       "src": "/assets/optimized-images/hero/global-payroll-banner.webp",
       "alt": "global-payroll-banner"
     },
     {
-      "id": "0e79260b-05aa-4bd4-8709-2549c6e67c32",
+      "id": "af4f2716-143d-453e-8d49-b77b4cd71c01",
       "src": "/assets/optimized-images/hero/global-recruiting-banner.webp",
       "alt": "global-recruiting-banner"
     },
     {
-      "id": "f67ed722-838d-446d-a468-2e5d9adf819e",
+      "id": "69b1663a-3ce3-4c8a-998e-1b6afb4248c9",
       "src": "/assets/optimized-images/hero/homepage-banner.webp",
       "alt": "homepage-banner"
     },
     {
-      "id": "04ed7a30-aa3e-4d36-9f46-b2e16a9f6712",
+      "id": "440a110f-dff3-4478-9651-ccc1988d9d6a",
       "src": "/assets/optimized-images/hero/job-board-banner.webp",
       "alt": "job-board-banner"
     },
     {
-      "id": "bee2cd75-27b5-4ad5-b835-60a57e5d440b",
+      "id": "40ea5888-973e-41e3-bb31-c707699bd102",
       "src": "/assets/optimized-images/hero/visas-and-work-permits-banner.webp",
       "alt": "visas-and-work-permits-banner"
     }
   ],
   "home": [
     {
-      "id": "67d3dc4e-4278-4b26-bb04-edc2f19c0bd3",
+      "id": "58a8b913-beab-4cae-874e-282800be3cf5",
       "src": "/assets/optimized-images/home/banner.webp",
       "alt": "banner"
     }
   ],
   "keyFeatures": [
     {
-      "id": "8acb91ee-ed12-438f-b526-cadb9493c24a",
+      "id": "c724a66b-d854-48fb-bbc5-6f697581b80e",
       "src": "/assets/optimized-images/keyFeatures/bpo-features.webp",
       "alt": "bpo-features"
     },
     {
-      "id": "7d62b806-dc73-4756-8588-9f3551377f9f",
+      "id": "e24cc52d-a5c2-4d87-947a-cea8a4615894",
       "src": "/assets/optimized-images/keyFeatures/employer-of-record-features.webp",
       "alt": "employer-of-record-features"
     },
     {
-      "id": "486ea654-e311-41c0-8b20-911ee9b9012e",
+      "id": "f30f0c14-4da3-4eef-8e0e-01fa05709388",
       "src": "/assets/optimized-images/keyFeatures/global-payroll-features.webp",
       "alt": "global-payroll-features"
     },
     {
-      "id": "fd22d5cb-84d6-41ca-b151-0db203488e41",
+      "id": "52d03e31-b7f2-4b8e-85f4-cd78c8345cf8",
       "src": "/assets/optimized-images/keyFeatures/global-recruiting-features.webp",
       "alt": "global-recruiting-features"
     },
     {
-      "id": "af764678-f681-4348-9209-64194e379677",
+      "id": "4274b847-d886-4cff-9ff0-c4f3a2cd867e",
       "src": "/assets/optimized-images/keyFeatures/visas-and-work-permits-features.webp",
       "alt": "visas-and-work-permits-features"
     }

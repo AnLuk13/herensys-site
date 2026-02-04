@@ -11,7 +11,9 @@ import { capitalizeFirstLetter } from '@/lib/utils/capitalizeFirstLetter';
 function Countries({ params }: { params?: Promise<{ region: string }> }) {
   const region = params && use(params).region;
 
-  const heroImage = manifest.countries.find(image => image.alt === region)!;
+  const heroImage = region 
+    ? manifest.countries.find(image => image.alt === region)
+    : manifest.hero.find(image => image.alt === 'countries-banner');
 
   const heroSection =
     region && countriesData.heroSections[region as keyof typeof countriesData.heroSections]
@@ -23,7 +25,7 @@ function Countries({ params }: { params?: Promise<{ region: string }> }) {
       <HeroSection
         {...heroSection}
         showArrow={false}
-        imageSrc={heroImage!.src}
+        imageSrc={heroImage?.src || '/assets/images/hero/countries-banner.jpg'}
         imageAlt={`${capitalizeFirstLetter(region ?? 'Country')} hero banner`}
       />
       <PresentCountriesSection initialFilter={region} />
