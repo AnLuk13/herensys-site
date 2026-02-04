@@ -4,15 +4,16 @@ import JobListingSection from '@/components/job-board/JobListingSection';
 import CTASection from '@/components/CTASection';
 import jobBoardData from '@/data/job-board.json';
 import eorData from '@/data/employer-of-record.json';
+import manifest from '@/lib/assets-manifest.json';
 
 function JobBoard({ initialJobs }: { initialJobs?: any[] }) {
-  const heroImage = 'https://picsum.photos/800/600';
+  const heroImage = manifest.hero.find(image => image.alt === 'job-board-banner');
 
   return (
     <main id="main-content">
       <HeroSection
         {...jobBoardData.heroSection}
-        imageSrc={heroImage}
+        imageSrc={heroImage!.src}
         imageAlt="Job Board Hero Image"
       />
       <FirestoreSection

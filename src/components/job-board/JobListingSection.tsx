@@ -1,6 +1,6 @@
 'use client';
 
-import { Activity, useState } from 'react';
+import { useState } from 'react';
 import Select from 'react-select';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -52,7 +52,7 @@ function JobListingSection({ data }: JobListingSectionProps) {
     <section className="sectionWrapper">
       <div className="contentContainer">
         <div className={styles.jobListingContainer}>
-          <h1 className={styles.mainTitle}>Let's find you an open position.</h1>
+          <h1 className={styles.mainTitle}>Let&apos;s find you an open position.</h1>
 
           <div className={styles.searchSection}>
             <p className={styles.subtitle}>
@@ -186,10 +186,12 @@ function JobListingSection({ data }: JobListingSectionProps) {
                             <span className={styles.metaLabel}>Location</span>
                             <span className={styles.metaValue}>{job.location}</span>
                           </div>
-                          <div className={styles.metaItem}>
-                            <span className={styles.metaLabel}>Headquarter</span>
-                            <span className={styles.metaValue}>{job.headquarter}</span>
-                          </div>
+                          {job.headquarter && (
+                            <div className={styles.metaItem}>
+                              <span className={styles.metaLabel}>Headquarter</span>
+                              <span className={styles.metaValue}>{job.headquarter}</span>
+                            </div>
+                          )}
                         </div>
                         <div className={styles.jobActions}>
                           <div
@@ -239,14 +241,16 @@ function JobListingSection({ data }: JobListingSectionProps) {
                         </ul>
                       </div>
 
-                      <div className={styles.detailSection}>
-                        <h4 className={styles.detailTitle}>Nice to have</h4>
-                        <ul className={styles.detailList}>
-                          {job.niceToHave.map((item, index) => (
-                            <li key={index}>{item}</li>
-                          ))}
-                        </ul>
-                      </div>
+                      {job.niceToHave.length > 0 && (
+                        <div className={styles.detailSection}>
+                          <h4 className={styles.detailTitle}>Nice to have</h4>
+                          <ul className={styles.detailList}>
+                            {job.niceToHave.map((item, index) => (
+                              <li key={index}>{item}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
 
                       <div
                         className={styles.accordionButton}

@@ -6,10 +6,12 @@ import PresentCountriesSection from '@/components/countries-presence/PresentCoun
 import ContactForm from '@/components/contact-form/ContactForm';
 import { use } from 'react';
 import countriesData from '@/data/countries.json';
+import { capitalizeFirstLetter } from '@/lib/utils/capitalizeFirstLetter';
 
 function Countries({ params }: { params?: Promise<{ region: string }> }) {
-  const heroImage = manifest.hero.find(image => image.alt === 'countries-banner')!;
   const region = params && use(params).region;
+
+  const heroImage = manifest.countries.find(image => image.alt === region)!;
 
   const heroSection =
     region && countriesData.heroSections[region as keyof typeof countriesData.heroSections]
@@ -22,7 +24,7 @@ function Countries({ params }: { params?: Promise<{ region: string }> }) {
         {...heroSection}
         showArrow={false}
         imageSrc={heroImage!.src}
-        imageAlt="Countries hero banner"
+        imageAlt={`${capitalizeFirstLetter(region ?? 'Country')} hero banner`}
       />
       <PresentCountriesSection initialFilter={region} />
       <ContactForm />

@@ -6,7 +6,7 @@ import AllBlogPostsSection from '@/components/blog/AllBlogPostsSection';
 import blogData from '@/data/blog.json';
 
 function Blog({ initialBlogs }: { initialBlogs?: any[] }) {
-  const heroImage = manifest.home.find(image => image.alt === 'banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'blog-banner');
 
   return (
     <main id="main-content">

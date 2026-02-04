@@ -12,7 +12,9 @@ import eorData from '@/data/employer-of-record.json';
 import { mapCardsWithIcons } from '@/lib/utils/iconMapper';
 
 function AboutUs() {
-  const heroImage = manifest.home.find(image => image.alt === 'banner');
+  const heroImage = manifest.hero.find(image => image.alt === 'about-us-banner');
+  const openingTheWorldImage = manifest.hero.find(image => image.alt === 'about-us2');
+  const weGetThingsDoneImage = manifest.hero.find(image => image.alt === 'about-us3');
 
   const goGlobalSection = {
     ...aboutUsData.goGlobalSection,
@@ -28,13 +30,13 @@ function AboutUs() {
       />
       <ImageContentSection
         {...aboutUsData.openingTheWorldSection}
-        imageSrc={heroImage!.src}
+        imageSrc={openingTheWorldImage!.src}
         imageAlt="Opening the world to opportunity"
       />
       <BuildDreamTeamSection {...goGlobalSection} />
       <ImageContentSection
         {...aboutUsData.weGetThingsDoneSection}
-        imageSrc={heroImage!.src}
+        imageSrc={weGetThingsDoneImage!.src}
         imageAlt="We Get Things Done"
       />
       <TeamSection
