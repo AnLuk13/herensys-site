@@ -1,11 +1,9 @@
 {
   "heroSection": {
-    "titleLines": [
-      { "text": "JOIN HERENSYS" },
-      { "text": "— WE'RE HIRING" },
-      { "text": "WORLDWIDE" }
+    "titleLines": [{ "text": "Build Your Career " }, { "text": "Beyond Borders" }],
+    "descriptions": [
+      "Join a global mission to redefine how the world works. At Herensys, we don’t just fill roles; we create pathways for top-tier talent to work on high-impact international projects. Whether you are an engineer, an operations expert, or a compliance specialist, your next big step starts here. Explore our open positions and let’s map your future together."
     ],
-    "descriptions": ["International projects, strong teams, clear growth paths."],
     "buttonText": "Apply Now",
     "showArrow": false,
     "showDecorations": true

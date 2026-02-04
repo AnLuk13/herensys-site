@@ -1,15 +1,53 @@
 {
-  "heroSection": {
-    "titleLines": [
-      {
-        "text": "Herensys helps you navigate global expansion with ease",
-        "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
-      }
-    ],
-    "descriptions": [
-      "Explore our comprehensive country guides covering everything from taxes, leave, and benefits to local HR, accounting, and tax regulations across 185+ countries. Whether you're hiring abroad or expanding internationally, Herensys provides the insights you need to make informed and compliant decisions."
-    ],
-    "buttonText": "Book a call"
+  "heroSections": {
+    "all": {
+      "titleLines": [
+        {
+          "text": "Herensys helps you navigate global expansion with ease",
+          "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
+        }
+      ],
+      "descriptions": [
+        "Explore our comprehensive country guides covering everything from taxes, leave, and benefits to local HR, accounting, and tax regulations across 185+ countries. Whether you're hiring abroad or expanding internationally, Herensys provides the insights you need to make informed and compliant decisions."
+      ],
+      "buttonText": "Book a call"
+    },
+    "north-africa": {
+      "titleLines": [
+        {
+          "text": "Your Gateway to North Africa's High-Growth Talent",
+          "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
+        }
+      ],
+      "descriptions": [
+        "Scale your operations in the Mediterranean tech frontier. Access a young, multilingual, and STEM-focused workforce in Algeria, Tunisia, and Morocco with zero administrative friction."
+      ],
+      "buttonText": "Book a call"
+    },
+    "eastern-europe": {
+      "titleLines": [
+        {
+          "text": "High-Velocity Engineering & Strategic Growth",
+          "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
+        }
+      ],
+      "descriptions": [
+        "Tap into Europe's most resilient IT hubs. From Moldova to Armenia, we help you navigate complex local regulations to hire senior technical talent and build high-performing distributed teams."
+      ],
+      "buttonText": "Book a call"
+    },
+    "balkans": {
+      "titleLines": [
+        {
+          "text": "Unlocking Untapped Potential in the Balkans",
+          "CSSProperties": { "color": "var(--black)", "fontWeight": "700" }
+        }
+      ],
+      "descriptions": [
+        "Expand into the heart of the Balkan peninsula with confidence. We provide the local infrastructure and compliance expertise you need to scale teams in Kosovo, Albania, and North Macedonia efficiently."
+      ],
+      "buttonText": "Book a call"
+    }
   },
   "countriesData": [
     {

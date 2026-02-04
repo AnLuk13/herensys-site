@@ -42,6 +42,7 @@ function CountryCard({ name, image, flag, region }: CountryCardProps) {
             width={32}
             height={24}
             className={styles.flagImage}
+            style={objectFit.cover}
           />
         </div>
       </div>

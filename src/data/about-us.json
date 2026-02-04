@@ -1,11 +1,14 @@
 {
   "heroSection": {
     "titleLines": [
-      { "text": "Breaking boundaries " },
-      { "text": "in work and opportunity", "CSSProperties": { "color": "var(--accent-primary)" } }
+      { "text": "Strong Minds" },
+      {
+        "text": "for Strong Enterprises",
+        "CSSProperties": { "color": "var(--accent-primary)" }
+      }
     ],
     "descriptions": [
-      "Your potential shouldn't be defined by geography. We're shaping a future where opportunity travels farther than ever before"
+      "Herensys acts as the strategic bridge between global enterprises and the untapped potential of emerging markets. We don’t just fill vacancies; we empower companies to scale at speed by providing access to elite, vetted professionals in North Africa, Eastern Europe, and the Balkans.\n\nWe understand that finding the right team is the ultimate catalyst for business growth. By removing the complexities of international compliance, local HR, and payroll, we allow you to focus on what matters most: your vision. With Herensys, your company’s expansion isn’t just possible—it’s predictable."
     ],
     "buttonText": "Schedule a Call",
     "showArrow": false,
@@ -59,52 +62,23 @@
       "logo": "/assets/optimized-images/brands/ACUMEN_logo.webp"
     },
     {
-      "name": "American Airlines",
-      "logo": "/assets/images/brands/american-airlines.webp"
-    },
-    {
-      "name": "TAJ Hotels",
-      "logo": "/assets/images/brands/taj.webp"
-    },
-    {
-      "name": "Hilton",
-      "logo": "/assets/images/brands/hilton.webp"
+      "name": "QUANT",
+      "logo": "/assets/optimized-images/brands/QUANT_logo.webp"
     }
   ],
   "openingTheWorldSection": {
-    "title": "Opening the world to opportunity",
-    "description": "In 2019, we started with a simple idea: what if hiring great people anywhere was as easy as hiring locally?\n\nWe believe world-class talent isn't confined by geography. Our mission is to help forward-thinking companies hire the best people—no matter where they are.\n\nToday, we support distributed team across more than 60 countries and continues to grow. We've experienced the power of borderless work firsthand, and we're here to make that same freedom possible for you.",
+    "title": "Fueling Business Growth with Resilient Expertise.",
+    "description": "Your ambition shouldn’t be limited by local talent pools. We provide the high-performance intellectual capital your enterprise needs to scale. By sourcing vetted experts from the world’s most adaptive regions, we turn your global expansion into a predictable competitive advantage.\n\nSince 2019, Herensys has operated on a single premise: that the right talent is the ultimate catalyst for business success.",
     "features": [],
     "buttonText": "Schedule a Call",
     "reverse": false,
     "background": "var(--white)"
   },
   "weGetThingsDoneSection": {
-    "title": "We Get Things Done",
-    "description": "We're a hands-on team that thrives on challenges. When faced with complexity, we lean in—driven by passion, integrity, and a commitment to deliver excellence.",
-    "features": [
-      {
-        "title": "Your Goals = Our Mission",
-        "description": "Everything we do starts with your success in mind."
-      },
-      {
-        "title": "Driven by Impact",
-        "description": "We love fast and act with purpose, ensuring results that truly matter."
-      },
-      {
-        "title": "Always Evolving",
-        "description": "We move fast and act with purpose, ensuring results that truly matter."
-      },
-      {
-        "title": "Innovation fuels us",
-        "description": "We stay curious, improving every step of the way."
-      },
-      {
-        "title": "Raising the Bar",
-        "description": "We never settle for 'good enough.' We push boundaries to find smarter, stronger ways to help you win."
-      }
-    ],
-    "buttonText": "Schedule a Call",
+    "title": "Partners in Your Global Success instead of We Get Things Done",
+    "description": "At Herensys, we don't just execute tasks; we align with your ultimate vision. This handshake represents our core promise: to treat your goals as our own. We combine the speed and agility of a modern tech company with the unwavering standards of a global consultancy.\n\nWhether it's embracing innovation or raising the bar on compliance, every action we take is driven by one metric: measurable impact on your business growth. We are in this together, building your future across borders.",
+    "features": [],
+    "buttonText": "Start Your Expansion",
     "reverse": true,
     "background": "var(--gray-background)"
   },

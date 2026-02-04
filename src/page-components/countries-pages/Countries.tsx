@@ -11,10 +11,15 @@ function Countries({ params }: { params?: Promise<{ region: string }> }) {
   const heroImage = manifest.hero.find(image => image.alt === 'countries-banner')!;
   const region = params && use(params).region;
 
+  const heroSection =
+    region && countriesData.heroSections[region as keyof typeof countriesData.heroSections]
+      ? countriesData.heroSections[region as keyof typeof countriesData.heroSections]
+      : countriesData.heroSections.all;
+
   return (
     <main id="main-content">
       <HeroSection
-        {...countriesData.heroSection}
+        {...heroSection}
         showArrow={false}
         imageSrc={heroImage!.src}
         imageAlt="Countries hero banner"

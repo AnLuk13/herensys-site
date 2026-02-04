@@ -1,8 +1,14 @@
 {
   "heroSection": {
-    "titleLines": [{ "text": "Your Global" }, { "text": "Growth" }, { "text": "Playbook" }],
+    "titleLines": [
+      { "text": "Market Insights &", "CSSProperties": { "fontWeight": 700 } },
+      {
+        "text": "Strategic Foresight.",
+        "CSSProperties": { "color": "var(--accent-primary)", "fontWeight": 700 }
+      }
+    ],
     "descriptions": [
-      "Your potential shouldn't be defined by geography. We're shaping a future where opportunity travels farther than ever before"
+      "Navigate the complexities of global expansion with actionable intelligence. Explore our analysis on emerging talent hubs, compliance trends, and the future of borderless work."
     ],
     "buttonText": "Book a call",
     "showArrow": false,
